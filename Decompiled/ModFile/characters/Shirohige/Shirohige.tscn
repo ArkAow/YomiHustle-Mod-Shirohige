@@ -36,7 +36,7 @@
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/lightspearhigh/animation1.png" type="Texture" id=34]
 [ext_resource path="res://ModFile/characters/Shirohige/States/GroundedSpearUp.gd" type="Script" id=35]
 [ext_resource path="res://characters/stickman/sprites/stickman35.png" type="Texture" id=36]
-[ext_resource path="res://icon2.png" type="Texture" id=37]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/lightspearhigh/GroundedSpearUpIcon.png" type="Texture" id=37]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/basics/landing.png" type="Texture" id=38]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/basics/burst.png" type="Texture" id=41]
 [ext_resource path="res://characters/stickman/sprites/stickman55.png" type="Texture" id=42]
@@ -418,6 +418,7 @@ start_tick = 5
 active_ticks = 6
 
 [node name="Hitbox2" type="Node2D" parent="StateMachine/GroundedSpearUp" index="1"]
+z_index = 1000
 script = ExtResource( 96 )
 x = -30
 y = -15
