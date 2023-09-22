@@ -1,16 +1,16 @@
-[gd_scene load_steps=110 format=2]
+[gd_scene load_steps=105 format=2]
 
 [ext_resource path="res://characters/BaseChar.gdshader" type="Shader" id=1]
 [ext_resource path="res://characters/BaseChar.tscn" type="PackedScene" id=2]
 [ext_resource path="res://characters/stickman/sprites/stickman30.png" type="Texture" id=3]
-[ext_resource path="res://characters/stickman/sprites/stickman14.png" type="Texture" id=4]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/lightspearhigh/animation4.png" type="Texture" id=4]
 [ext_resource path="res://characters/stickman/sprites/stickman36.png" type="Texture" id=5]
 [ext_resource path="res://characters/stickman/sprites/stickman19.png" type="Texture" id=6]
-[ext_resource path="res://characters/stickman/sprites/stickman16.png" type="Texture" id=7]
-[ext_resource path="res://characters/stickman/sprites/stickman27.png" type="Texture" id=8]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/lightspearhigh/animation2.png" type="Texture" id=7]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/lightspearhigh/animation5.png" type="Texture" id=8]
 [ext_resource path="res://characters/stickman/sprites/stickman6.png" type="Texture" id=9]
 [ext_resource path="res://characters/stickman/sprites/stickman22.png" type="Texture" id=10]
-[ext_resource path="res://characters/stickman/sprites/stickman15.png" type="Texture" id=11]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/lightspearhigh/animation7.png" type="Texture" id=11]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/basics/wallslam.png" type="Texture" id=12]
 [ext_resource path="res://characters/stickman/sprites/stickman7.png" type="Texture" id=13]
 [ext_resource path="res://ModFile/characters/Shirohige/States/GroundedPunch.gd" type="Script" id=14]
@@ -23,23 +23,21 @@
 [ext_resource path="res://characters/stickman/sprites/stickman8.png" type="Texture" id=21]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/basics/getup.png" type="Texture" id=22]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/basics/hurtgroundedmid.png" type="Texture" id=23]
-[ext_resource path="res://characters/stickman/sprites/stickman26.png" type="Texture" id=24]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/lightspearhigh/animation6.png" type="Texture" id=24]
 [ext_resource path="res://characters/stickman/sprites/stickman20.png" type="Texture" id=25]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/punch/animation5.png" type="Texture" id=26]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/basics/wait.png" type="Texture" id=27]
 [ext_resource path="res://characters/stickman/sprites/stickman21.png" type="Texture" id=28]
 [ext_resource path="res://characters/stickman/sprites/stickman23.png" type="Texture" id=29]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/basics/forwardDash.png" type="Texture" id=30]
-[ext_resource path="res://characters/stickman/sprites/stickman28.png" type="Texture" id=31]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/lightspearhigh/animation3.png" type="Texture" id=31]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/basics/jump.png" type="Texture" id=32]
 [ext_resource path="res://characters/stickman/sprites/stickman34.png" type="Texture" id=33]
-[ext_resource path="res://characters/stickman/sprites/stickman51.png" type="Texture" id=34]
-[ext_resource path="res://characters/stickman/sprites/stickman42.png" type="Texture" id=35]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/lightspearhigh/animation1.png" type="Texture" id=34]
+[ext_resource path="res://ModFile/characters/Shirohige/States/GroundedSpearUp.gd" type="Script" id=35]
 [ext_resource path="res://characters/stickman/sprites/stickman35.png" type="Texture" id=36]
-[ext_resource path="res://characters/stickman/sprites/stickman39.png" type="Texture" id=37]
+[ext_resource path="res://icon2.png" type="Texture" id=37]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/basics/landing.png" type="Texture" id=38]
-[ext_resource path="res://characters/stickman/sprites/stickman41.png" type="Texture" id=39]
-[ext_resource path="res://characters/stickman/sprites/stickman40.png" type="Texture" id=40]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/basics/burst.png" type="Texture" id=41]
 [ext_resource path="res://characters/stickman/sprites/stickman55.png" type="Texture" id=42]
 [ext_resource path="res://characters/stickman/sprites/stickman56.png" type="Texture" id=43]
@@ -48,14 +46,12 @@
 [ext_resource path="res://characters/stickman/sprites/chuk_jump1.png" type="Texture" id=46]
 [ext_resource path="res://characters/stickman/sprites/nunchuk_heavy3.png" type="Texture" id=47]
 [ext_resource path="res://characters/stickman/sprites/nunchuk_heavy2.png" type="Texture" id=48]
-[ext_resource path="res://characters/stickman/sprites/stickman45.png" type="Texture" id=49]
 [ext_resource path="res://characters/stickman/sprites/chuk_spin5.png" type="Texture" id=50]
 [ext_resource path="res://characters/stickman/sprites/chuk_spin4.png" type="Texture" id=51]
 [ext_resource path="res://characters/stickman/sprites/nunchuk_light1.png" type="Texture" id=52]
 [ext_resource path="res://characters/stickman/sprites/chuk_spin2.png" type="Texture" id=53]
 [ext_resource path="res://characters/stickman/sprites/stickman49.png" type="Texture" id=54]
 [ext_resource path="res://characters/stickman/sprites/stickman54.png" type="Texture" id=55]
-[ext_resource path="res://characters/stickman/sprites/stickman44.png" type="Texture" id=56]
 [ext_resource path="res://characters/stickman/sprites/stickman50.png" type="Texture" id=57]
 [ext_resource path="res://characters/stickman/sprites/stickman53.png" type="Texture" id=58]
 [ext_resource path="res://characters/stickman/sprites/stickman58.png" type="Texture" id=59]
@@ -101,11 +97,10 @@
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/basics/doubleJump/doubleJump2.png" type="Texture" id=99]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/basics/doubleJump/doubleJump4.png" type="Texture" id=100]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/basics/doubleJump/doubleJump1.png" type="Texture" id=101]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/punch/punchIcon.png" type="Texture" id=102]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/punch/animation1.png" type="Texture" id=103]
-[ext_resource path="res://icon2.png" type="Texture" id=105]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/punch/animation3.png" type="Texture" id=106]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/punch/animation2.png" type="Texture" id=108]
-[ext_resource path="res://characters/wizard/SandstormParticle.tscn" type="PackedScene" id=109]
 
 [sub_resource type="ShaderMaterial" id=1]
 resource_local_to_scene = true
@@ -127,21 +122,6 @@ shader_param/outline_color = Color( 0, 0, 0, 1 )
 
 [sub_resource type="SpriteFrames" id=3]
 animations = [ {
-"frames": [ ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 11 ), ExtResource( 11 ), ExtResource( 11 ), ExtResource( 11 ), ExtResource( 11 ), ExtResource( 11 ), ExtResource( 11 ), ExtResource( 7 ) ],
-"loop": true,
-"name": "AirAttack",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 24 ), ExtResource( 24 ), ExtResource( 24 ), ExtResource( 24 ), ExtResource( 24 ), ExtResource( 24 ), ExtResource( 24 ), ExtResource( 24 ), ExtResource( 24 ), ExtResource( 24 ), ExtResource( 24 ), ExtResource( 24 ), ExtResource( 31 ) ],
-"loop": true,
-"name": "AirFireball",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 37 ), ExtResource( 37 ), ExtResource( 37 ), ExtResource( 37 ), ExtResource( 40 ), ExtResource( 40 ), ExtResource( 39 ) ],
-"loop": true,
-"name": "AirUpwardPunch",
-"speed": 60.0
-}, {
 "frames": [ ExtResource( 41 ) ],
 "loop": true,
 "name": "Burst",
@@ -157,24 +137,9 @@ animations = [ {
 "name": "DashForward",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 34 ), ExtResource( 34 ), ExtResource( 34 ), ExtResource( 34 ), ExtResource( 34 ), ExtResource( 34 ), ExtResource( 34 ), ExtResource( 34 ), ExtResource( 34 ), ExtResource( 34 ), ExtResource( 34 ), ExtResource( 35 ) ],
-"loop": true,
-"name": "DiveKick",
-"speed": 60.0
-}, {
 "frames": [ ExtResource( 101 ), ExtResource( 99 ), ExtResource( 98 ), ExtResource( 100 ) ],
 "loop": true,
 "name": "DoubleJump",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 56 ), ExtResource( 56 ), ExtResource( 56 ), ExtResource( 56 ), ExtResource( 56 ), ExtResource( 56 ), ExtResource( 56 ), ExtResource( 56 ), ExtResource( 56 ), ExtResource( 56 ), ExtResource( 56 ), ExtResource( 56 ), ExtResource( 56 ), ExtResource( 49 ) ],
-"loop": true,
-"name": "DropKick",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 24 ), ExtResource( 24 ), ExtResource( 24 ), ExtResource( 24 ), ExtResource( 24 ), ExtResource( 24 ), ExtResource( 24 ), ExtResource( 24 ), ExtResource( 24 ), ExtResource( 24 ), ExtResource( 24 ), ExtResource( 24 ), ExtResource( 8 ) ],
-"loop": true,
-"name": "Fireball",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 45 ), ExtResource( 45 ), ExtResource( 45 ), ExtResource( 45 ), ExtResource( 45 ), ExtResource( 45 ), ExtResource( 45 ), ExtResource( 45 ), ExtResource( 45 ), ExtResource( 60 ) ],
@@ -205,6 +170,11 @@ animations = [ {
 "frames": [ ExtResource( 103 ), ExtResource( 108 ), ExtResource( 106 ), ExtResource( 15 ), ExtResource( 26 ) ],
 "loop": true,
 "name": "GroundedPunch",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 34 ), ExtResource( 7 ), ExtResource( 31 ), ExtResource( 4 ), ExtResource( 8 ), ExtResource( 24 ), ExtResource( 11 ) ],
+"loop": true,
+"name": "GroundedSpearUp",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 79 ), ExtResource( 79 ), ExtResource( 79 ), ExtResource( 79 ), ExtResource( 62 ), ExtResource( 62 ), ExtResource( 62 ), ExtResource( 69 ), ExtResource( 69 ), ExtResource( 54 ), ExtResource( 54 ), ExtResource( 54 ), ExtResource( 54 ), ExtResource( 54 ), ExtResource( 54 ), ExtResource( 57 ) ],
@@ -340,8 +310,16 @@ character_portrait = ExtResource( 27 )
 [node name="Sprite" parent="Flip" index="0"]
 material = SubResource( 2 )
 frames = SubResource( 3 )
-animation = "GroundedPunch"
-frame = 3
+animation = "GroundedSpearUp"
+frame = 2
+
+[node name="Super" parent="Sounds" index="3"]
+pitch_scale = 0.46
+
+[node name="Hurtbox" parent="." index="3"]
+x = -1
+y = -19
+height = 19
 
 [node name="SeaQuake" type="Node2D" parent="StateMachine" index="47"]
 script = ExtResource( 81 )
@@ -364,10 +342,10 @@ hit_cancel_into_string = "Grounded"
 [node name="Hitbox" type="Node2D" parent="StateMachine/SeaQuake" index="0"]
 z_index = 1000
 script = ExtResource( 96 )
-x = -5
+x = -4
 y = -21
-width = 41
-height = 17
+width = 36
+height = 15
 damage = 200
 minimum_damage = 50
 hitstun_ticks = 20
@@ -386,14 +364,14 @@ script = ExtResource( 14 )
 apply_forces = true
 apply_fric = true
 apply_grav = true
-anim_length = 20
-ticks_per_frame = 4
-enter_force_dir_x = "2"
-enter_force_speed = "3"
-particle_scene = ExtResource( 109 )
+anim_length = 15
+ticks_per_frame = 3
+force_dir_x = "1"
+force_speed = "2"
+force_tick = 8
 title = "Punch"
 type = 1
-button_texture = ExtResource( 105 )
+button_texture = ExtResource( 102 )
 interrupt_from_string = "Grounded
 GroundedAttack"
 interrupt_into_string = "Grounded
@@ -412,5 +390,38 @@ damage = 50
 minimum_damage = 20
 hitlag_ticks = 5
 knockback = "5.0"
-start_tick = 11
-active_ticks = 8
+start_tick = 9
+active_ticks = 6
+
+[node name="GroundedSpearUp" type="Node2D" parent="StateMachine" index="49"]
+script = ExtResource( 35 )
+apply_forces = true
+apply_fric = true
+apply_grav = true
+anim_length = 16
+ticks_per_frame = 2
+title = "Spear High"
+type = 1
+button_texture = ExtResource( 37 )
+interrupt_from_string = "Grounded
+GroundedAttack"
+interrupt_into_string = "Grounded"
+hit_cancel_into_string = "Grounded"
+
+[node name="Hitbox" type="Node2D" parent="StateMachine/GroundedSpearUp" index="0"]
+z_index = 1000
+script = ExtResource( 96 )
+y = -35
+width = 35
+height = 8
+start_tick = 5
+active_ticks = 6
+
+[node name="Hitbox2" type="Node2D" parent="StateMachine/GroundedSpearUp" index="1"]
+script = ExtResource( 96 )
+x = -30
+y = -15
+width = 10
+height = 13
+start_tick = 4
+active_ticks = 4

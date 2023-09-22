@@ -12,7 +12,7 @@ signal predicted()
 
 
 
-var MAX_HEALTH = 1000
+var MAX_HEALTH = 2000
 
 
 
