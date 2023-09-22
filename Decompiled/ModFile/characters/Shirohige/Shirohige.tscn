@@ -1,4 +1,4 @@
-[gd_scene load_steps=113 format=2]
+[gd_scene load_steps=110 format=2]
 
 [ext_resource path="res://characters/BaseChar.gdshader" type="Shader" id=1]
 [ext_resource path="res://characters/BaseChar.tscn" type="PackedScene" id=2]
@@ -101,12 +101,9 @@
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/basics/doubleJump/doubleJump2.png" type="Texture" id=99]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/basics/doubleJump/doubleJump4.png" type="Texture" id=100]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/basics/doubleJump/doubleJump1.png" type="Texture" id=101]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/punch/animation7.png" type="Texture" id=102]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/punch/animation1.png" type="Texture" id=103]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/punch/animation8.png" type="Texture" id=104]
 [ext_resource path="res://icon2.png" type="Texture" id=105]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/punch/animation3.png" type="Texture" id=106]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/punch/animation6.png" type="Texture" id=107]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/punch/animation2.png" type="Texture" id=108]
 [ext_resource path="res://characters/wizard/SandstormParticle.tscn" type="PackedScene" id=109]
 
@@ -205,7 +202,7 @@ animations = [ {
 "name": "GroundedKick",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 103 ), ExtResource( 108 ), ExtResource( 106 ), ExtResource( 15 ), ExtResource( 26 ), ExtResource( 107 ), ExtResource( 102 ), ExtResource( 104 ) ],
+"frames": [ ExtResource( 103 ), ExtResource( 108 ), ExtResource( 106 ), ExtResource( 15 ), ExtResource( 26 ) ],
 "loop": true,
 "name": "GroundedPunch",
 "speed": 5.0
@@ -344,7 +341,7 @@ character_portrait = ExtResource( 27 )
 material = SubResource( 2 )
 frames = SubResource( 3 )
 animation = "GroundedPunch"
-frame = 5
+frame = 3
 
 [node name="SeaQuake" type="Node2D" parent="StateMachine" index="47"]
 script = ExtResource( 81 )
@@ -389,7 +386,8 @@ script = ExtResource( 14 )
 apply_forces = true
 apply_fric = true
 apply_grav = true
-anim_length = 15
+anim_length = 20
+ticks_per_frame = 4
 enter_force_dir_x = "2"
 enter_force_speed = "3"
 particle_scene = ExtResource( 109 )
@@ -406,13 +404,13 @@ hit_cancel_into_string = "Grounded
 [node name="Hitbox" type="Node2D" parent="StateMachine/GroundedPunch" index="0"]
 z_index = 1000
 script = ExtResource( 96 )
-x = 6
+x = 15
 y = -24
-width = 14
-height = 14
+width = 12
+height = 6
 damage = 50
 minimum_damage = 20
 hitlag_ticks = 5
 knockback = "5.0"
-start_tick = 6
-active_ticks = 3
+start_tick = 11
+active_ticks = 8
