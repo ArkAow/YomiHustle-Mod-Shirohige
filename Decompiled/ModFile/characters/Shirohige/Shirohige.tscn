@@ -1,4 +1,4 @@
-[gd_scene load_steps=105 format=2]
+[gd_scene load_steps=111 format=2]
 
 [ext_resource path="res://characters/BaseChar.gdshader" type="Shader" id=1]
 [ext_resource path="res://characters/BaseChar.tscn" type="PackedScene" id=2]
@@ -14,7 +14,6 @@
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/basics/wallslam.png" type="Texture" id=12]
 [ext_resource path="res://characters/stickman/sprites/stickman7.png" type="Texture" id=13]
 [ext_resource path="res://ModFile/characters/Shirohige/States/GroundedPunch.gd" type="Script" id=14]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/punch/animation4.png" type="Texture" id=15]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/basics/backwardDash.png" type="Texture" id=16]
 [ext_resource path="res://characters/stickman/sprites/stickman5.png" type="Texture" id=17]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/basics/parryhigh.png" type="Texture" id=18]
@@ -38,6 +37,8 @@
 [ext_resource path="res://characters/stickman/sprites/stickman35.png" type="Texture" id=36]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/lightspearhigh/GroundedSpearUpIcon.png" type="Texture" id=37]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/basics/landing.png" type="Texture" id=38]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/lightspearlow/animation1.png" type="Texture" id=39]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/lightspearlow/animation4.png" type="Texture" id=40]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/basics/burst.png" type="Texture" id=41]
 [ext_resource path="res://characters/stickman/sprites/stickman55.png" type="Texture" id=42]
 [ext_resource path="res://characters/stickman/sprites/stickman56.png" type="Texture" id=43]
@@ -46,12 +47,14 @@
 [ext_resource path="res://characters/stickman/sprites/chuk_jump1.png" type="Texture" id=46]
 [ext_resource path="res://characters/stickman/sprites/nunchuk_heavy3.png" type="Texture" id=47]
 [ext_resource path="res://characters/stickman/sprites/nunchuk_heavy2.png" type="Texture" id=48]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/lightspearlow/animation2.png" type="Texture" id=49]
 [ext_resource path="res://characters/stickman/sprites/chuk_spin5.png" type="Texture" id=50]
 [ext_resource path="res://characters/stickman/sprites/chuk_spin4.png" type="Texture" id=51]
 [ext_resource path="res://characters/stickman/sprites/nunchuk_light1.png" type="Texture" id=52]
 [ext_resource path="res://characters/stickman/sprites/chuk_spin2.png" type="Texture" id=53]
 [ext_resource path="res://characters/stickman/sprites/stickman49.png" type="Texture" id=54]
 [ext_resource path="res://characters/stickman/sprites/stickman54.png" type="Texture" id=55]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/lightspearlow/animation3.png" type="Texture" id=56]
 [ext_resource path="res://characters/stickman/sprites/stickman50.png" type="Texture" id=57]
 [ext_resource path="res://characters/stickman/sprites/stickman53.png" type="Texture" id=58]
 [ext_resource path="res://characters/stickman/sprites/stickman58.png" type="Texture" id=59]
@@ -99,7 +102,10 @@
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/basics/doubleJump/doubleJump1.png" type="Texture" id=101]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/punch/punchIcon.png" type="Texture" id=102]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/punch/animation1.png" type="Texture" id=103]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/lightspearlow/animation5.png" type="Texture" id=104]
+[ext_resource path="res://ModFile/characters/Shirohige/States/GroundedSpearDown.gd" type="Script" id=105]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/punch/animation3.png" type="Texture" id=106]
+[ext_resource path="res://icon2.png" type="Texture" id=107]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/punch/animation2.png" type="Texture" id=108]
 
 [sub_resource type="ShaderMaterial" id=1]
@@ -167,9 +173,14 @@ animations = [ {
 "name": "GroundedKick",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 103 ), ExtResource( 108 ), ExtResource( 106 ), ExtResource( 15 ), ExtResource( 26 ) ],
+"frames": [ ExtResource( 103 ), ExtResource( 108 ), ExtResource( 106 ), ExtResource( 26 ), ExtResource( 26 ) ],
 "loop": true,
 "name": "GroundedPunch",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 39 ), ExtResource( 49 ), ExtResource( 56 ), ExtResource( 40 ), ExtResource( 104 ) ],
+"loop": true,
+"name": "GroundedSpearDown",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 34 ), ExtResource( 7 ), ExtResource( 31 ), ExtResource( 4 ), ExtResource( 8 ), ExtResource( 24 ), ExtResource( 11 ) ],
@@ -310,7 +321,7 @@ character_portrait = ExtResource( 27 )
 [node name="Sprite" parent="Flip" index="0"]
 material = SubResource( 2 )
 frames = SubResource( 3 )
-animation = "GroundedSpearUp"
+animation = "GroundedSpearDown"
 frame = 2
 
 [node name="Super" parent="Sounds" index="3"]
@@ -391,7 +402,7 @@ minimum_damage = 20
 hitlag_ticks = 5
 knockback = "5.0"
 start_tick = 9
-active_ticks = 6
+active_ticks = 3
 
 [node name="GroundedSpearUp" type="Node2D" parent="StateMachine" index="49"]
 script = ExtResource( 35 )
@@ -409,6 +420,7 @@ interrupt_into_string = "Grounded"
 hit_cancel_into_string = "Grounded"
 
 [node name="Hitbox" type="Node2D" parent="StateMachine/GroundedSpearUp" index="0"]
+rotation = -0.207446
 z_index = 1000
 script = ExtResource( 96 )
 y = -35
@@ -426,3 +438,33 @@ width = 10
 height = 13
 start_tick = 4
 active_ticks = 4
+
+[node name="GroundedSpearDown" type="Node2D" parent="StateMachine" index="50"]
+script = ExtResource( 105 )
+apply_forces = true
+apply_fric = true
+apply_grav = true
+anim_length = 15
+ticks_per_frame = 3
+enter_force_dir_x = "2"
+enter_force_speed = "2"
+title = "Spear Swipe"
+type = 1
+button_texture = ExtResource( 107 )
+interrupt_from_string = "Grounded
+GroundedAttack"
+interrupt_into_string = "Grounded"
+hit_cancel_into_string = "Grounded"
+
+[node name="Hitbox" type="Node2D" parent="StateMachine/GroundedSpearDown" index="0"]
+rotation = -0.0445289
+script = ExtResource( 96 )
+x = 2
+y = -10
+width = 39
+height = 8
+damage = 80
+minimum_damage = 40
+knockback = "5.0"
+start_tick = 7
+active_ticks = 9
