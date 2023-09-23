@@ -1,4 +1,4 @@
-[gd_scene load_steps=111 format=2]
+[gd_scene load_steps=112 format=2]
 
 [ext_resource path="res://characters/BaseChar.gdshader" type="Shader" id=1]
 [ext_resource path="res://characters/BaseChar.tscn" type="PackedScene" id=2]
@@ -14,6 +14,7 @@
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/basics/wallslam.png" type="Texture" id=12]
 [ext_resource path="res://characters/stickman/sprites/stickman7.png" type="Texture" id=13]
 [ext_resource path="res://ModFile/characters/Shirohige/States/GroundedPunch.gd" type="Script" id=14]
+[ext_resource path="res://ModFile/characters/Shirohige/Particles/SeaQuakeShokeWaveEffect.tscn" type="PackedScene" id=15]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/basics/backwardDash.png" type="Texture" id=16]
 [ext_resource path="res://characters/stickman/sprites/stickman5.png" type="Texture" id=17]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/basics/parryhigh.png" type="Texture" id=18]
@@ -105,7 +106,7 @@
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/lightspearlow/animation5.png" type="Texture" id=104]
 [ext_resource path="res://ModFile/characters/Shirohige/States/GroundedSpearDown.gd" type="Script" id=105]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/punch/animation3.png" type="Texture" id=106]
-[ext_resource path="res://icon2.png" type="Texture" id=107]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/lightspearlow/GroundedSpearDownIcon.png" type="Texture" id=107]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/punch/animation2.png" type="Texture" id=108]
 
 [sub_resource type="ShaderMaterial" id=1]
@@ -321,8 +322,8 @@ character_portrait = ExtResource( 27 )
 [node name="Sprite" parent="Flip" index="0"]
 material = SubResource( 2 )
 frames = SubResource( 3 )
-animation = "GroundedSpearDown"
-frame = 2
+animation = "SeaQuake"
+frame = 9
 
 [node name="Super" parent="Sounds" index="3"]
 pitch_scale = 0.46
@@ -332,45 +333,7 @@ x = -1
 y = -19
 height = 19
 
-[node name="SeaQuake" type="Node2D" parent="StateMachine" index="47"]
-script = ExtResource( 81 )
-apply_forces = true
-apply_fric = true
-apply_grav = true
-sprite_animation = "SeaQuake"
-anim_length = 50
-ticks_per_frame = 2
-state_screenshake_tick = 15
-state_screenshake_length = 2.0
-title = "Sea Quake"
-type = 2
-button_texture = ExtResource( 97 )
-interrupt_from_string = "Grounded
-GroundedAttack"
-interrupt_into_string = "Grounded"
-hit_cancel_into_string = "Grounded"
-
-[node name="Hitbox" type="Node2D" parent="StateMachine/SeaQuake" index="0"]
-z_index = 1000
-script = ExtResource( 96 )
-x = -4
-y = -21
-width = 36
-height = 15
-damage = 200
-minimum_damage = 50
-hitstun_ticks = 20
-hitlag_ticks = 5
-victim_hitlag = 50
-cancellable = false
-ignore_armor = true
-dir_x = "5.0"
-knockback = "40.0"
-wall_slam = true
-start_tick = 15
-active_ticks = 10
-
-[node name="GroundedPunch" type="Node2D" parent="StateMachine" index="48"]
+[node name="GroundedPunch" type="Node2D" parent="StateMachine" index="47"]
 script = ExtResource( 14 )
 apply_forces = true
 apply_fric = true
@@ -404,7 +367,7 @@ knockback = "5.0"
 start_tick = 9
 active_ticks = 3
 
-[node name="GroundedSpearUp" type="Node2D" parent="StateMachine" index="49"]
+[node name="GroundedSpearUp" type="Node2D" parent="StateMachine" index="48"]
 script = ExtResource( 35 )
 apply_forces = true
 apply_fric = true
@@ -439,7 +402,7 @@ height = 13
 start_tick = 4
 active_ticks = 4
 
-[node name="GroundedSpearDown" type="Node2D" parent="StateMachine" index="50"]
+[node name="GroundedSpearDown" type="Node2D" parent="StateMachine" index="49"]
 script = ExtResource( 105 )
 apply_forces = true
 apply_fric = true
@@ -458,6 +421,7 @@ hit_cancel_into_string = "Grounded"
 
 [node name="Hitbox" type="Node2D" parent="StateMachine/GroundedSpearDown" index="0"]
 rotation = -0.0445289
+z_index = 1000
 script = ExtResource( 96 )
 x = 2
 y = -10
@@ -467,4 +431,46 @@ damage = 80
 minimum_damage = 40
 knockback = "5.0"
 start_tick = 7
+active_ticks = 9
+
+[node name="SeaQuake" type="Node2D" parent="StateMachine" index="50"]
+script = ExtResource( 81 )
+apply_forces = true
+apply_fric = true
+apply_grav = true
+sprite_animation = "SeaQuake"
+anim_length = 50
+ticks_per_frame = 3
+state_screenshake_tick = 27
+state_screenshake_length = 2.0
+state_screenshake_amount = 5
+timed_particle_scene = ExtResource( 15 )
+timed_particle_position = Vector2( 15, -16 )
+timed_spawn_particle_tick = 27
+title = "Sea Quake"
+type = 3
+button_texture = ExtResource( 97 )
+interrupt_from_string = "GroundedAttack
+Grounded"
+interrupt_into_string = "Grounded"
+hit_cancel_into_string = "Grounded"
+super_level = 0
+
+[node name="Hitbox" type="Node2D" parent="StateMachine/SeaQuake" index="0"]
+z_index = 1000
+script = ExtResource( 96 )
+x = -4
+y = -24
+width = 60
+height = 28
+damage = 400
+minimum_damage = 150
+hitlag_ticks = 50
+victim_hitlag = 30
+ignore_armor = true
+hit_height = 0
+dir_x = "10.0"
+knockback = "60.0"
+wall_slam = true
+start_tick = 27
 active_ticks = 9

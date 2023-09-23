@@ -293,6 +293,7 @@
 [ext_resource path="res://characters/swordandgun/ActionUIData/ShootDodgeActionUIData.tscn" type="PackedScene" id=291]
 [ext_resource path="res://characters/swordandgun/sprites/action_buttons/shoot_dodge.png" type="Texture" id=292]
 
+
 [sub_resource type="ShaderMaterial" id=3]
 resource_local_to_scene = true
 shader = ExtResource( 190 )
