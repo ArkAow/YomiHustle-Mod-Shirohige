@@ -1,4 +1,4 @@
-[gd_scene load_steps=112 format=2]
+[gd_scene load_steps=111 format=2]
 
 [ext_resource path="res://characters/BaseChar.gdshader" type="Shader" id=1]
 [ext_resource path="res://characters/BaseChar.tscn" type="PackedScene" id=2]
@@ -102,7 +102,6 @@
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/basics/doubleJump/doubleJump4.png" type="Texture" id=100]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/basics/doubleJump/doubleJump1.png" type="Texture" id=101]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/punch/punchIcon.png" type="Texture" id=102]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/punch/animation1.png" type="Texture" id=103]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/lightspearlow/animation5.png" type="Texture" id=104]
 [ext_resource path="res://ModFile/characters/Shirohige/States/GroundedSpearDown.gd" type="Script" id=105]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/punch/animation3.png" type="Texture" id=106]
@@ -174,12 +173,12 @@ animations = [ {
 "name": "GroundedKick",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 103 ), ExtResource( 108 ), ExtResource( 106 ), ExtResource( 26 ), ExtResource( 26 ) ],
+"frames": [ ExtResource( 108 ), ExtResource( 108 ), ExtResource( 106 ), ExtResource( 106 ), ExtResource( 26 ) ],
 "loop": true,
 "name": "GroundedPunch",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 39 ), ExtResource( 49 ), ExtResource( 56 ), ExtResource( 40 ), ExtResource( 104 ) ],
+"frames": [ ExtResource( 39 ), ExtResource( 49 ), ExtResource( 56 ), ExtResource( 56 ), ExtResource( 40 ), ExtResource( 40 ), ExtResource( 104 ) ],
 "loop": true,
 "name": "GroundedSpearDown",
 "speed": 5.0
@@ -322,8 +321,9 @@ character_portrait = ExtResource( 27 )
 [node name="Sprite" parent="Flip" index="0"]
 material = SubResource( 2 )
 frames = SubResource( 3 )
-animation = "SeaQuake"
-frame = 9
+animation = "GroundedSpearUp"
+frame = 4
+speed_scale = 3.0
 
 [node name="Super" parent="Sounds" index="3"]
 pitch_scale = 0.46
@@ -340,9 +340,9 @@ apply_fric = true
 apply_grav = true
 anim_length = 15
 ticks_per_frame = 3
-force_dir_x = "1"
+force_dir_x = "2"
 force_speed = "2"
-force_tick = 8
+force_tick = 6
 title = "Punch"
 type = 1
 button_texture = ExtResource( 102 )
@@ -360,20 +360,20 @@ x = 15
 y = -24
 width = 12
 height = 6
-damage = 50
-minimum_damage = 20
+damage = 100
+minimum_damage = 50
 hitlag_ticks = 5
 knockback = "5.0"
-start_tick = 9
-active_ticks = 3
+start_tick = 6
+active_ticks = 6
 
 [node name="GroundedSpearUp" type="Node2D" parent="StateMachine" index="48"]
 script = ExtResource( 35 )
 apply_forces = true
 apply_fric = true
 apply_grav = true
-anim_length = 16
-ticks_per_frame = 2
+anim_length = 21
+ticks_per_frame = 3
 title = "Spear High"
 type = 1
 button_texture = ExtResource( 37 )
@@ -383,31 +383,50 @@ interrupt_into_string = "Grounded"
 hit_cancel_into_string = "Grounded"
 
 [node name="Hitbox" type="Node2D" parent="StateMachine/GroundedSpearUp" index="0"]
-rotation = -0.207446
 z_index = 1000
 script = ExtResource( 96 )
-y = -35
-width = 35
-height = 8
-start_tick = 5
+x = 4
+y = -25
+width = 36
+damage = 100
+minimum_damage = 50
+start_tick = 9
 active_ticks = 6
 
 [node name="Hitbox2" type="Node2D" parent="StateMachine/GroundedSpearUp" index="1"]
 z_index = 1000
 script = ExtResource( 96 )
-x = -30
-y = -15
-width = 10
-height = 13
-start_tick = 4
-active_ticks = 4
+x = 4
+y = -55
+width = 25
+height = 10
+damage = 120
+minimum_damage = 60
+hitlag_ticks = 5
+knockback = "15.0"
+start_tick = 9
+active_ticks = 6
+
+[node name="Hitbox3" type="Node2D" parent="StateMachine/GroundedSpearUp" index="2"]
+z_index = 1000
+script = ExtResource( 96 )
+x = 32
+y = -26
+width = 9
+height = 23
+damage = 50
+minimum_damage = 30
+hitstun_ticks = 20
+knockback = "5.0"
+start_tick = 15
+active_ticks = 3
 
 [node name="GroundedSpearDown" type="Node2D" parent="StateMachine" index="49"]
 script = ExtResource( 105 )
 apply_forces = true
 apply_fric = true
 apply_grav = true
-anim_length = 15
+anim_length = 21
 ticks_per_frame = 3
 enter_force_dir_x = "2"
 enter_force_speed = "2"
@@ -429,9 +448,10 @@ width = 39
 height = 8
 damage = 80
 minimum_damage = 40
+hit_height = 2
 knockback = "5.0"
 start_tick = 7
-active_ticks = 9
+active_ticks = 14
 
 [node name="SeaQuake" type="Node2D" parent="StateMachine" index="50"]
 script = ExtResource( 81 )
@@ -474,3 +494,9 @@ knockback = "60.0"
 wall_slam = true
 start_tick = 27
 active_ticks = 9
+
+[node name="EmoteLabel" parent="." index="10"]
+margin_left = -144.0
+margin_top = -64.0
+margin_right = 138.0
+margin_bottom = -32.0
