@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Whitebeard Sea Quake Sound effect.mp3-98473c7b87de7740b7c4f45fda1d54d0.mp3str"
+
+[deps]
+
+source_file="res://ModFile/characters/Shirohige/Sound/Whitebeard Sea Quake Sound effect.mp3"
+dest_files=[ "res://.import/Whitebeard Sea Quake Sound effect.mp3-98473c7b87de7740b7c4f45fda1d54d0.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

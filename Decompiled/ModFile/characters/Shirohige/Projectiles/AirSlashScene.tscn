@@ -1,0 +1,65 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://projectile/BaseProjectile.tscn" type="PackedScene" id=1]
+[ext_resource path="res://mechanics/Hitbox.gd" type="Script" id=2]
+[ext_resource path="res://characters/BaseChar.gdshader" type="Shader" id=3]
+[ext_resource path="res://ModFile/characters/Shirohige/States/AirSlashDefaultState.gd" type="Script" id=4]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/groundedairslash/projectile/SlashProjectile.png" type="Texture" id=5]
+
+[sub_resource type="ShaderMaterial" id=1]
+resource_local_to_scene = true
+shader = ExtResource( 3 )
+shader_param/color = Color( 1, 1, 1, 1 )
+shader_param/max_color_distance = 0.01
+shader_param/super_dim = false
+shader_param/use_outline = false
+shader_param/outline_color = Color( 0, 0, 0, 1 )
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 5 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[node name="BaseProjectile" instance=ExtResource( 1 )]
+material = SubResource( 1 )
+fizzle_on_ceiling = false
+
+[node name="Sprite" parent="Flip" index="0"]
+frames = SubResource( 2 )
+
+[node name="CollisionBox" parent="." index="2"]
+x = 25
+y = -5
+width = 12
+height = 25
+
+[node name="Hurtbox" parent="." index="3"]
+x = 25
+y = -5
+width = 12
+height = 25
+
+[node name="Default" parent="StateMachine" index="0"]
+script = ExtResource( 4 )
+sprite_animation = ""
+endless = false
+
+[node name="Hitbox" type="Node2D" parent="StateMachine/Default" index="0"]
+z_index = 1000
+script = ExtResource( 2 )
+x = 23
+y = -6
+width = 17
+height = 28
+damage = 60
+hitstun_ticks = 35
+hitlag_ticks = 5
+victim_hitlag = 5
+dir_y = "-0.01"
+knockback = "5"
+start_tick = 1
+active_ticks = 0
+always_on = true

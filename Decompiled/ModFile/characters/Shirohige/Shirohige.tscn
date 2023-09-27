@@ -1,4 +1,4 @@
-[gd_scene load_steps=111 format=2]
+[gd_scene load_steps=142 format=2]
 
 [ext_resource path="res://characters/BaseChar.gdshader" type="Shader" id=1]
 [ext_resource path="res://characters/BaseChar.tscn" type="PackedScene" id=2]
@@ -102,11 +102,42 @@
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/basics/doubleJump/doubleJump4.png" type="Texture" id=100]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/basics/doubleJump/doubleJump1.png" type="Texture" id=101]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/punch/punchIcon.png" type="Texture" id=102]
+[ext_resource path="res://ModFile/characters/Shirohige/States/GroundedSpearFront.gd" type="Script" id=103]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/lightspearlow/animation5.png" type="Texture" id=104]
 [ext_resource path="res://ModFile/characters/Shirohige/States/GroundedSpearDown.gd" type="Script" id=105]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/punch/animation3.png" type="Texture" id=106]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/lightspearlow/GroundedSpearDownIcon.png" type="Texture" id=107]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/punch/animation2.png" type="Texture" id=108]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/lightspearfront/frontspear9.png" type="Texture" id=109]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/lightspearfront/frontspear4.png" type="Texture" id=110]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/lightspearfront/frontspear1.png" type="Texture" id=111]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/lightspearfront/frontspear3.png" type="Texture" id=112]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/lightspearfront/frontspear2.png" type="Texture" id=113]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/lightspearfront/frontspear6.png" type="Texture" id=114]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/lightspearfront/frontspear5.png" type="Texture" id=115]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/lightspearfront/frontspear8.png" type="Texture" id=116]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/lightspearfront/frontspear7.png" type="Texture" id=117]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/lightspearfront/GroundedSpearFrontIcon.png" type="Texture" id=118]
+[ext_resource path="res://ModFile/characters/Shirohige/States/GroundedAirSlash.gd" type="Script" id=119]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/groundedairslash/slash16.png" type="Texture" id=120]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/groundedairslash/slash17.png" type="Texture" id=121]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/groundedairslash/slash5.png" type="Texture" id=122]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/groundedairslash/slash2.png" type="Texture" id=123]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/groundedairslash/slash13.png" type="Texture" id=124]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/groundedairslash/slash6.png" type="Texture" id=125]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/groundedairslash/slash7.png" type="Texture" id=126]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/groundedairslash/slashIcon.png" type="Texture" id=127]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/groundedairslash/slash1.png" type="Texture" id=128]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/groundedairslash/slash4.png" type="Texture" id=129]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/groundedairslash/slash3.png" type="Texture" id=130]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/groundedairslash/slash10.png" type="Texture" id=131]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/groundedairslash/slash11.png" type="Texture" id=132]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/groundedairslash/slash9.png" type="Texture" id=133]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/groundedairslash/slash15.png" type="Texture" id=134]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/groundedairslash/slash14.png" type="Texture" id=135]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/groundedairslash/slash8.png" type="Texture" id=136]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/groundedairslash/slash12.png" type="Texture" id=137]
+[ext_resource path="res://ModFile/characters/Shirohige/Projectiles/AirSlashScene.tscn" type="PackedScene" id=138]
 
 [sub_resource type="ShaderMaterial" id=1]
 resource_local_to_scene = true
@@ -168,6 +199,11 @@ animations = [ {
 "name": "Grabbed",
 "speed": 5.0
 }, {
+"frames": [ ExtResource( 128 ), ExtResource( 123 ), ExtResource( 130 ), ExtResource( 129 ), ExtResource( 122 ), ExtResource( 125 ), ExtResource( 126 ), ExtResource( 136 ), ExtResource( 133 ), ExtResource( 131 ), ExtResource( 132 ), ExtResource( 137 ), ExtResource( 124 ), ExtResource( 135 ), ExtResource( 134 ), ExtResource( 120 ), ExtResource( 121 ) ],
+"loop": true,
+"name": "GroundedAirSlash",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 33 ), ExtResource( 33 ), ExtResource( 33 ), ExtResource( 33 ), ExtResource( 36 ), ExtResource( 36 ), ExtResource( 36 ), ExtResource( 5 ) ],
 "loop": true,
 "name": "GroundedKick",
@@ -181,6 +217,11 @@ animations = [ {
 "frames": [ ExtResource( 39 ), ExtResource( 49 ), ExtResource( 56 ), ExtResource( 56 ), ExtResource( 40 ), ExtResource( 40 ), ExtResource( 104 ) ],
 "loop": true,
 "name": "GroundedSpearDown",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 111 ), ExtResource( 113 ), ExtResource( 112 ), ExtResource( 110 ), ExtResource( 115 ), ExtResource( 114 ), ExtResource( 117 ), ExtResource( 116 ), ExtResource( 109 ) ],
+"loop": true,
+"name": "GroundedSpearFront",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 34 ), ExtResource( 7 ), ExtResource( 31 ), ExtResource( 4 ), ExtResource( 8 ), ExtResource( 24 ), ExtResource( 11 ) ],
@@ -316,13 +357,15 @@ animations = [ {
 
 [node name="Shirohige" instance=ExtResource( 2 )]
 material = SubResource( 1 )
+max_fall_speed = "10"
 character_portrait = ExtResource( 27 )
+num_feints = 3
 
 [node name="Sprite" parent="Flip" index="0"]
 material = SubResource( 2 )
 frames = SubResource( 3 )
-animation = "GroundedSpearUp"
-frame = 4
+animation = "GroundedAirSlash"
+frame = 14
 speed_scale = 3.0
 
 [node name="Super" parent="Sounds" index="3"]
@@ -332,6 +375,9 @@ pitch_scale = 0.46
 x = -1
 y = -19
 height = 19
+
+[node name="ChargeDash" parent="StateMachine" index="24"]
+show_in_menu = false
 
 [node name="GroundedPunch" type="Node2D" parent="StateMachine" index="47"]
 script = ExtResource( 14 )
@@ -463,10 +509,10 @@ anim_length = 50
 ticks_per_frame = 3
 state_screenshake_tick = 27
 state_screenshake_length = 2.0
-state_screenshake_amount = 5
+state_screenshake_amount = 7
 timed_particle_scene = ExtResource( 15 )
 timed_particle_position = Vector2( 15, -16 )
-timed_spawn_particle_tick = 27
+timed_spawn_particle_tick = 22
 title = "Sea Quake"
 type = 3
 button_texture = ExtResource( 97 )
@@ -494,6 +540,58 @@ knockback = "60.0"
 wall_slam = true
 start_tick = 27
 active_ticks = 9
+
+[node name="GroundedSpearFront" type="Node2D" parent="StateMachine" index="51"]
+script = ExtResource( 103 )
+apply_forces = true
+apply_fric = true
+apply_grav = true
+anim_length = 27
+ticks_per_frame = 3
+force_dir_x = "4"
+force_speed = "2"
+force_tick = 15
+title = "Front spear attack"
+type = 1
+button_texture = ExtResource( 118 )
+interrupt_from_string = "Grounded
+GroundedAttack"
+interrupt_into_string = "Grounded"
+hit_cancel_into_string = "Grounded"
+
+[node name="Hitbox" type="Node2D" parent="StateMachine/GroundedSpearFront" index="0"]
+script = ExtResource( 96 )
+x = 14
+y = -25
+width = 30
+height = 25
+damage = 110
+minimum_damage = 100
+knockback = "8.0"
+start_tick = 15
+active_ticks = 9
+
+[node name="GroundedAirSlash" type="Node2D" parent="StateMachine" index="52"]
+script = ExtResource( 119 )
+apply_forces = true
+apply_fric = true
+apply_grav = true
+anim_length = 34
+ticks_per_frame = 2
+title = "Air Slash"
+type = 1
+button_texture = ExtResource( 127 )
+interrupt_from_string = "Grounded
+GroundedAttack
+Aerial
+AerialAttack"
+interrupt_into_string = "Grounded
+Aerial"
+hit_cancel_into_string = "Grounded
+Aerial"
+AirSlashScene = ExtResource( 138 )
+projPosX = 15
+projPosY = -16
 
 [node name="EmoteLabel" parent="." index="10"]
 margin_left = -144.0
