@@ -1,24 +1,41 @@
 extends ObjectState
 
-var hit_something = false
+var hit_something
+var lifetime
 
 func _frame_0():
-	if host.get_facing_int() == -1:
-		host.sprite.flip_h = true
-	
+	lifetime = data["lifetime"]
+	host.set_grounded(false)
+	var dir = data["dir"]
+	var move_vec = fixed.normalized_vec_times(str(dir.x), str(dir.y), str(data["speed"]))
+	host.apply_force(move_vec.x, move_vec.y)
+	host.sprite.rotation = float(fixed.vec_to_angle(data["dir"].x, data["dir"].y))
+	host.particles.rotation = float(fixed.vec_to_angle(data["dir"].x, data["dir"].y))
+
 func _tick():
-	if not hit_something:
-		host.move_directly(8 * host.get_facing_int(),0)
-		
 	var pos = host.get_pos()
-	if pos.x < -host.stage_width or pos.x > host.stage_width:
-		hit_something = true
-		host.disable()
+	host.update_grounded()
+	if current_tick > 1 and not hit_something and host.is_grounded() or pos.x < - host.stage_width or pos.x > host.stage_width:
+		fizzle()
+		host.hurtbox.width = 0
+		host.hurtbox.height = 0
+		pass
+	if current_tick > lifetime:
+		fizzle()
+		host.hurtbox.width = 0
+		host.hurtbox.height = 0
+		pass
+	elif not hit_something:
+		host.apply_forces()
+		host.update_data()
 
-func _on_hit_something(obj,hitbox):
+func _got_parried():
+	fizzle()
+
+func fizzle():
 	hit_something = true
 	host.disable()
+	terminate_hitboxes()
 
-func _frame_35():
-	hit_something = true
-	host.disable()
+func _on_hit_something(obj, hitbox):
+	fizzle()

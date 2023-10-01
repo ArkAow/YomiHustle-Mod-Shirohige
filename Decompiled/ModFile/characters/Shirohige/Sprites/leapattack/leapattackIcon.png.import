@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/SlashProjectile.png-7c4d0a8f9e3704f2bda92a59b57eb537.stex"
+path="res://.import/leapattackIcon.png-4a9a2c61c8c0c93f83b686d8db41ac7a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ModFile/characters/Shirohige/Sprites/groundedairslash/projectile/SlashProjectile.png"
-dest_files=[ "res://.import/SlashProjectile.png-7c4d0a8f9e3704f2bda92a59b57eb537.stex" ]
+source_file="res://ModFile/characters/Shirohige/Sprites/leapattack/leapattackIcon.png"
+dest_files=[ "res://.import/leapattackIcon.png-4a9a2c61c8c0c93f83b686d8db41ac7a.stex" ]
 
 [params]
 

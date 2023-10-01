@@ -1,4 +1,4 @@
-[gd_scene load_steps=142 format=2]
+[gd_scene load_steps=159 format=2]
 
 [ext_resource path="res://characters/BaseChar.gdshader" type="Shader" id=1]
 [ext_resource path="res://characters/BaseChar.tscn" type="PackedScene" id=2]
@@ -19,7 +19,7 @@
 [ext_resource path="res://characters/stickman/sprites/stickman5.png" type="Texture" id=17]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/basics/parryhigh.png" type="Texture" id=18]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/basics/parrylow.png" type="Texture" id=19]
-[ext_resource path="res://characters/stickman/sprites/stickman57.png" type="Texture" id=20]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/basics/grab/grab2.png" type="Texture" id=20]
 [ext_resource path="res://characters/stickman/sprites/stickman8.png" type="Texture" id=21]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/basics/getup.png" type="Texture" id=22]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/basics/hurtgroundedmid.png" type="Texture" id=23]
@@ -44,7 +44,7 @@
 [ext_resource path="res://characters/stickman/sprites/stickman55.png" type="Texture" id=42]
 [ext_resource path="res://characters/stickman/sprites/stickman56.png" type="Texture" id=43]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/basics/hurtaerial.png" type="Texture" id=44]
-[ext_resource path="res://characters/stickman/sprites/stickman59.png" type="Texture" id=45]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/basics/forwardThrow/forwardThrow1.png" type="Texture" id=45]
 [ext_resource path="res://characters/stickman/sprites/chuk_jump1.png" type="Texture" id=46]
 [ext_resource path="res://characters/stickman/sprites/nunchuk_heavy3.png" type="Texture" id=47]
 [ext_resource path="res://characters/stickman/sprites/nunchuk_heavy2.png" type="Texture" id=48]
@@ -58,8 +58,8 @@
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/lightspearlow/animation3.png" type="Texture" id=56]
 [ext_resource path="res://characters/stickman/sprites/stickman50.png" type="Texture" id=57]
 [ext_resource path="res://characters/stickman/sprites/stickman53.png" type="Texture" id=58]
-[ext_resource path="res://characters/stickman/sprites/stickman58.png" type="Texture" id=59]
-[ext_resource path="res://characters/stickman/sprites/stickman60.png" type="Texture" id=60]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/basics/grab/grab1.png" type="Texture" id=59]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/basics/forwardThrow/forwardThrow2.png" type="Texture" id=60]
 [ext_resource path="res://characters/stickman/sprites/phantomdash1.png" type="Texture" id=61]
 [ext_resource path="res://characters/stickman/sprites/stickman47.png" type="Texture" id=62]
 [ext_resource path="res://characters/stickman/sprites/nunchuk_light2.png" type="Texture" id=63]
@@ -69,7 +69,7 @@
 [ext_resource path="res://characters/stickman/sprites/phantomdash2.png" type="Texture" id=67]
 [ext_resource path="res://characters/stickman/sprites/phantomdash3.png" type="Texture" id=68]
 [ext_resource path="res://characters/stickman/sprites/stickman48.png" type="Texture" id=69]
-[ext_resource path="res://characters/stickman/sprites/stickman61.png" type="Texture" id=70]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/basics/grabbed.png" type="Texture" id=70]
 [ext_resource path="res://characters/stickman/sprites/chuk_jump3.png" type="Texture" id=71]
 [ext_resource path="res://characters/stickman/sprites/nunchuk_light3.png" type="Texture" id=72]
 [ext_resource path="res://characters/stickman/sprites/nunchuk_heavy4.png" type="Texture" id=73]
@@ -138,6 +138,23 @@
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/groundedairslash/slash8.png" type="Texture" id=136]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/groundedairslash/slash12.png" type="Texture" id=137]
 [ext_resource path="res://ModFile/characters/Shirohige/Projectiles/AirSlashScene.tscn" type="PackedScene" id=138]
+[ext_resource path="res://ModFile/characters/Shirohige/UI/ActionSelector/AirSlashActionUIData.tscn" type="PackedScene" id=139]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/leapattack/leapattack1.png" type="Texture" id=140]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/leapattack/leapattack4.png" type="Texture" id=141]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/leapattack/leapattack6.png" type="Texture" id=142]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/leapattack/leapattack7.png" type="Texture" id=143]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/leapattack/leapattack2.png" type="Texture" id=144]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/leapattack/leapattack8.png" type="Texture" id=145]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/leapattack/leapattack5.png" type="Texture" id=146]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/leapattack/leapattack10.png" type="Texture" id=147]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/leapattack/leapattack9.png" type="Texture" id=148]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/leapattack/leapattack11.png" type="Texture" id=149]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/leapattack/leapattack3.png" type="Texture" id=150]
+[ext_resource path="res://ModFile/characters/Shirohige/States/LeapAttack.gd" type="Script" id=151]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/leapattack/leapattackIcon.png" type="Texture" id=152]
+[ext_resource path="res://ModFile/characters/Shirohige/Particles/SpearStompEffect.tscn" type="PackedScene" id=153]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/leapattack/leapattack13.png" type="Texture" id=154]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/leapattack/leapattack12.png" type="Texture" id=155]
 
 [sub_resource type="ShaderMaterial" id=1]
 resource_local_to_scene = true
@@ -189,12 +206,12 @@ animations = [ {
 "name": "Getup",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 20 ), ExtResource( 20 ), ExtResource( 20 ), ExtResource( 20 ), ExtResource( 59 ), ExtResource( 59 ), ExtResource( 59 ), ExtResource( 59 ), ExtResource( 59 ), ExtResource( 59 ), ExtResource( 59 ), ExtResource( 59 ), ExtResource( 59 ) ],
+"frames": [ ExtResource( 59 ), ExtResource( 59 ), ExtResource( 59 ), ExtResource( 20 ), ExtResource( 20 ), ExtResource( 20 ), ExtResource( 20 ), ExtResource( 20 ), ExtResource( 20 ), ExtResource( 20 ), ExtResource( 20 ), ExtResource( 20 ), ExtResource( 20 ) ],
 "loop": true,
 "name": "Grab",
 "speed": 60.0
 }, {
-"frames": [ ExtResource( 17 ) ],
+"frames": [ ExtResource( 70 ) ],
 "loop": true,
 "name": "Grabbed",
 "speed": 5.0
@@ -284,6 +301,11 @@ animations = [ {
 "name": "Landing",
 "speed": 5.0
 }, {
+"frames": [ ExtResource( 140 ), ExtResource( 144 ), ExtResource( 144 ), ExtResource( 150 ), ExtResource( 150 ), ExtResource( 141 ), ExtResource( 141 ), ExtResource( 146 ), ExtResource( 142 ), ExtResource( 142 ), ExtResource( 143 ), ExtResource( 145 ), ExtResource( 148 ), ExtResource( 147 ), ExtResource( 149 ), ExtResource( 155 ), ExtResource( 155 ), ExtResource( 154 ) ],
+"loop": true,
+"name": "LeapAttack",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 77 ), ExtResource( 77 ), ExtResource( 77 ), ExtResource( 77 ), ExtResource( 77 ), ExtResource( 77 ), ExtResource( 77 ), ExtResource( 77 ), ExtResource( 48 ), ExtResource( 48 ), ExtResource( 48 ), ExtResource( 47 ), ExtResource( 47 ), ExtResource( 47 ), ExtResource( 48 ), ExtResource( 48 ), ExtResource( 48 ), ExtResource( 73 ) ],
 "loop": true,
 "name": "NunChukHeavy",
@@ -334,7 +356,7 @@ animations = [ {
 "name": "SeaQuake",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 70 ) ],
+"frames": [ ExtResource( 64 ) ],
 "loop": true,
 "name": "ThrowTech",
 "speed": 5.0
@@ -364,9 +386,7 @@ num_feints = 3
 [node name="Sprite" parent="Flip" index="0"]
 material = SubResource( 2 )
 frames = SubResource( 3 )
-animation = "GroundedAirSlash"
-frame = 14
-speed_scale = 3.0
+animation = "Grab"
 
 [node name="Super" parent="Sounds" index="3"]
 pitch_scale = 0.46
@@ -560,6 +580,7 @@ interrupt_into_string = "Grounded"
 hit_cancel_into_string = "Grounded"
 
 [node name="Hitbox" type="Node2D" parent="StateMachine/GroundedSpearFront" index="0"]
+z_index = 1000
 script = ExtResource( 96 )
 x = 14
 y = -25
@@ -580,6 +601,7 @@ anim_length = 34
 ticks_per_frame = 2
 title = "Air Slash"
 type = 1
+data_ui_scene = ExtResource( 139 )
 button_texture = ExtResource( 127 )
 interrupt_from_string = "Grounded
 GroundedAttack
@@ -589,9 +611,71 @@ interrupt_into_string = "Grounded
 Aerial"
 hit_cancel_into_string = "Grounded
 Aerial"
-AirSlashScene = ExtResource( 138 )
-projPosX = 15
-projPosY = -16
+SimpleProjectileScene = ExtResource( 138 )
+spawn_y_pos = -15
+
+[node name="Hitbox" type="Node2D" parent="StateMachine/GroundedAirSlash" index="0"]
+z_index = 1000
+script = ExtResource( 96 )
+x = 25
+y = -25
+width = 15
+height = 25
+damage = 50
+start_tick = 12
+active_ticks = 4
+
+[node name="LeapAttack" type="Node2D" parent="StateMachine" index="53"]
+script = ExtResource( 151 )
+apply_forces = true
+apply_fric = true
+apply_grav = true
+sprite_animation = "LeapAttack"
+anim_length = 50
+ticks_per_frame = 2
+enter_force_dir_x = "5"
+enter_force_dir_y = "-2.5"
+enter_force_speed = "2"
+reset_momentum = true
+state_screenshake_tick = 24
+state_screenshake_amount = 5
+timed_particle_scene = ExtResource( 153 )
+timed_particle_position = Vector2( 15, 0 )
+timed_spawn_particle_tick = 20
+title = "Leap Attack"
+type = 2
+button_texture = ExtResource( 152 )
+reversible = false
+interrupt_from_string = "Grounded
+GroundedAttack"
+interrupt_into_string = "Grounded
+"
+hit_cancel_into_string = "Grounded
+"
+
+[node name="Hitbox" type="Node2D" parent="StateMachine/LeapAttack" index="0"]
+z_index = 1000
+script = ExtResource( 96 )
+x = 28
+y = -28
+width = 17
+height = 24
+damage = 160
+minimum_damage = 90
+start_tick = 22
+active_ticks = 8
+
+[node name="Hitbox2" type="Node2D" parent="StateMachine/LeapAttack" index="1"]
+z_index = 1000
+script = ExtResource( 96 )
+x = 40
+y = -5
+width = 30
+height = 5
+damage = 100
+minimum_damage = 20
+start_tick = 24
+active_ticks = 2
 
 [node name="EmoteLabel" parent="." index="10"]
 margin_left = -144.0

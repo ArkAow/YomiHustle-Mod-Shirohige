@@ -21,6 +21,7 @@ func _ready():
 func disable():
 	sprite.hide()
 	disabled = true
+	
 	for hitbox in get_active_hitboxes():
 		hitbox.deactivate()
 	stop_particles()
