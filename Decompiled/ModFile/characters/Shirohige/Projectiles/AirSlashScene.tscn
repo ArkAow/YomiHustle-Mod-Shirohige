@@ -4,11 +4,11 @@
 [ext_resource path="res://mechanics/Hitbox.gd" type="Script" id=2]
 [ext_resource path="res://characters/BaseChar.gdshader" type="Shader" id=3]
 [ext_resource path="res://ModFile/characters/Shirohige/States/AirSlashDefaultState.gd" type="Script" id=4]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/groundedairslash/projectile/SlashProjectile4.png" type="Texture" id=5]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/groundedairslash/projectile/SlashProjectile3.png" type="Texture" id=6]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/groundedairslash/projectile/SlashProjectile1.png" type="Texture" id=7]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/groundedairslash/projectile/SlashProjectile5.png" type="Texture" id=10]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/groundedairslash/projectile/SlashProjectile2.png" type="Texture" id=12]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/groundedairslash/projectile/SlashProjectile4.png" type="Texture" id=5]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/groundedairslash/projectile/SlashProjectile3.png" type="Texture" id=6]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/groundedairslash/projectile/SlashProjectile1.png" type="Texture" id=7]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/groundedairslash/projectile/SlashProjectile5.png" type="Texture" id=10]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/groundedairslash/projectile/SlashProjectile2.png" type="Texture" id=12]
 
 [sub_resource type="ShaderMaterial" id=1]
 resource_local_to_scene = true

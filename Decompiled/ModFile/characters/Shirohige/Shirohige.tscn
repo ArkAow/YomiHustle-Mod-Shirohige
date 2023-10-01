@@ -1,16 +1,16 @@
-[gd_scene load_steps=159 format=2]
+[gd_scene load_steps=195 format=2]
 
 [ext_resource path="res://characters/BaseChar.gdshader" type="Shader" id=1]
 [ext_resource path="res://characters/BaseChar.tscn" type="PackedScene" id=2]
 [ext_resource path="res://characters/stickman/sprites/stickman30.png" type="Texture" id=3]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/lightspearhigh/animation4.png" type="Texture" id=4]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/lightspearhigh/animation4.png" type="Texture" id=4]
 [ext_resource path="res://characters/stickman/sprites/stickman36.png" type="Texture" id=5]
 [ext_resource path="res://characters/stickman/sprites/stickman19.png" type="Texture" id=6]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/lightspearhigh/animation2.png" type="Texture" id=7]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/lightspearhigh/animation5.png" type="Texture" id=8]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/lightspearhigh/animation2.png" type="Texture" id=7]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/lightspearhigh/animation5.png" type="Texture" id=8]
 [ext_resource path="res://characters/stickman/sprites/stickman6.png" type="Texture" id=9]
 [ext_resource path="res://characters/stickman/sprites/stickman22.png" type="Texture" id=10]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/lightspearhigh/animation7.png" type="Texture" id=11]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/lightspearhigh/animation7.png" type="Texture" id=11]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/basics/wallslam.png" type="Texture" id=12]
 [ext_resource path="res://characters/stickman/sprites/stickman7.png" type="Texture" id=13]
 [ext_resource path="res://ModFile/characters/Shirohige/States/GroundedPunch.gd" type="Script" id=14]
@@ -23,23 +23,23 @@
 [ext_resource path="res://characters/stickman/sprites/stickman8.png" type="Texture" id=21]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/basics/getup.png" type="Texture" id=22]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/basics/hurtgroundedmid.png" type="Texture" id=23]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/lightspearhigh/animation6.png" type="Texture" id=24]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/lightspearhigh/animation6.png" type="Texture" id=24]
 [ext_resource path="res://characters/stickman/sprites/stickman20.png" type="Texture" id=25]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/punch/animation5.png" type="Texture" id=26]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/punch/animation5.png" type="Texture" id=26]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/basics/wait.png" type="Texture" id=27]
 [ext_resource path="res://characters/stickman/sprites/stickman21.png" type="Texture" id=28]
 [ext_resource path="res://characters/stickman/sprites/stickman23.png" type="Texture" id=29]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/basics/forwardDash.png" type="Texture" id=30]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/lightspearhigh/animation3.png" type="Texture" id=31]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/lightspearhigh/animation3.png" type="Texture" id=31]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/basics/jump.png" type="Texture" id=32]
 [ext_resource path="res://characters/stickman/sprites/stickman34.png" type="Texture" id=33]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/lightspearhigh/animation1.png" type="Texture" id=34]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/lightspearhigh/animation1.png" type="Texture" id=34]
 [ext_resource path="res://ModFile/characters/Shirohige/States/GroundedSpearUp.gd" type="Script" id=35]
 [ext_resource path="res://characters/stickman/sprites/stickman35.png" type="Texture" id=36]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/lightspearhigh/GroundedSpearUpIcon.png" type="Texture" id=37]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/lightspearhigh/GroundedSpearUpIcon.png" type="Texture" id=37]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/basics/landing.png" type="Texture" id=38]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/lightspearlow/animation1.png" type="Texture" id=39]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/lightspearlow/animation4.png" type="Texture" id=40]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/lightspearlow/animation1.png" type="Texture" id=39]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/lightspearlow/animation4.png" type="Texture" id=40]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/basics/burst.png" type="Texture" id=41]
 [ext_resource path="res://characters/stickman/sprites/stickman55.png" type="Texture" id=42]
 [ext_resource path="res://characters/stickman/sprites/stickman56.png" type="Texture" id=43]
@@ -48,14 +48,14 @@
 [ext_resource path="res://characters/stickman/sprites/chuk_jump1.png" type="Texture" id=46]
 [ext_resource path="res://characters/stickman/sprites/nunchuk_heavy3.png" type="Texture" id=47]
 [ext_resource path="res://characters/stickman/sprites/nunchuk_heavy2.png" type="Texture" id=48]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/lightspearlow/animation2.png" type="Texture" id=49]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/lightspearlow/animation2.png" type="Texture" id=49]
 [ext_resource path="res://characters/stickman/sprites/chuk_spin5.png" type="Texture" id=50]
 [ext_resource path="res://characters/stickman/sprites/chuk_spin4.png" type="Texture" id=51]
 [ext_resource path="res://characters/stickman/sprites/nunchuk_light1.png" type="Texture" id=52]
 [ext_resource path="res://characters/stickman/sprites/chuk_spin2.png" type="Texture" id=53]
 [ext_resource path="res://characters/stickman/sprites/stickman49.png" type="Texture" id=54]
 [ext_resource path="res://characters/stickman/sprites/stickman54.png" type="Texture" id=55]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/lightspearlow/animation3.png" type="Texture" id=56]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/lightspearlow/animation3.png" type="Texture" id=56]
 [ext_resource path="res://characters/stickman/sprites/stickman50.png" type="Texture" id=57]
 [ext_resource path="res://characters/stickman/sprites/stickman53.png" type="Texture" id=58]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/basics/grab/grab1.png" type="Texture" id=59]
@@ -101,60 +101,96 @@
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/basics/doubleJump/doubleJump2.png" type="Texture" id=99]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/basics/doubleJump/doubleJump4.png" type="Texture" id=100]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/basics/doubleJump/doubleJump1.png" type="Texture" id=101]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/punch/punchIcon.png" type="Texture" id=102]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/punch/punchIcon.png" type="Texture" id=102]
 [ext_resource path="res://ModFile/characters/Shirohige/States/GroundedSpearFront.gd" type="Script" id=103]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/lightspearlow/animation5.png" type="Texture" id=104]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/lightspearlow/animation5.png" type="Texture" id=104]
 [ext_resource path="res://ModFile/characters/Shirohige/States/GroundedSpearDown.gd" type="Script" id=105]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/punch/animation3.png" type="Texture" id=106]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/lightspearlow/GroundedSpearDownIcon.png" type="Texture" id=107]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/punch/animation2.png" type="Texture" id=108]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/lightspearfront/frontspear9.png" type="Texture" id=109]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/lightspearfront/frontspear4.png" type="Texture" id=110]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/lightspearfront/frontspear1.png" type="Texture" id=111]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/lightspearfront/frontspear3.png" type="Texture" id=112]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/lightspearfront/frontspear2.png" type="Texture" id=113]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/lightspearfront/frontspear6.png" type="Texture" id=114]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/lightspearfront/frontspear5.png" type="Texture" id=115]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/lightspearfront/frontspear8.png" type="Texture" id=116]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/lightspearfront/frontspear7.png" type="Texture" id=117]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/lightspearfront/GroundedSpearFrontIcon.png" type="Texture" id=118]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/punch/animation3.png" type="Texture" id=106]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/lightspearlow/GroundedSpearDownIcon.png" type="Texture" id=107]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/punch/animation2.png" type="Texture" id=108]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/lightspearfront/frontspear9.png" type="Texture" id=109]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/lightspearfront/frontspear4.png" type="Texture" id=110]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/lightspearfront/frontspear1.png" type="Texture" id=111]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/lightspearfront/frontspear3.png" type="Texture" id=112]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/lightspearfront/frontspear2.png" type="Texture" id=113]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/lightspearfront/frontspear6.png" type="Texture" id=114]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/lightspearfront/frontspear5.png" type="Texture" id=115]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/lightspearfront/frontspear8.png" type="Texture" id=116]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/lightspearfront/frontspear7.png" type="Texture" id=117]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/lightspearfront/GroundedSpearFrontIcon.png" type="Texture" id=118]
 [ext_resource path="res://ModFile/characters/Shirohige/States/GroundedAirSlash.gd" type="Script" id=119]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/groundedairslash/slash16.png" type="Texture" id=120]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/groundedairslash/slash17.png" type="Texture" id=121]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/groundedairslash/slash5.png" type="Texture" id=122]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/groundedairslash/slash2.png" type="Texture" id=123]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/groundedairslash/slash13.png" type="Texture" id=124]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/groundedairslash/slash6.png" type="Texture" id=125]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/groundedairslash/slash7.png" type="Texture" id=126]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/groundedairslash/slashIcon.png" type="Texture" id=127]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/groundedairslash/slash1.png" type="Texture" id=128]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/groundedairslash/slash4.png" type="Texture" id=129]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/groundedairslash/slash3.png" type="Texture" id=130]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/groundedairslash/slash10.png" type="Texture" id=131]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/groundedairslash/slash11.png" type="Texture" id=132]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/groundedairslash/slash9.png" type="Texture" id=133]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/groundedairslash/slash15.png" type="Texture" id=134]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/groundedairslash/slash14.png" type="Texture" id=135]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/groundedairslash/slash8.png" type="Texture" id=136]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/groundedairslash/slash12.png" type="Texture" id=137]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/groundedairslash/slash16.png" type="Texture" id=120]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/groundedairslash/slash17.png" type="Texture" id=121]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/groundedairslash/slash5.png" type="Texture" id=122]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/groundedairslash/slash2.png" type="Texture" id=123]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/groundedairslash/slash13.png" type="Texture" id=124]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/groundedairslash/slash6.png" type="Texture" id=125]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/groundedairslash/slash7.png" type="Texture" id=126]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/groundedairslash/slashIcon.png" type="Texture" id=127]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/groundedairslash/slash1.png" type="Texture" id=128]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/groundedairslash/slash4.png" type="Texture" id=129]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/groundedairslash/slash3.png" type="Texture" id=130]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/groundedairslash/slash10.png" type="Texture" id=131]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/groundedairslash/slash11.png" type="Texture" id=132]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/groundedairslash/slash9.png" type="Texture" id=133]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/groundedairslash/slash15.png" type="Texture" id=134]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/groundedairslash/slash14.png" type="Texture" id=135]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/groundedairslash/slash8.png" type="Texture" id=136]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/groundedairslash/slash12.png" type="Texture" id=137]
 [ext_resource path="res://ModFile/characters/Shirohige/Projectiles/AirSlashScene.tscn" type="PackedScene" id=138]
 [ext_resource path="res://ModFile/characters/Shirohige/UI/ActionSelector/AirSlashActionUIData.tscn" type="PackedScene" id=139]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/leapattack/leapattack1.png" type="Texture" id=140]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/leapattack/leapattack4.png" type="Texture" id=141]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/leapattack/leapattack6.png" type="Texture" id=142]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/leapattack/leapattack7.png" type="Texture" id=143]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/leapattack/leapattack2.png" type="Texture" id=144]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/leapattack/leapattack8.png" type="Texture" id=145]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/leapattack/leapattack5.png" type="Texture" id=146]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/leapattack/leapattack10.png" type="Texture" id=147]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/leapattack/leapattack9.png" type="Texture" id=148]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/leapattack/leapattack11.png" type="Texture" id=149]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/leapattack/leapattack3.png" type="Texture" id=150]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/leapattack/leapattack1.png" type="Texture" id=140]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/leapattack/leapattack4.png" type="Texture" id=141]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/leapattack/leapattack6.png" type="Texture" id=142]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/leapattack/leapattack7.png" type="Texture" id=143]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/leapattack/leapattack2.png" type="Texture" id=144]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/leapattack/leapattack8.png" type="Texture" id=145]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/leapattack/leapattack5.png" type="Texture" id=146]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/leapattack/leapattack10.png" type="Texture" id=147]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/leapattack/leapattack9.png" type="Texture" id=148]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/leapattack/leapattack11.png" type="Texture" id=149]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/leapattack/leapattack3.png" type="Texture" id=150]
 [ext_resource path="res://ModFile/characters/Shirohige/States/LeapAttack.gd" type="Script" id=151]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/leapattack/leapattackIcon.png" type="Texture" id=152]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/leapattack/leapattackIcon.png" type="Texture" id=152]
 [ext_resource path="res://ModFile/characters/Shirohige/Particles/SpearStompEffect.tscn" type="PackedScene" id=153]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/leapattack/leapattack13.png" type="Texture" id=154]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/leapattack/leapattack12.png" type="Texture" id=155]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/leapattack/leapattack13.png" type="Texture" id=154]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/leapattack/leapattack12.png" type="Texture" id=155]
+[ext_resource path="res://ModFile/characters/Shirohige/Shirohige.gd" type="Script" id=156]
+[ext_resource path="res://ModFile/characters/Shirohige/ShirohigePlayerInfo.tscn" type="PackedScene" id=157]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/haki/Hakit12.png" type="Texture" id=158]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/haki/Hakit13.png" type="Texture" id=159]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/haki/Hakit14.png" type="Texture" id=160]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/haki/Hakit1.png" type="Texture" id=161]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/haki/Hakit2.png" type="Texture" id=162]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/haki/Hakit3.png" type="Texture" id=163]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/haki/Hakit5.png" type="Texture" id=164]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/haki/Hakit4.png" type="Texture" id=165]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/haki/Hakit6.png" type="Texture" id=166]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/haki/Hakit7.png" type="Texture" id=167]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/haki/Hakit8.png" type="Texture" id=168]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/haki/Hakit9.png" type="Texture" id=169]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/haki/Hakit10.png" type="Texture" id=170]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/haki/Hakit11.png" type="Texture" id=171]
+[ext_resource path="res://ModFile/characters/Shirohige/States/ActivateHaki.gd" type="Script" id=172]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/haki/hakiIcon.png" type="Texture" id=173]
+[ext_resource path="res://characters/states/Idle.gd" type="Script" id=174]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/basics/waitHaki.png" type="Texture" id=175]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/hakiLeapAttack/hakileapattackIcon.png" type="Texture" id=176]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/hakiLeapAttack/hakileapattack6.png" type="Texture" id=177]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/hakiLeapAttack/hakileapattack7.png" type="Texture" id=178]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/hakiLeapAttack/hakileapattack2.png" type="Texture" id=179]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/hakiLeapAttack/hakileapattack8.png" type="Texture" id=180]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/hakiLeapAttack/hakileapattack9.png" type="Texture" id=181]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/hakiLeapAttack/hakileapattack3.png" type="Texture" id=182]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/hakiLeapAttack/hakileapattack11.png" type="Texture" id=183]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/hakiLeapAttack/hakileapattack10.png" type="Texture" id=184]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/hakiLeapAttack/hakileapattack12.png" type="Texture" id=185]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/hakiLeapAttack/hakileapattack13.png" type="Texture" id=186]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/hakiLeapAttack/hakileapattack5.png" type="Texture" id=187]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/hakiLeapAttack/hakileapattack1.png" type="Texture" id=188]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/hakiLeapAttack/hakileapattack4.png" type="Texture" id=189]
+[ext_resource path="res://ModFile/characters/Shirohige/States/HakiLeapAttack.gd" type="Script" id=190]
+[ext_resource path="res://ui/ActionSelector/StateIcons/wait.png" type="Texture" id=191]
 
 [sub_resource type="ShaderMaterial" id=1]
 resource_local_to_scene = true
@@ -176,6 +212,11 @@ shader_param/outline_color = Color( 0, 0, 0, 1 )
 
 [sub_resource type="SpriteFrames" id=3]
 animations = [ {
+"frames": [ ExtResource( 161 ), ExtResource( 162 ), ExtResource( 163 ), ExtResource( 165 ), ExtResource( 164 ), ExtResource( 166 ), ExtResource( 167 ), ExtResource( 168 ), ExtResource( 169 ), ExtResource( 170 ), ExtResource( 171 ), ExtResource( 158 ), ExtResource( 159 ), ExtResource( 160 ) ],
+"loop": true,
+"name": "ActivateHaki",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 41 ) ],
 "loop": true,
 "name": "Burst",
@@ -249,6 +290,11 @@ animations = [ {
 "frames": [ ExtResource( 79 ), ExtResource( 79 ), ExtResource( 79 ), ExtResource( 79 ), ExtResource( 62 ), ExtResource( 62 ), ExtResource( 62 ), ExtResource( 69 ), ExtResource( 69 ), ExtResource( 54 ), ExtResource( 54 ), ExtResource( 54 ), ExtResource( 54 ), ExtResource( 54 ), ExtResource( 54 ), ExtResource( 57 ) ],
 "loop": true,
 "name": "GroundedSweep",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 188 ), ExtResource( 179 ), ExtResource( 179 ), ExtResource( 182 ), ExtResource( 182 ), ExtResource( 189 ), ExtResource( 189 ), ExtResource( 187 ), ExtResource( 177 ), ExtResource( 177 ), ExtResource( 178 ), ExtResource( 180 ), ExtResource( 181 ), ExtResource( 184 ), ExtResource( 183 ), ExtResource( 185 ), ExtResource( 185 ), ExtResource( 186 ) ],
+"loop": true,
+"name": "HakiLeapAttack",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 44 ) ],
@@ -371,6 +417,11 @@ animations = [ {
 "name": "Wait",
 "speed": 30.0
 }, {
+"frames": [ ExtResource( 175 ) ],
+"loop": true,
+"name": "WaitHaki",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 12 ) ],
 "loop": true,
 "name": "WallSlam",
@@ -379,14 +430,18 @@ animations = [ {
 
 [node name="Shirohige" instance=ExtResource( 2 )]
 material = SubResource( 1 )
-max_fall_speed = "10"
+script = ExtResource( 156 )
+gravity = "0.8"
+max_air_speed = "10"
+max_fall_speed = "20"
+num_air_movements = 3
 character_portrait = ExtResource( 27 )
-num_feints = 3
+player_info_scene = ExtResource( 157 )
 
 [node name="Sprite" parent="Flip" index="0"]
 material = SubResource( 2 )
 frames = SubResource( 3 )
-animation = "Grab"
+animation = "HakiLeapAttack"
 
 [node name="Super" parent="Sounds" index="3"]
 pitch_scale = 0.46
@@ -396,10 +451,103 @@ x = -1
 y = -19
 height = 19
 
-[node name="ChargeDash" parent="StateMachine" index="24"]
-show_in_menu = false
+[node name="Start" parent="StateMachine" index="0"]
+allowed_stances_string = "Normal
+All"
 
-[node name="GroundedPunch" type="Node2D" parent="StateMachine" index="47"]
+[node name="Roll" parent="StateMachine" index="4"]
+allowed_stances_string = "Normal
+All"
+
+[node name="WaitHaki" type="Node2D" parent="StateMachine" index="9"]
+script = ExtResource( 174 )
+fallback_state = "WaitHaki"
+anim_length = 10
+title = "Wait"
+button_texture = ExtResource( 191 )
+interrupt_from_string = "GroundedIdle
+Grounded"
+interrupt_into_string = "Grounded
+Aerial"
+allowed_stances_string = "Haki"
+
+[node name="Burst" parent="StateMachine" index="10"]
+change_stance_to = ""
+
+[node name="OffensiveBurst" parent="StateMachine" index="11"]
+change_stance_to = ""
+
+[node name="Fall" parent="StateMachine" index="12"]
+allowed_stances_string = "All"
+
+[node name="Landing" parent="StateMachine" index="13"]
+allowed_stances_string = "All"
+change_stance_to = ""
+
+[node name="Knockdown" parent="StateMachine" index="14"]
+allowed_stances_string = "All"
+
+[node name="HardKnockdown" parent="StateMachine" index="15"]
+allowed_stances_string = "All"
+
+[node name="CounterAttack" parent="StateMachine" index="18"]
+allowed_stances_string = "All"
+
+[node name="DashForward" parent="StateMachine" index="19"]
+change_stance_to = ""
+
+[node name="DashBackward" parent="StateMachine" index="21"]
+change_stance_to = ""
+
+[node name="DashBackwardHold" parent="StateMachine" index="22"]
+change_stance_to = ""
+
+[node name="DashStartup" parent="StateMachine" index="23"]
+change_stance_to = ""
+
+[node name="Jump" parent="StateMachine" index="24"]
+change_stance_to = ""
+
+[node name="ChargeDash" parent="StateMachine" index="25"]
+show_in_menu = false
+allowed_stances_string = "All"
+
+[node name="SuperJump" parent="StateMachine" index="26"]
+allowed_stances_string = "All"
+change_stance_to = ""
+
+[node name="DoubleJump" parent="StateMachine" index="27"]
+allowed_stances_string = "All"
+
+[node name="AirDash" parent="StateMachine" index="28"]
+allowed_stances_string = "All"
+
+[node name="InstantCancel" parent="StateMachine" index="29"]
+change_stance_to = ""
+
+[node name="WhiffInstantCancel" parent="StateMachine" index="30"]
+change_stance_to = ""
+
+[node name="HurtDizzy" parent="StateMachine" index="32"]
+allowed_stances_string = "All"
+change_stance_to = ""
+
+[node name="WallSlam" parent="StateMachine" index="33"]
+allowed_stances_string = "All"
+
+[node name="HurtAerial" parent="StateMachine" index="34"]
+allowed_stances_string = "All"
+change_stance_to = ""
+
+[node name="ThrowTech" parent="StateMachine" index="45"]
+allowed_stances_string = "All"
+change_stance_to = ""
+
+[node name="Taunt" parent="StateMachine" index="46"]
+allowed_stances_string = "Normal
+Haki"
+
+[node name="GroundedPunch" type="Node2D" parent="StateMachine" index="48"]
 script = ExtResource( 14 )
 apply_forces = true
 apply_fric = true
@@ -433,7 +581,7 @@ knockback = "5.0"
 start_tick = 6
 active_ticks = 6
 
-[node name="GroundedSpearUp" type="Node2D" parent="StateMachine" index="48"]
+[node name="GroundedSpearUp" type="Node2D" parent="StateMachine" index="49"]
 script = ExtResource( 35 )
 apply_forces = true
 apply_fric = true
@@ -487,7 +635,7 @@ knockback = "5.0"
 start_tick = 15
 active_ticks = 3
 
-[node name="GroundedSpearDown" type="Node2D" parent="StateMachine" index="49"]
+[node name="GroundedSpearDown" type="Node2D" parent="StateMachine" index="50"]
 script = ExtResource( 105 )
 apply_forces = true
 apply_fric = true
@@ -519,7 +667,7 @@ knockback = "5.0"
 start_tick = 7
 active_ticks = 14
 
-[node name="SeaQuake" type="Node2D" parent="StateMachine" index="50"]
+[node name="SeaQuake" type="Node2D" parent="StateMachine" index="51"]
 script = ExtResource( 81 )
 apply_forces = true
 apply_fric = true
@@ -561,7 +709,7 @@ wall_slam = true
 start_tick = 27
 active_ticks = 9
 
-[node name="GroundedSpearFront" type="Node2D" parent="StateMachine" index="51"]
+[node name="GroundedSpearFront" type="Node2D" parent="StateMachine" index="52"]
 script = ExtResource( 103 )
 apply_forces = true
 apply_fric = true
@@ -592,7 +740,7 @@ knockback = "8.0"
 start_tick = 15
 active_ticks = 9
 
-[node name="GroundedAirSlash" type="Node2D" parent="StateMachine" index="52"]
+[node name="GroundedAirSlash" type="Node2D" parent="StateMachine" index="53"]
 script = ExtResource( 119 )
 apply_forces = true
 apply_fric = true
@@ -625,7 +773,7 @@ damage = 50
 start_tick = 12
 active_ticks = 4
 
-[node name="LeapAttack" type="Node2D" parent="StateMachine" index="53"]
+[node name="LeapAttack" type="Node2D" parent="StateMachine" index="54"]
 script = ExtResource( 151 )
 apply_forces = true
 apply_fric = true
@@ -676,6 +824,76 @@ damage = 100
 minimum_damage = 20
 start_tick = 24
 active_ticks = 2
+
+[node name="HakiLeapAttack" type="Node2D" parent="StateMachine" index="55"]
+script = ExtResource( 190 )
+__meta__ = {
+"_editor_description_": ""
+}
+apply_forces = true
+apply_fric = true
+apply_grav = true
+fallback_state = "WaitHaki"
+anim_length = 50
+ticks_per_frame = 2
+enter_force_dir_x = "5"
+enter_force_dir_y = "-2.5"
+enter_force_speed = "2"
+reset_momentum = true
+state_screenshake_tick = 24
+state_screenshake_amount = 5
+timed_particle_scene = ExtResource( 153 )
+timed_particle_position = Vector2( 15, 0 )
+timed_spawn_particle_tick = 20
+title = "Leap Attack"
+type = 2
+button_texture = ExtResource( 176 )
+reversible = false
+interrupt_from_string = "Grounded
+GroundedAttack"
+interrupt_into_string = "Grounded
+"
+hit_cancel_into_string = "Grounded
+"
+allowed_stances_string = "Haki"
+
+[node name="Hitbox" type="Node2D" parent="StateMachine/HakiLeapAttack" index="0"]
+z_index = 1000
+script = ExtResource( 96 )
+x = 28
+y = -28
+width = 17
+height = 24
+damage = 200
+minimum_damage = 130
+start_tick = 22
+active_ticks = 8
+
+[node name="Hitbox2" type="Node2D" parent="StateMachine/HakiLeapAttack" index="1"]
+z_index = 1000
+script = ExtResource( 96 )
+x = 40
+y = -5
+width = 30
+height = 5
+damage = 140
+minimum_damage = 60
+start_tick = 24
+active_ticks = 2
+
+[node name="ActivateHaki" type="Node2D" parent="StateMachine" index="56"]
+script = ExtResource( 172 )
+fallback_state = "WaitHaki"
+anim_length = 28
+ticks_per_frame = 2
+title = "Activate Haki"
+type = 2
+button_texture = ExtResource( 173 )
+interrupt_from_string = "GroundedAttack
+Grounded"
+interrupt_into_string = "Grounded"
+hit_cancel_into_string = "Grounded"
+change_stance_to = "Haki"
 
 [node name="EmoteLabel" parent="." index="10"]
 margin_left = -144.0
