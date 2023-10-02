@@ -11,6 +11,8 @@ func set_fighter(fighter):
 func _process(delta):
 	if is_instance_valid(fighter):
 		haki_bar.value = fighter.currentHakiAmount / float(fighter.maximumHakiAmount)
-		haki_bar.modulate.a = 0.25 if fighter.currentHakiAmount <= fighter.maximumHakiAmount else 1.0
-	
+		if ((fighter.currentHakiAmount < fighter.maximumHakiAmount)&& !fighter.hakiActivated):
+			haki_bar.modulate.a = 0.5  
+		else:
+			 haki_bar.modulate.a = 1.0
 		haki_bar.tint_progress = Color("a10303")

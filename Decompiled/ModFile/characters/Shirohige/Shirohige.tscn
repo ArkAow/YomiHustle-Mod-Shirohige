@@ -434,6 +434,11 @@ script = ExtResource( 156 )
 gravity = "0.8"
 max_air_speed = "10"
 max_fall_speed = "20"
+extra_state_variables = "currentHakiAmount
+maximumHakiAmount
+hakiFull
+hakiEmpty
+hakiActivated"
 num_air_movements = 3
 character_portrait = ExtResource( 27 )
 player_info_scene = ExtResource( 157 )
@@ -539,6 +544,10 @@ allowed_stances_string = "All"
 allowed_stances_string = "All"
 change_stance_to = ""
 
+[node name="Grab" parent="StateMachine" index="38"]
+allowed_stances_string = "Normal
+HakiAvailable"
+
 [node name="ThrowTech" parent="StateMachine" index="45"]
 allowed_stances_string = "All"
 change_stance_to = ""
@@ -566,6 +575,8 @@ interrupt_into_string = "Grounded
 "
 hit_cancel_into_string = "Grounded
 "
+allowed_stances_string = "Normal
+HakiAvailable"
 
 [node name="Hitbox" type="Node2D" parent="StateMachine/GroundedPunch" index="0"]
 z_index = 1000
@@ -595,6 +606,8 @@ interrupt_from_string = "Grounded
 GroundedAttack"
 interrupt_into_string = "Grounded"
 hit_cancel_into_string = "Grounded"
+allowed_stances_string = "Normal
+HakiAvailable"
 
 [node name="Hitbox" type="Node2D" parent="StateMachine/GroundedSpearUp" index="0"]
 z_index = 1000
@@ -651,6 +664,8 @@ interrupt_from_string = "Grounded
 GroundedAttack"
 interrupt_into_string = "Grounded"
 hit_cancel_into_string = "Grounded"
+allowed_stances_string = "Normal
+HakiAvailable"
 
 [node name="Hitbox" type="Node2D" parent="StateMachine/GroundedSpearDown" index="0"]
 rotation = -0.0445289
@@ -688,6 +703,8 @@ interrupt_from_string = "GroundedAttack
 Grounded"
 interrupt_into_string = "Grounded"
 hit_cancel_into_string = "Grounded"
+allowed_stances_string = "Normal
+HakiAvailable"
 super_level = 0
 
 [node name="Hitbox" type="Node2D" parent="StateMachine/SeaQuake" index="0"]
@@ -726,6 +743,8 @@ interrupt_from_string = "Grounded
 GroundedAttack"
 interrupt_into_string = "Grounded"
 hit_cancel_into_string = "Grounded"
+allowed_stances_string = "Normal
+HakiAvailable"
 
 [node name="Hitbox" type="Node2D" parent="StateMachine/GroundedSpearFront" index="0"]
 z_index = 1000
@@ -759,6 +778,8 @@ interrupt_into_string = "Grounded
 Aerial"
 hit_cancel_into_string = "Grounded
 Aerial"
+allowed_stances_string = "Normal
+HakiAvailable"
 SimpleProjectileScene = ExtResource( 138 )
 spawn_y_pos = -15
 
@@ -800,6 +821,8 @@ interrupt_into_string = "Grounded
 "
 hit_cancel_into_string = "Grounded
 "
+allowed_stances_string = "Normal
+HakiAvailable"
 
 [node name="Hitbox" type="Node2D" parent="StateMachine/LeapAttack" index="0"]
 z_index = 1000
@@ -893,6 +916,7 @@ interrupt_from_string = "GroundedAttack
 Grounded"
 interrupt_into_string = "Grounded"
 hit_cancel_into_string = "Grounded"
+allowed_stances_string = "HakiAvailable"
 change_stance_to = "Haki"
 
 [node name="EmoteLabel" parent="." index="10"]
