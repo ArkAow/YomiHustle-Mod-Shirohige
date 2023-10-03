@@ -46,5 +46,5 @@ material = SubResource( 2 )
 [node name="AnimatedSprite" type="AnimatedSprite" parent="." index="1"]
 scale = Vector2( 2, 2 )
 frames = SubResource( 1 )
-frame = 43
+frame = 26
 speed_scale = 6.0

@@ -11,40 +11,40 @@
 [ext_resource path="res://characters/stickman/sprites/stickman6.png" type="Texture" id=9]
 [ext_resource path="res://characters/stickman/sprites/stickman22.png" type="Texture" id=10]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/lightspearhigh/animation7.png" type="Texture" id=11]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/basics/wallslam.png" type="Texture" id=12]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/basics/wallslam.png" type="Texture" id=12]
 [ext_resource path="res://characters/stickman/sprites/stickman7.png" type="Texture" id=13]
 [ext_resource path="res://ModFile/characters/Shirohige/States/GroundedPunch.gd" type="Script" id=14]
 [ext_resource path="res://ModFile/characters/Shirohige/Particles/SeaQuakeShokeWaveEffect.tscn" type="PackedScene" id=15]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/basics/backwardDash.png" type="Texture" id=16]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/basics/backwardDash.png" type="Texture" id=16]
 [ext_resource path="res://characters/stickman/sprites/stickman5.png" type="Texture" id=17]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/basics/parryhigh.png" type="Texture" id=18]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/basics/parrylow.png" type="Texture" id=19]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/basics/grab/grab2.png" type="Texture" id=20]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/basics/parryhigh.png" type="Texture" id=18]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/basics/parrylow.png" type="Texture" id=19]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/basics/grab/grab2.png" type="Texture" id=20]
 [ext_resource path="res://characters/stickman/sprites/stickman8.png" type="Texture" id=21]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/basics/getup.png" type="Texture" id=22]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/basics/hurtgroundedmid.png" type="Texture" id=23]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/basics/getup.png" type="Texture" id=22]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/basics/hurtgroundedmid.png" type="Texture" id=23]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/lightspearhigh/animation6.png" type="Texture" id=24]
 [ext_resource path="res://characters/stickman/sprites/stickman20.png" type="Texture" id=25]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/punch/animation5.png" type="Texture" id=26]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/basics/wait.png" type="Texture" id=27]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/basics/wait.png" type="Texture" id=27]
 [ext_resource path="res://characters/stickman/sprites/stickman21.png" type="Texture" id=28]
 [ext_resource path="res://characters/stickman/sprites/stickman23.png" type="Texture" id=29]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/basics/forwardDash.png" type="Texture" id=30]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/basics/forwardDash.png" type="Texture" id=30]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/lightspearhigh/animation3.png" type="Texture" id=31]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/basics/jump.png" type="Texture" id=32]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/basics/jump.png" type="Texture" id=32]
 [ext_resource path="res://characters/stickman/sprites/stickman34.png" type="Texture" id=33]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/lightspearhigh/animation1.png" type="Texture" id=34]
 [ext_resource path="res://ModFile/characters/Shirohige/States/GroundedSpearUp.gd" type="Script" id=35]
 [ext_resource path="res://characters/stickman/sprites/stickman35.png" type="Texture" id=36]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/lightspearhigh/GroundedSpearUpIcon.png" type="Texture" id=37]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/basics/landing.png" type="Texture" id=38]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/basics/landing.png" type="Texture" id=38]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/lightspearlow/animation1.png" type="Texture" id=39]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/lightspearlow/animation4.png" type="Texture" id=40]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/basics/burst.png" type="Texture" id=41]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/basics/burst.png" type="Texture" id=41]
 [ext_resource path="res://characters/stickman/sprites/stickman55.png" type="Texture" id=42]
 [ext_resource path="res://characters/stickman/sprites/stickman56.png" type="Texture" id=43]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/basics/hurtaerial.png" type="Texture" id=44]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/basics/forwardThrow/forwardThrow1.png" type="Texture" id=45]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/basics/hurtaerial.png" type="Texture" id=44]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/basics/forwardThrow/forwardThrow1.png" type="Texture" id=45]
 [ext_resource path="res://characters/stickman/sprites/chuk_jump1.png" type="Texture" id=46]
 [ext_resource path="res://characters/stickman/sprites/nunchuk_heavy3.png" type="Texture" id=47]
 [ext_resource path="res://characters/stickman/sprites/nunchuk_heavy2.png" type="Texture" id=48]
@@ -58,18 +58,18 @@
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/lightspearlow/animation3.png" type="Texture" id=56]
 [ext_resource path="res://characters/stickman/sprites/stickman50.png" type="Texture" id=57]
 [ext_resource path="res://characters/stickman/sprites/stickman53.png" type="Texture" id=58]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/basics/grab/grab1.png" type="Texture" id=59]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/basics/forwardThrow/forwardThrow2.png" type="Texture" id=60]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/basics/grab/grab1.png" type="Texture" id=59]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/basics/forwardThrow/forwardThrow2.png" type="Texture" id=60]
 [ext_resource path="res://characters/stickman/sprites/phantomdash1.png" type="Texture" id=61]
 [ext_resource path="res://characters/stickman/sprites/stickman47.png" type="Texture" id=62]
 [ext_resource path="res://characters/stickman/sprites/nunchuk_light2.png" type="Texture" id=63]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/basics/hurtgroundedhigh.png" type="Texture" id=64]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/basics/hurtgroundedhigh.png" type="Texture" id=64]
 [ext_resource path="res://characters/stickman/sprites/chuk_jump2.png" type="Texture" id=65]
 [ext_resource path="res://characters/stickman/sprites/stickman52.png" type="Texture" id=66]
 [ext_resource path="res://characters/stickman/sprites/phantomdash2.png" type="Texture" id=67]
 [ext_resource path="res://characters/stickman/sprites/phantomdash3.png" type="Texture" id=68]
 [ext_resource path="res://characters/stickman/sprites/stickman48.png" type="Texture" id=69]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/basics/grabbed.png" type="Texture" id=70]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/basics/grabbed.png" type="Texture" id=70]
 [ext_resource path="res://characters/stickman/sprites/chuk_jump3.png" type="Texture" id=71]
 [ext_resource path="res://characters/stickman/sprites/nunchuk_light3.png" type="Texture" id=72]
 [ext_resource path="res://characters/stickman/sprites/nunchuk_heavy4.png" type="Texture" id=73]
@@ -79,7 +79,7 @@
 [ext_resource path="res://characters/stickman/sprites/nunchuk_heavy1.png" type="Texture" id=77]
 [ext_resource path="res://characters/stickman/sprites/chuk_spin3.png" type="Texture" id=78]
 [ext_resource path="res://characters/stickman/sprites/stickman46.png" type="Texture" id=79]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/basics/hurtgroundedlow.png" type="Texture" id=80]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/basics/hurtgroundedlow.png" type="Texture" id=80]
 [ext_resource path="res://ModFile/characters/Shirohige/States/SeaQuake.gd" type="Script" id=81]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/seaquake/animation3.png" type="Texture" id=82]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/seaquake/animation4.png" type="Texture" id=83]
@@ -97,10 +97,10 @@
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/seaquake/animation1.png" type="Texture" id=95]
 [ext_resource path="res://mechanics/Hitbox.gd" type="Script" id=96]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/seaquake/seaQuakeIcon.png" type="Texture" id=97]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/basics/doubleJump/doubleJump3.png" type="Texture" id=98]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/basics/doubleJump/doubleJump2.png" type="Texture" id=99]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/basics/doubleJump/doubleJump4.png" type="Texture" id=100]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/basics/doubleJump/doubleJump1.png" type="Texture" id=101]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/basics/doubleJump/doubleJump3.png" type="Texture" id=98]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/basics/doubleJump/doubleJump2.png" type="Texture" id=99]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/basics/doubleJump/doubleJump4.png" type="Texture" id=100]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/basics/doubleJump/doubleJump1.png" type="Texture" id=101]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/punch/punchIcon.png" type="Texture" id=102]
 [ext_resource path="res://ModFile/characters/Shirohige/States/GroundedSpearFront.gd" type="Script" id=103]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/lightspearlow/animation5.png" type="Texture" id=104]
@@ -157,24 +157,24 @@
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/leapattack/leapattack12.png" type="Texture" id=155]
 [ext_resource path="res://ModFile/characters/Shirohige/Shirohige.gd" type="Script" id=156]
 [ext_resource path="res://ModFile/characters/Shirohige/ShirohigePlayerInfo.tscn" type="PackedScene" id=157]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/haki/Hakit12.png" type="Texture" id=158]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/haki/Hakit13.png" type="Texture" id=159]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/haki/Hakit14.png" type="Texture" id=160]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/haki/Hakit1.png" type="Texture" id=161]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/haki/Hakit2.png" type="Texture" id=162]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/haki/Hakit3.png" type="Texture" id=163]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/haki/Hakit5.png" type="Texture" id=164]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/haki/Hakit4.png" type="Texture" id=165]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/haki/Hakit6.png" type="Texture" id=166]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/haki/Hakit7.png" type="Texture" id=167]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/haki/Hakit8.png" type="Texture" id=168]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/haki/Hakit9.png" type="Texture" id=169]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/haki/Hakit10.png" type="Texture" id=170]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/haki/Hakit11.png" type="Texture" id=171]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/hakiActivation/Hakit12.png" type="Texture" id=158]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/hakiActivation/Hakit13.png" type="Texture" id=159]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/hakiActivation/Hakit14.png" type="Texture" id=160]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/hakiActivation/Hakit1.png" type="Texture" id=161]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/hakiActivation/Hakit2.png" type="Texture" id=162]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/hakiActivation/Hakit3.png" type="Texture" id=163]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/hakiActivation/Hakit5.png" type="Texture" id=164]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/hakiActivation/Hakit4.png" type="Texture" id=165]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/hakiActivation/Hakit6.png" type="Texture" id=166]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/hakiActivation/Hakit7.png" type="Texture" id=167]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/hakiActivation/Hakit8.png" type="Texture" id=168]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/hakiActivation/Hakit9.png" type="Texture" id=169]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/hakiActivation/Hakit10.png" type="Texture" id=170]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/hakiActivation/Hakit11.png" type="Texture" id=171]
 [ext_resource path="res://ModFile/characters/Shirohige/States/ActivateHaki.gd" type="Script" id=172]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/haki/hakiIcon.png" type="Texture" id=173]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/hakiActivation/hakiIcon.png" type="Texture" id=173]
 [ext_resource path="res://characters/states/Idle.gd" type="Script" id=174]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/basics/waitHaki.png" type="Texture" id=175]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/waitHaki.png" type="Texture" id=175]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/hakiLeapAttack/hakileapattackIcon.png" type="Texture" id=176]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/hakiLeapAttack/hakileapattack6.png" type="Texture" id=177]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/hakiLeapAttack/hakileapattack7.png" type="Texture" id=178]
@@ -458,11 +458,31 @@ height = 19
 
 [node name="Start" parent="StateMachine" index="0"]
 allowed_stances_string = "Normal
-All"
+HakiAvailable"
+
+[node name="ParryHigh" parent="StateMachine" index="1"]
+allowed_stances_string = "Normal
+HakiAvailable"
+
+[node name="ParryLow" parent="StateMachine" index="2"]
+allowed_stances_string = "Normal
+HakiAvailable"
+
+[node name="ParryAir" parent="StateMachine" index="3"]
+allowed_stances_string = "Normal
+HakiAvailable"
 
 [node name="Roll" parent="StateMachine" index="4"]
 allowed_stances_string = "Normal
+HakiAvailable"
+
+[node name="ShieldHigh" parent="StateMachine" index="5"]
+allowed_stances_string = "Normal
 All"
+
+[node name="Wait" parent="StateMachine" index="8"]
+allowed_stances_string = "Normal
+HakiAvailable"
 
 [node name="WaitHaki" type="Node2D" parent="StateMachine" index="9"]
 script = ExtResource( 174 )
@@ -499,62 +519,128 @@ allowed_stances_string = "All"
 allowed_stances_string = "All"
 
 [node name="DashForward" parent="StateMachine" index="19"]
+allowed_stances_string = "Normal
+HakiAvailable"
 change_stance_to = ""
 
+[node name="ChargeDashForward" parent="StateMachine" index="20"]
+allowed_stances_string = "Normal
+HakiAvailable"
+
 [node name="DashBackward" parent="StateMachine" index="21"]
+allowed_stances_string = "Normal
+HakiAvailable"
 change_stance_to = ""
 
 [node name="DashBackwardHold" parent="StateMachine" index="22"]
+allowed_stances_string = "Normal
+HakiAvailable"
 change_stance_to = ""
 
 [node name="DashStartup" parent="StateMachine" index="23"]
+allowed_stances_string = "Normal
+HakiAvailableAll"
 change_stance_to = ""
 
 [node name="Jump" parent="StateMachine" index="24"]
+allowed_stances_string = "Normal
+HakiAvailable"
 change_stance_to = ""
 
 [node name="ChargeDash" parent="StateMachine" index="25"]
 show_in_menu = false
-allowed_stances_string = "All"
+allowed_stances_string = "Normal
+HakiAvailableAll"
 
 [node name="SuperJump" parent="StateMachine" index="26"]
-allowed_stances_string = "All"
+allowed_stances_string = "Normal
+HakiAvailable"
 change_stance_to = ""
 
 [node name="DoubleJump" parent="StateMachine" index="27"]
-allowed_stances_string = "All"
+allowed_stances_string = "Normal
+HakiAvailable"
 
 [node name="AirDash" parent="StateMachine" index="28"]
-allowed_stances_string = "All"
+allowed_stances_string = "Normal
+HakiAvailable"
 
 [node name="InstantCancel" parent="StateMachine" index="29"]
+allowed_stances_string = "Normal
+HakiAvailable"
 change_stance_to = ""
 
 [node name="WhiffInstantCancel" parent="StateMachine" index="30"]
+allowed_stances_string = "Normal
+HakiAvailable"
 change_stance_to = ""
 
+[node name="HurtGrounded" parent="StateMachine" index="31"]
+allowed_stances_string = "Normal
+HakiAvailable"
+
 [node name="HurtDizzy" parent="StateMachine" index="32"]
-allowed_stances_string = "All"
+allowed_stances_string = "Normal
+HakiAvailable"
 change_stance_to = ""
 
 [node name="WallSlam" parent="StateMachine" index="33"]
-allowed_stances_string = "All"
+allowed_stances_string = "Normal
+HakiAvailable"
 
 [node name="HurtAerial" parent="StateMachine" index="34"]
-allowed_stances_string = "All"
+allowed_stances_string = "Normal
+HakiAvailable"
 change_stance_to = ""
+
+[node name="Grabbed" parent="StateMachine" index="35"]
+allowed_stances_string = "Normal
+HakiAvailable"
+
+[node name="Hold" parent="StateMachine" index="36"]
+allowed_stances_string = "Normal
+HakiAvailable"
+
+[node name="AirHold" parent="StateMachine" index="37"]
+allowed_stances_string = "Normal
+HakiAvailable"
 
 [node name="Grab" parent="StateMachine" index="38"]
 allowed_stances_string = "Normal
 HakiAvailable"
 
+[node name="ForwardThrow" parent="StateMachine" index="40"]
+allowed_stances_string = "Normal
+HakiAvailable"
+
+[node name="BackThrow" parent="StateMachine" index="41"]
+allowed_stances_string = "Normal
+HakiAvailable"
+
+[node name="AirForwardThrow" parent="StateMachine" index="42"]
+allowed_stances_string = "Normal
+HakiAvailable"
+
+[node name="AirBackThrow" parent="StateMachine" index="43"]
+allowed_stances_string = "Normal
+HakiAvailable"
+
+[node name="AirDownThrow" parent="StateMachine" index="44"]
+allowed_stances_string = "Normal
+HakiAvailable"
+
 [node name="ThrowTech" parent="StateMachine" index="45"]
-allowed_stances_string = "All"
+allowed_stances_string = "Normal
+HakiAvailable"
 change_stance_to = ""
 
 [node name="Taunt" parent="StateMachine" index="46"]
 allowed_stances_string = "Normal
-Haki"
+HakiAvailable"
+
+[node name="ForfeitExplosion" parent="StateMachine" index="47"]
+allowed_stances_string = "Normal
+HakiAvailable"
 
 [node name="GroundedPunch" type="Node2D" parent="StateMachine" index="48"]
 script = ExtResource( 14 )
@@ -767,7 +853,7 @@ apply_grav = true
 anim_length = 34
 ticks_per_frame = 2
 title = "Air Slash"
-type = 1
+type = 2
 data_ui_scene = ExtResource( 139 )
 button_texture = ExtResource( 127 )
 interrupt_from_string = "Grounded
