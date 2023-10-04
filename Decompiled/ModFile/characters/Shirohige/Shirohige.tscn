@@ -1,4 +1,4 @@
-[gd_scene load_steps=195 format=2]
+[gd_scene load_steps=201 format=2]
 
 [ext_resource path="res://characters/BaseChar.gdshader" type="Shader" id=1]
 [ext_resource path="res://characters/BaseChar.tscn" type="PackedScene" id=2]
@@ -13,7 +13,7 @@
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/lightspearhigh/animation7.png" type="Texture" id=11]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/basics/wallslam.png" type="Texture" id=12]
 [ext_resource path="res://characters/stickman/sprites/stickman7.png" type="Texture" id=13]
-[ext_resource path="res://ModFile/characters/Shirohige/States/GroundedPunch.gd" type="Script" id=14]
+[ext_resource path="res://ModFile/characters/Shirohige/States/AttackStates/GroundedPunch.gd" type="Script" id=14]
 [ext_resource path="res://ModFile/characters/Shirohige/Particles/SeaQuakeShokeWaveEffect.tscn" type="PackedScene" id=15]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/basics/backwardDash.png" type="Texture" id=16]
 [ext_resource path="res://characters/stickman/sprites/stickman5.png" type="Texture" id=17]
@@ -34,18 +34,18 @@
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/basics/jump.png" type="Texture" id=32]
 [ext_resource path="res://characters/stickman/sprites/stickman34.png" type="Texture" id=33]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/lightspearhigh/animation1.png" type="Texture" id=34]
-[ext_resource path="res://ModFile/characters/Shirohige/States/GroundedSpearUp.gd" type="Script" id=35]
+[ext_resource path="res://ModFile/characters/Shirohige/States/AttackStates/GroundedSpearUp.gd" type="Script" id=35]
 [ext_resource path="res://characters/stickman/sprites/stickman35.png" type="Texture" id=36]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/lightspearhigh/GroundedSpearUpIcon.png" type="Texture" id=37]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/basics/landing.png" type="Texture" id=38]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/lightspearlow/animation1.png" type="Texture" id=39]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/lightspearlow/animation4.png" type="Texture" id=40]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/basics/burst.png" type="Texture" id=41]
-[ext_resource path="res://characters/stickman/sprites/stickman55.png" type="Texture" id=42]
-[ext_resource path="res://characters/stickman/sprites/stickman56.png" type="Texture" id=43]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/basicHaki/doubleJump/doubleJumpHaki3.png" type="Texture" id=42]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/basicHaki/jumpHaki.png" type="Texture" id=43]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/basics/hurtaerial.png" type="Texture" id=44]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/basics/forwardThrow/forwardThrow1.png" type="Texture" id=45]
-[ext_resource path="res://characters/stickman/sprites/chuk_jump1.png" type="Texture" id=46]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/basicHaki/doubleJump/doubleJumpHaki2.png" type="Texture" id=46]
 [ext_resource path="res://characters/stickman/sprites/nunchuk_heavy3.png" type="Texture" id=47]
 [ext_resource path="res://characters/stickman/sprites/nunchuk_heavy2.png" type="Texture" id=48]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/lightspearlow/animation2.png" type="Texture" id=49]
@@ -54,23 +54,20 @@
 [ext_resource path="res://characters/stickman/sprites/nunchuk_light1.png" type="Texture" id=52]
 [ext_resource path="res://characters/stickman/sprites/chuk_spin2.png" type="Texture" id=53]
 [ext_resource path="res://characters/stickman/sprites/stickman49.png" type="Texture" id=54]
-[ext_resource path="res://characters/stickman/sprites/stickman54.png" type="Texture" id=55]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/basicHaki/doubleJump/doubleJumpHaki4.png" type="Texture" id=55]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/lightspearlow/animation3.png" type="Texture" id=56]
 [ext_resource path="res://characters/stickman/sprites/stickman50.png" type="Texture" id=57]
-[ext_resource path="res://characters/stickman/sprites/stickman53.png" type="Texture" id=58]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/basicHaki/doubleJump/doubleJumpHaki1.png" type="Texture" id=58]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/basics/grab/grab1.png" type="Texture" id=59]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/basics/forwardThrow/forwardThrow2.png" type="Texture" id=60]
 [ext_resource path="res://characters/stickman/sprites/phantomdash1.png" type="Texture" id=61]
 [ext_resource path="res://characters/stickman/sprites/stickman47.png" type="Texture" id=62]
 [ext_resource path="res://characters/stickman/sprites/nunchuk_light2.png" type="Texture" id=63]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/basics/hurtgroundedhigh.png" type="Texture" id=64]
-[ext_resource path="res://characters/stickman/sprites/chuk_jump2.png" type="Texture" id=65]
-[ext_resource path="res://characters/stickman/sprites/stickman52.png" type="Texture" id=66]
 [ext_resource path="res://characters/stickman/sprites/phantomdash2.png" type="Texture" id=67]
 [ext_resource path="res://characters/stickman/sprites/phantomdash3.png" type="Texture" id=68]
 [ext_resource path="res://characters/stickman/sprites/stickman48.png" type="Texture" id=69]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/basics/grabbed.png" type="Texture" id=70]
-[ext_resource path="res://characters/stickman/sprites/chuk_jump3.png" type="Texture" id=71]
 [ext_resource path="res://characters/stickman/sprites/nunchuk_light3.png" type="Texture" id=72]
 [ext_resource path="res://characters/stickman/sprites/nunchuk_heavy4.png" type="Texture" id=73]
 [ext_resource path="res://characters/stickman/sprites/chuk_spin7.png" type="Texture" id=74]
@@ -80,7 +77,7 @@
 [ext_resource path="res://characters/stickman/sprites/chuk_spin3.png" type="Texture" id=78]
 [ext_resource path="res://characters/stickman/sprites/stickman46.png" type="Texture" id=79]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/basics/hurtgroundedlow.png" type="Texture" id=80]
-[ext_resource path="res://ModFile/characters/Shirohige/States/SeaQuake.gd" type="Script" id=81]
+[ext_resource path="res://ModFile/characters/Shirohige/States/AttackStates/SeaQuake.gd" type="Script" id=81]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/seaquake/animation3.png" type="Texture" id=82]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/seaquake/animation4.png" type="Texture" id=83]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/seaquake/animation7.png" type="Texture" id=84]
@@ -102,9 +99,9 @@
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/basics/doubleJump/doubleJump4.png" type="Texture" id=100]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/basics/doubleJump/doubleJump1.png" type="Texture" id=101]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/punch/punchIcon.png" type="Texture" id=102]
-[ext_resource path="res://ModFile/characters/Shirohige/States/GroundedSpearFront.gd" type="Script" id=103]
+[ext_resource path="res://ModFile/characters/Shirohige/States/AttackStates/GroundedSpearFront.gd" type="Script" id=103]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/lightspearlow/animation5.png" type="Texture" id=104]
-[ext_resource path="res://ModFile/characters/Shirohige/States/GroundedSpearDown.gd" type="Script" id=105]
+[ext_resource path="res://ModFile/characters/Shirohige/States/AttackStates/GroundedSpearDown.gd" type="Script" id=105]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/punch/animation3.png" type="Texture" id=106]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/lightspearlow/GroundedSpearDownIcon.png" type="Texture" id=107]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/punch/animation2.png" type="Texture" id=108]
@@ -118,7 +115,7 @@
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/lightspearfront/frontspear8.png" type="Texture" id=116]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/lightspearfront/frontspear7.png" type="Texture" id=117]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/lightspearfront/GroundedSpearFrontIcon.png" type="Texture" id=118]
-[ext_resource path="res://ModFile/characters/Shirohige/States/GroundedAirSlash.gd" type="Script" id=119]
+[ext_resource path="res://ModFile/characters/Shirohige/States/AttackStates/GroundedAirSlash.gd" type="Script" id=119]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/groundedairslash/slash16.png" type="Texture" id=120]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/groundedairslash/slash17.png" type="Texture" id=121]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/groundedairslash/slash5.png" type="Texture" id=122]
@@ -150,7 +147,7 @@
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/leapattack/leapattack9.png" type="Texture" id=148]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/leapattack/leapattack11.png" type="Texture" id=149]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/leapattack/leapattack3.png" type="Texture" id=150]
-[ext_resource path="res://ModFile/characters/Shirohige/States/LeapAttack.gd" type="Script" id=151]
+[ext_resource path="res://ModFile/characters/Shirohige/States/AttackStates/LeapAttack.gd" type="Script" id=151]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/leapattack/leapattackIcon.png" type="Texture" id=152]
 [ext_resource path="res://ModFile/characters/Shirohige/Particles/SpearStompEffect.tscn" type="PackedScene" id=153]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/leapattack/leapattack13.png" type="Texture" id=154]
@@ -171,10 +168,10 @@
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/hakiActivation/Hakit9.png" type="Texture" id=169]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/hakiActivation/Hakit10.png" type="Texture" id=170]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/hakiActivation/Hakit11.png" type="Texture" id=171]
-[ext_resource path="res://ModFile/characters/Shirohige/States/ActivateHaki.gd" type="Script" id=172]
+[ext_resource path="res://ModFile/characters/Shirohige/States/AttackStates/ActivateHaki.gd" type="Script" id=172]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/hakiActivation/hakiIcon.png" type="Texture" id=173]
-[ext_resource path="res://characters/states/Idle.gd" type="Script" id=174]
-[ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/waitHaki.png" type="Texture" id=175]
+[ext_resource path="res://ModFile/characters/Shirohige/States/ShirohigeFall.gd" type="Script" id=174]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/basicHaki/waitHaki.png" type="Texture" id=175]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/hakiLeapAttack/hakileapattackIcon.png" type="Texture" id=176]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/hakiLeapAttack/hakileapattack6.png" type="Texture" id=177]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/hakiLeapAttack/hakileapattack7.png" type="Texture" id=178]
@@ -189,8 +186,17 @@
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/hakiLeapAttack/hakileapattack5.png" type="Texture" id=187]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/hakiLeapAttack/hakileapattack1.png" type="Texture" id=188]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/hakiLeapAttack/hakileapattack4.png" type="Texture" id=189]
-[ext_resource path="res://ModFile/characters/Shirohige/States/HakiLeapAttack.gd" type="Script" id=190]
-[ext_resource path="res://ui/ActionSelector/StateIcons/wait.png" type="Texture" id=191]
+[ext_resource path="res://ModFile/characters/Shirohige/States/AttackStates/HakiLeapAttack.gd" type="Script" id=190]
+[ext_resource path="res://ModFile/characters/Shirohige/States/ShirohigeIdle.gd" type="Script" id=191]
+[ext_resource path="res://ModFile/characters/Shirohige/States/ShirohigeHurtGrounded.gd" type="Script" id=192]
+[ext_resource path="res://ModFile/characters/Shirohige/States/ShirohigeHurtAerial.gd" type="Script" id=193]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/basicHaki/hurtaerialHaki.png" type="Texture" id=194]
+[ext_resource path="res://ModFile/characters/Shirohige/States/ShirohigeJump.gd" type="Script" id=195]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/basicHaki/hurtgroundedhighHaki.png" type="Texture" id=196]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/basicHaki/hurtgroundedlowHaki.png" type="Texture" id=197]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/basicHaki/hurtgroundedmidHaki.png" type="Texture" id=198]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/basicHaki/landingHaki.png" type="Texture" id=199]
+[ext_resource path="res://ModFile/characters/Shirohige/States/ShirohigeLanding.gd" type="Script" id=200]
 
 [sub_resource type="ShaderMaterial" id=1]
 resource_local_to_scene = true
@@ -235,6 +241,11 @@ animations = [ {
 "frames": [ ExtResource( 101 ), ExtResource( 99 ), ExtResource( 98 ), ExtResource( 100 ) ],
 "loop": true,
 "name": "DoubleJump",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 58 ), ExtResource( 46 ), ExtResource( 42 ), ExtResource( 55 ) ],
+"loop": true,
+"name": "DoubleJumpHaki",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 45 ), ExtResource( 45 ), ExtResource( 45 ), ExtResource( 45 ), ExtResource( 45 ), ExtResource( 45 ), ExtResource( 45 ), ExtResource( 45 ), ExtResource( 45 ), ExtResource( 60 ) ],
@@ -302,9 +313,19 @@ animations = [ {
 "name": "HurtAerial",
 "speed": 5.0
 }, {
+"frames": [ ExtResource( 194 ) ],
+"loop": true,
+"name": "HurtAerialHaki",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 64 ) ],
 "loop": true,
 "name": "HurtGroundedHigh",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 196 ) ],
+"loop": true,
+"name": "HurtGroundedHighHaki",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 80 ) ],
@@ -312,9 +333,19 @@ animations = [ {
 "name": "HurtGroundedLow",
 "speed": 5.0
 }, {
+"frames": [ ExtResource( 197 ) ],
+"loop": true,
+"name": "HurtGroundedLowHaki",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 23 ) ],
 "loop": true,
 "name": "HurtGroundedMid",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 198 ) ],
+"loop": true,
+"name": "HurtGroundedMidHaki",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 16 ) ],
@@ -332,9 +363,9 @@ animations = [ {
 "name": "JumpBack",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 66 ), ExtResource( 66 ), ExtResource( 58 ), ExtResource( 58 ), ExtResource( 58 ), ExtResource( 58 ), ExtResource( 58 ), ExtResource( 58 ), ExtResource( 55 ), ExtResource( 55 ), ExtResource( 42 ), ExtResource( 42 ), ExtResource( 42 ), ExtResource( 42 ), ExtResource( 42 ), ExtResource( 42 ), ExtResource( 42 ), ExtResource( 42 ), ExtResource( 43 ) ],
+"frames": [ ExtResource( 43 ) ],
 "loop": true,
-"name": "JumpKick",
+"name": "JumpHaki",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 3 ) ],
@@ -347,6 +378,11 @@ animations = [ {
 "name": "Landing",
 "speed": 5.0
 }, {
+"frames": [ ExtResource( 199 ) ],
+"loop": true,
+"name": "LandingHaki",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 140 ), ExtResource( 144 ), ExtResource( 144 ), ExtResource( 150 ), ExtResource( 150 ), ExtResource( 141 ), ExtResource( 141 ), ExtResource( 146 ), ExtResource( 142 ), ExtResource( 142 ), ExtResource( 143 ), ExtResource( 145 ), ExtResource( 148 ), ExtResource( 147 ), ExtResource( 149 ), ExtResource( 155 ), ExtResource( 155 ), ExtResource( 154 ) ],
 "loop": true,
 "name": "LeapAttack",
@@ -356,11 +392,6 @@ animations = [ {
 "loop": true,
 "name": "NunChukHeavy",
 "speed": 60.0
-}, {
-"frames": [ ExtResource( 46 ), ExtResource( 46 ), ExtResource( 46 ), ExtResource( 46 ), ExtResource( 46 ), ExtResource( 46 ), ExtResource( 46 ), ExtResource( 46 ), ExtResource( 46 ), ExtResource( 46 ), ExtResource( 46 ), ExtResource( 46 ), ExtResource( 46 ), ExtResource( 46 ), ExtResource( 46 ), ExtResource( 65 ), ExtResource( 65 ), ExtResource( 65 ), ExtResource( 65 ), ExtResource( 71 ) ],
-"loop": true,
-"name": "NunChukJump",
-"speed": 5.0
 }, {
 "frames": [ ExtResource( 52 ), ExtResource( 52 ), ExtResource( 52 ), ExtResource( 52 ), ExtResource( 52 ), ExtResource( 63 ), ExtResource( 63 ), ExtResource( 63 ), ExtResource( 72 ) ],
 "loop": true,
@@ -446,7 +477,7 @@ player_info_scene = ExtResource( 157 )
 [node name="Sprite" parent="Flip" index="0"]
 material = SubResource( 2 )
 frames = SubResource( 3 )
-animation = "HakiLeapAttack"
+animation = "DoubleJumpHaki"
 
 [node name="Super" parent="Sounds" index="3"]
 pitch_scale = 0.46
@@ -481,168 +512,201 @@ allowed_stances_string = "Normal
 All"
 
 [node name="Wait" parent="StateMachine" index="8"]
-allowed_stances_string = "Normal
-HakiAvailable"
+script = ExtResource( 191 )
+__meta__ = {
+"_editor_description_": ""
+}
+allowed_stances_string = "All"
+change_stance_to = "Normal"
 
-[node name="WaitHaki" type="Node2D" parent="StateMachine" index="9"]
+[node name="Burst" parent="StateMachine" index="9"]
+change_stance_to = ""
+
+[node name="OffensiveBurst" parent="StateMachine" index="10"]
+change_stance_to = ""
+
+[node name="Fall" parent="StateMachine" index="11"]
 script = ExtResource( 174 )
-fallback_state = "WaitHaki"
-anim_length = 10
-title = "Wait"
-button_texture = ExtResource( 191 )
-interrupt_from_string = "GroundedIdle
-Grounded"
-interrupt_into_string = "Grounded
-Aerial"
-allowed_stances_string = "Haki"
-
-[node name="Burst" parent="StateMachine" index="10"]
-change_stance_to = ""
-
-[node name="OffensiveBurst" parent="StateMachine" index="11"]
-change_stance_to = ""
-
-[node name="Fall" parent="StateMachine" index="12"]
+__meta__ = {
+"_editor_description_": ""
+}
 allowed_stances_string = "All"
 
-[node name="Landing" parent="StateMachine" index="13"]
+[node name="Landing" parent="StateMachine" index="12"]
+script = ExtResource( 200 )
+__meta__ = {
+"_editor_description_": ""
+}
 allowed_stances_string = "All"
 change_stance_to = ""
 
-[node name="Knockdown" parent="StateMachine" index="14"]
+[node name="Knockdown" parent="StateMachine" index="13"]
 allowed_stances_string = "All"
 
-[node name="HardKnockdown" parent="StateMachine" index="15"]
+[node name="HardKnockdown" parent="StateMachine" index="14"]
 allowed_stances_string = "All"
 
-[node name="CounterAttack" parent="StateMachine" index="18"]
+[node name="CounterAttack" parent="StateMachine" index="17"]
 allowed_stances_string = "All"
 
-[node name="DashForward" parent="StateMachine" index="19"]
+[node name="DashForward" parent="StateMachine" index="18"]
 allowed_stances_string = "Normal
 HakiAvailable"
 change_stance_to = ""
 
-[node name="ChargeDashForward" parent="StateMachine" index="20"]
+[node name="ChargeDashForward" parent="StateMachine" index="19"]
 allowed_stances_string = "Normal
 HakiAvailable"
 
-[node name="DashBackward" parent="StateMachine" index="21"]
-allowed_stances_string = "Normal
-HakiAvailable"
-change_stance_to = ""
-
-[node name="DashBackwardHold" parent="StateMachine" index="22"]
+[node name="DashBackward" parent="StateMachine" index="20"]
 allowed_stances_string = "Normal
 HakiAvailable"
 change_stance_to = ""
 
-[node name="DashStartup" parent="StateMachine" index="23"]
+[node name="DashBackwardHold" parent="StateMachine" index="21"]
+allowed_stances_string = "Normal
+HakiAvailable"
+change_stance_to = ""
+
+[node name="DashStartup" parent="StateMachine" index="22"]
 allowed_stances_string = "Normal
 HakiAvailableAll"
 change_stance_to = ""
 
-[node name="Jump" parent="StateMachine" index="24"]
-allowed_stances_string = "Normal
-HakiAvailable"
+[node name="Jump" parent="StateMachine" index="23"]
+script = ExtResource( 195 )
+fallback_state = "Wait"
+sprite_animation = ""
+anim_length = 1
+sprite_anim_length = -1
+loop_animation = false
+particle_scene = null
+sfx = null
+title = ""
+data_ui_scene = null
+button_texture = null
+interrupt_frames = [  ]
+interruptible_on_opponent_turn = false
+reversible = true
+interrupt_from_string = ""
+interrupt_into_string = ""
+allowed_stances_string = "Normal"
 change_stance_to = ""
+speed = "25.0"
+y_modifier = "1.5"
 
-[node name="ChargeDash" parent="StateMachine" index="25"]
+[node name="ChargeDash" parent="StateMachine" index="24"]
 show_in_menu = false
 allowed_stances_string = "Normal
 HakiAvailableAll"
 
-[node name="SuperJump" parent="StateMachine" index="26"]
+[node name="SuperJump" parent="StateMachine" index="25"]
 allowed_stances_string = "Normal
 HakiAvailable"
 change_stance_to = ""
 
-[node name="DoubleJump" parent="StateMachine" index="27"]
+[node name="DoubleJump" parent="StateMachine" index="26"]
 allowed_stances_string = "Normal
 HakiAvailable"
 
-[node name="AirDash" parent="StateMachine" index="28"]
+[node name="AirDash" parent="StateMachine" index="27"]
 allowed_stances_string = "Normal
 HakiAvailable"
 
-[node name="InstantCancel" parent="StateMachine" index="29"]
-allowed_stances_string = "Normal
-HakiAvailable"
-change_stance_to = ""
-
-[node name="WhiffInstantCancel" parent="StateMachine" index="30"]
+[node name="InstantCancel" parent="StateMachine" index="28"]
 allowed_stances_string = "Normal
 HakiAvailable"
 change_stance_to = ""
 
-[node name="HurtGrounded" parent="StateMachine" index="31"]
-allowed_stances_string = "Normal
-HakiAvailable"
-
-[node name="HurtDizzy" parent="StateMachine" index="32"]
+[node name="WhiffInstantCancel" parent="StateMachine" index="29"]
 allowed_stances_string = "Normal
 HakiAvailable"
 change_stance_to = ""
 
-[node name="WallSlam" parent="StateMachine" index="33"]
+[node name="HurtGrounded" parent="StateMachine" index="30"]
+script = ExtResource( 192 )
+endless = false
+reset_momentum = false
+type = 0
+busy_interrupt_type = 0
+interrupt_into_string = ""
+allowed_stances_string = "All"
+change_stance_to = ""
+
+[node name="HurtDizzy" parent="StateMachine" index="31"]
+script = ExtResource( 192 )
+endless = false
+reset_momentum = false
+type = 0
+busy_interrupt_type = 0
+interrupt_into_string = ""
+change_stance_to = ""
+dizzy = false
+
+[node name="WallSlam" parent="StateMachine" index="32"]
 allowed_stances_string = "Normal
 HakiAvailable"
 
-[node name="HurtAerial" parent="StateMachine" index="34"]
+[node name="HurtAerial" parent="StateMachine" index="33"]
+script = ExtResource( 193 )
+endless = false
+reset_momentum = false
+air_type = 0
+busy_interrupt_type = 0
+interrupt_into_string = ""
+allowed_stances_string = "All"
+change_stance_to = ""
+
+[node name="Grabbed" parent="StateMachine" index="34"]
+allowed_stances_string = "Normal
+HakiAvailable"
+
+[node name="Hold" parent="StateMachine" index="35"]
+allowed_stances_string = "Normal
+HakiAvailable"
+
+[node name="AirHold" parent="StateMachine" index="36"]
+allowed_stances_string = "Normal
+HakiAvailable"
+
+[node name="Grab" parent="StateMachine" index="37"]
+allowed_stances_string = "Normal
+HakiAvailable"
+
+[node name="ForwardThrow" parent="StateMachine" index="39"]
+allowed_stances_string = "Normal
+HakiAvailable"
+
+[node name="BackThrow" parent="StateMachine" index="40"]
+allowed_stances_string = "Normal
+HakiAvailable"
+
+[node name="AirForwardThrow" parent="StateMachine" index="41"]
+allowed_stances_string = "Normal
+HakiAvailable"
+
+[node name="AirBackThrow" parent="StateMachine" index="42"]
+allowed_stances_string = "Normal
+HakiAvailable"
+
+[node name="AirDownThrow" parent="StateMachine" index="43"]
+allowed_stances_string = "Normal
+HakiAvailable"
+
+[node name="ThrowTech" parent="StateMachine" index="44"]
 allowed_stances_string = "Normal
 HakiAvailable"
 change_stance_to = ""
 
-[node name="Grabbed" parent="StateMachine" index="35"]
+[node name="Taunt" parent="StateMachine" index="45"]
 allowed_stances_string = "Normal
 HakiAvailable"
 
-[node name="Hold" parent="StateMachine" index="36"]
+[node name="ForfeitExplosion" parent="StateMachine" index="46"]
 allowed_stances_string = "Normal
 HakiAvailable"
 
-[node name="AirHold" parent="StateMachine" index="37"]
-allowed_stances_string = "Normal
-HakiAvailable"
-
-[node name="Grab" parent="StateMachine" index="38"]
-allowed_stances_string = "Normal
-HakiAvailable"
-
-[node name="ForwardThrow" parent="StateMachine" index="40"]
-allowed_stances_string = "Normal
-HakiAvailable"
-
-[node name="BackThrow" parent="StateMachine" index="41"]
-allowed_stances_string = "Normal
-HakiAvailable"
-
-[node name="AirForwardThrow" parent="StateMachine" index="42"]
-allowed_stances_string = "Normal
-HakiAvailable"
-
-[node name="AirBackThrow" parent="StateMachine" index="43"]
-allowed_stances_string = "Normal
-HakiAvailable"
-
-[node name="AirDownThrow" parent="StateMachine" index="44"]
-allowed_stances_string = "Normal
-HakiAvailable"
-
-[node name="ThrowTech" parent="StateMachine" index="45"]
-allowed_stances_string = "Normal
-HakiAvailable"
-change_stance_to = ""
-
-[node name="Taunt" parent="StateMachine" index="46"]
-allowed_stances_string = "Normal
-HakiAvailable"
-
-[node name="ForfeitExplosion" parent="StateMachine" index="47"]
-allowed_stances_string = "Normal
-HakiAvailable"
-
-[node name="GroundedPunch" type="Node2D" parent="StateMachine" index="48"]
+[node name="GroundedPunch" type="Node2D" parent="StateMachine" index="47"]
 script = ExtResource( 14 )
 apply_forces = true
 apply_fric = true
@@ -678,7 +742,7 @@ knockback = "5.0"
 start_tick = 6
 active_ticks = 6
 
-[node name="GroundedSpearUp" type="Node2D" parent="StateMachine" index="49"]
+[node name="GroundedSpearUp" type="Node2D" parent="StateMachine" index="48"]
 script = ExtResource( 35 )
 apply_forces = true
 apply_fric = true
@@ -734,7 +798,7 @@ knockback = "5.0"
 start_tick = 15
 active_ticks = 3
 
-[node name="GroundedSpearDown" type="Node2D" parent="StateMachine" index="50"]
+[node name="GroundedSpearDown" type="Node2D" parent="StateMachine" index="49"]
 script = ExtResource( 105 )
 apply_forces = true
 apply_fric = true
@@ -768,7 +832,7 @@ knockback = "5.0"
 start_tick = 7
 active_ticks = 14
 
-[node name="SeaQuake" type="Node2D" parent="StateMachine" index="51"]
+[node name="SeaQuake" type="Node2D" parent="StateMachine" index="50"]
 script = ExtResource( 81 )
 apply_forces = true
 apply_fric = true
@@ -812,7 +876,7 @@ wall_slam = true
 start_tick = 27
 active_ticks = 9
 
-[node name="GroundedSpearFront" type="Node2D" parent="StateMachine" index="52"]
+[node name="GroundedSpearFront" type="Node2D" parent="StateMachine" index="51"]
 script = ExtResource( 103 )
 apply_forces = true
 apply_fric = true
@@ -845,7 +909,7 @@ knockback = "8.0"
 start_tick = 15
 active_ticks = 9
 
-[node name="GroundedAirSlash" type="Node2D" parent="StateMachine" index="53"]
+[node name="GroundedAirSlash" type="Node2D" parent="StateMachine" index="52"]
 script = ExtResource( 119 )
 apply_forces = true
 apply_fric = true
@@ -880,7 +944,7 @@ damage = 50
 start_tick = 12
 active_ticks = 4
 
-[node name="LeapAttack" type="Node2D" parent="StateMachine" index="54"]
+[node name="LeapAttack" type="Node2D" parent="StateMachine" index="53"]
 script = ExtResource( 151 )
 apply_forces = true
 apply_fric = true
@@ -934,7 +998,7 @@ minimum_damage = 20
 start_tick = 24
 active_ticks = 2
 
-[node name="HakiLeapAttack" type="Node2D" parent="StateMachine" index="55"]
+[node name="HakiLeapAttack" type="Node2D" parent="StateMachine" index="54"]
 script = ExtResource( 190 )
 __meta__ = {
 "_editor_description_": ""
@@ -942,7 +1006,6 @@ __meta__ = {
 apply_forces = true
 apply_fric = true
 apply_grav = true
-fallback_state = "WaitHaki"
 anim_length = 50
 ticks_per_frame = 2
 enter_force_dir_x = "5"
@@ -990,9 +1053,8 @@ minimum_damage = 60
 start_tick = 24
 active_ticks = 2
 
-[node name="ActivateHaki" type="Node2D" parent="StateMachine" index="56"]
+[node name="ActivateHaki" type="Node2D" parent="StateMachine" index="55"]
 script = ExtResource( 172 )
-fallback_state = "WaitHaki"
 anim_length = 28
 ticks_per_frame = 2
 title = "Activate Haki"
