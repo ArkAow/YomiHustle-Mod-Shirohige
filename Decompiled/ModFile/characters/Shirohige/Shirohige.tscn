@@ -1,4 +1,4 @@
-[gd_scene load_steps=174 format=2]
+[gd_scene load_steps=191 format=2]
 
 [ext_resource path="res://characters/BaseChar.gdshader" type="Shader" id=1]
 [ext_resource path="res://characters/BaseChar.tscn" type="PackedScene" id=2]
@@ -24,13 +24,18 @@
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/basics/getup.png" type="Texture" id=22]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/basics/hurtgroundedmid.png" type="Texture" id=23]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/lightspearhigh/animation6.png" type="Texture" id=24]
+[ext_resource path="res://ModFile/characters/Shirohige/States/AttackStates/HakiStrongerPunch.gd" type="Script" id=25]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/punch/animation5.png" type="Texture" id=26]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/basics/wait.png" type="Texture" id=27]
+[ext_resource path="res://icon2.png" type="Texture" id=28]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/hakiStrongerPunch/hakistrongerpunch6.png" type="Texture" id=29]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/basics/forwardDash.png" type="Texture" id=30]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/lightspearhigh/animation3.png" type="Texture" id=31]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/basics/jump.png" type="Texture" id=32]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/hakiStrongerPunch/hakistrongerpunch12.png" type="Texture" id=33]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/lightspearhigh/animation1.png" type="Texture" id=34]
 [ext_resource path="res://ModFile/characters/Shirohige/States/AttackStates/GroundedSpearUp.gd" type="Script" id=35]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/hakiStrongerPunch/hakistrongerpunch7.png" type="Texture" id=36]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/lightspearhigh/GroundedSpearUpIcon.png" type="Texture" id=37]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/basics/landing.png" type="Texture" id=38]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/lightspearlow/animation1.png" type="Texture" id=39]
@@ -41,13 +46,25 @@
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/basics/hurtaerial.png" type="Texture" id=44]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/basics/forwardThrow/forwardThrow1.png" type="Texture" id=45]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/basicHaki/doubleJump/doubleJumpHaki2.png" type="Texture" id=46]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/hakiStrongerPunch/hakistrongerpunch3.png" type="Texture" id=47]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/hakiStrongerPunch/hakistrongerpunch15.png" type="Texture" id=48]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/lightspearlow/animation2.png" type="Texture" id=49]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/hakiStrongerPunch/hakistrongerpunch1.png" type="Texture" id=50]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/hakiStrongerPunch/hakistrongerpunch5.png" type="Texture" id=51]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/hakiStrongerPunch/hakistrongerpunch11.png" type="Texture" id=52]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/hakiStrongerPunch/hakistrongerpunch4.png" type="Texture" id=54]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/basicHaki/doubleJump/doubleJumpHaki4.png" type="Texture" id=55]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/lightspearlow/animation3.png" type="Texture" id=56]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/hakiStrongerPunch/hakistrongerpunch8.png" type="Texture" id=57]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/basicHaki/doubleJump/doubleJumpHaki1.png" type="Texture" id=58]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/basics/grab/grab1.png" type="Texture" id=59]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/basics/forwardThrow/forwardThrow2.png" type="Texture" id=60]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/hakiStrongerPunch/hakistrongerpunch9.png" type="Texture" id=61]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/hakiStrongerPunch/hakistrongerpunch10.png" type="Texture" id=62]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/hakiStrongerPunch/hakistrongerpunch2.png" type="Texture" id=63]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/basics/hurtgroundedhigh.png" type="Texture" id=64]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/hakiStrongerPunch/hakistrongerpunch16.png" type="Texture" id=65]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/hakiStrongerPunch/hakistrongerpunch14.png" type="Texture" id=66]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/basics/grabbed.png" type="Texture" id=70]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/basics/hurtgroundedlow.png" type="Texture" id=80]
 [ext_resource path="res://ModFile/characters/Shirohige/States/AttackStates/SeaQuake.gd" type="Script" id=81]
@@ -281,6 +298,11 @@ animations = [ {
 "name": "HakiLeapAttack",
 "speed": 5.0
 }, {
+"frames": [ ExtResource( 50 ), ExtResource( 63 ), ExtResource( 47 ), ExtResource( 54 ), ExtResource( 51 ), ExtResource( 29 ), ExtResource( 36 ), ExtResource( 57 ), ExtResource( 61 ), ExtResource( 62 ), ExtResource( 52 ), ExtResource( 52 ), ExtResource( 33 ), ExtResource( 66 ), ExtResource( 48 ), ExtResource( 65 ) ],
+"loop": true,
+"name": "HakiStrongerPunch",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 44 ) ],
 "loop": true,
 "name": "HurtAerial",
@@ -425,7 +447,10 @@ player_info_scene = ExtResource( 157 )
 [node name="Sprite" parent="Flip" index="0"]
 material = SubResource( 2 )
 frames = SubResource( 3 )
-animation = "DashBackwardHaki"
+animation = "HakiStrongerPunch"
+frame = 10
+speed_scale = 2.0
+playing = true
 
 [node name="Super" parent="Sounds" index="3"]
 pitch_scale = 0.46
@@ -687,7 +712,7 @@ damage = 100
 minimum_damage = 50
 hitlag_ticks = 5
 knockback = "5.0"
-start_tick = 6
+start_tick = 9
 active_ticks = 6
 
 [node name="GroundedSpearUp" type="Node2D" parent="StateMachine" index="48"]
@@ -946,7 +971,21 @@ minimum_damage = 20
 start_tick = 24
 active_ticks = 2
 
-[node name="HakiLeapAttack" type="Node2D" parent="StateMachine" index="54"]
+[node name="ActivateHaki" type="Node2D" parent="StateMachine" index="54"]
+script = ExtResource( 172 )
+anim_length = 28
+ticks_per_frame = 2
+title = "Activate Haki"
+type = 2
+button_texture = ExtResource( 173 )
+interrupt_from_string = "GroundedAttack
+Grounded"
+interrupt_into_string = "Grounded"
+hit_cancel_into_string = "Grounded"
+allowed_stances_string = "HakiAvailable"
+change_stance_to = "Haki"
+
+[node name="HakiLeapAttack" type="Node2D" parent="StateMachine" index="55"]
 script = ExtResource( 190 )
 __meta__ = {
 "_editor_description_": ""
@@ -1001,19 +1040,38 @@ minimum_damage = 60
 start_tick = 24
 active_ticks = 2
 
-[node name="ActivateHaki" type="Node2D" parent="StateMachine" index="55"]
-script = ExtResource( 172 )
-anim_length = 28
+[node name="HakiStrongerPunch" type="Node2D" parent="StateMachine" index="56"]
+script = ExtResource( 25 )
+apply_forces = true
+apply_fric = true
+apply_grav = true
+anim_length = 40
 ticks_per_frame = 2
-title = "Activate Haki"
-type = 2
-button_texture = ExtResource( 173 )
+force_dir_x = "5"
+force_speed = "3"
+force_tick = 19
+title = "Haki Strong Punch"
+type = 1
+button_texture = ExtResource( 28 )
 interrupt_from_string = "GroundedAttack
 Grounded"
 interrupt_into_string = "Grounded"
 hit_cancel_into_string = "Grounded"
-allowed_stances_string = "HakiAvailable"
-change_stance_to = "Haki"
+allowed_stances_string = "Haki"
+
+[node name="Hitbox" type="Node2D" parent="StateMachine/HakiStrongerPunch" index="0"]
+script = ExtResource( 96 )
+x = 20
+y = -25
+width = 15
+height = 5
+damage = 120
+minimum_damage = 60
+ignore_armor = true
+dir_x = "6.0"
+knockdown = true
+start_tick = 22
+active_ticks = 6
 
 [node name="EmoteLabel" parent="." index="10"]
 margin_left = -144.0
