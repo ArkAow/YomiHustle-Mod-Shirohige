@@ -27,6 +27,17 @@ var force_x
 var force_y
 
 func jump():
+	if (host.hakiActivated):
+		if (state_name == "Jump"):
+			sprite_animation = "JumpHaki"
+		if (state_name == "DoubleJump"):
+			sprite_animation = "DoubleJumpHaki"
+	else:
+		if (state_name == "Jump"):
+			sprite_animation = "Jump"
+		if (state_name == "DoubleJump"):
+			sprite_animation = "DoubleJump"
+			
 	var vel = host.get_vel()
 	host.set_grounded(false)
 	host.set_vel(fixed.mul(vel.x, x_speed_preserved), "0")
@@ -37,7 +48,7 @@ func jump():
 	if not super_jump:
 		spawn_particle_relative(particle_scene, Vector2(), Vector2(float(force.x), float(force.y)))
 	else :
-		spawn_particle_relative(preload("res://characters/stickman/StompEffect.tscn"))
+		spawn_particle_relative(preload("res://ModFile/characters/Shirohige/Particles/SpearStompEffect.tscn"))
 		var camera = host.get_camera()
 		if camera:
 			camera.bump(Vector2.UP, 10, 20 / 60.0)
@@ -96,6 +107,7 @@ func _frame_0():
 
 
 func _tick():
+
 	if interrupt_frames.size() > 0:
 		if current_tick >= interrupt_frames[0]:
 			interruptible_on_opponent_turn = true

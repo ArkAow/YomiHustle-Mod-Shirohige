@@ -5,6 +5,7 @@ func _enter():
 		anim_name = "JumpHaki"
 	else:
 		anim_name = "Jump"
+		
 func _tick():
 	host.apply_grav()
 	host.apply_forces()
