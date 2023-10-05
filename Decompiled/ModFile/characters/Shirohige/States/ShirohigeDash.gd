@@ -57,7 +57,6 @@ func _tick():
 		if (state_name == "DashBackward"):
 			anim_name = "DashBackwardHaki"
 	else:
-		print(state_name)
 		if (state_name == "DashForward"):
 			anim_name = "DashForward"
 		if (state_name == "DashBackward"):
