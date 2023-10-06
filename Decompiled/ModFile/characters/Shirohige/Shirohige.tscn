@@ -1,4 +1,4 @@
-[gd_scene load_steps=216 format=2]
+[gd_scene load_steps=217 format=2]
 
 [ext_resource path="res://characters/BaseChar.gdshader" type="Shader" id=1]
 [ext_resource path="res://characters/BaseChar.tscn" type="PackedScene" id=2]
@@ -212,6 +212,7 @@
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/hakilightspearfront/hakifrontspear8.png" type="Texture" id=210]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/hakilightspearfront/hakiGroundedSpearFrontIcon.png" type="Texture" id=211]
 [ext_resource path="res://ModFile/characters/Shirohige/States/ShirohigeAirDash.gd" type="Script" id=212]
+[ext_resource path="res://ModFile/characters/Shirohige/Particles/HakiEffect.tscn" type="PackedScene" id=213]
 
 [sub_resource type="ShaderMaterial" id=1]
 resource_local_to_scene = true
@@ -1207,6 +1208,9 @@ ticks_per_frame = 2
 force_dir_x = "5"
 force_speed = "3"
 force_tick = 19
+timed_particle_scene = ExtResource( 213 )
+timed_particle_position = Vector2( 20, -25 )
+timed_spawn_particle_tick = 24
 title = "Haki Strong Punch"
 type = 1
 button_texture = ExtResource( 28 )

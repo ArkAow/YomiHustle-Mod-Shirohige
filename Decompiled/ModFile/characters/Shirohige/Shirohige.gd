@@ -1,7 +1,7 @@
 extends Fighter
 
 var currentHakiAmount = 0
-var maximumHakiAmount = 100
+var maximumHakiAmount = 1000
 var hakiFull = false
 var hakiEmpty = false
 var hakiActivated = false
@@ -36,7 +36,7 @@ func tick():
 			hakiRegenerate = true
 			
 	if (hakiRegenerate):
-		currentHakiAmount += 0.5
+		currentHakiAmount += 5
 	
 	if(stance == hakiStance):
-		currentHakiAmount -= 0.1
+		currentHakiAmount -= 6
