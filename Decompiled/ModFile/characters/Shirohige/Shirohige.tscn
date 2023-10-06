@@ -1,4 +1,4 @@
-[gd_scene load_steps=217 format=2]
+[gd_scene load_steps=220 format=2]
 
 [ext_resource path="res://characters/BaseChar.gdshader" type="Shader" id=1]
 [ext_resource path="res://characters/BaseChar.tscn" type="PackedScene" id=2]
@@ -213,6 +213,9 @@
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/hakilightspearfront/hakiGroundedSpearFrontIcon.png" type="Texture" id=211]
 [ext_resource path="res://ModFile/characters/Shirohige/States/ShirohigeAirDash.gd" type="Script" id=212]
 [ext_resource path="res://ModFile/characters/Shirohige/Particles/HakiEffect.tscn" type="PackedScene" id=213]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/basicHaki/parryhighHaki.png" type="Texture" id=214]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/basicHaki/parrylowHaki.png" type="Texture" id=215]
+[ext_resource path="res://ModFile/characters/Shirohige/States/ShirohigeParry.gd" type="Script" id=216]
 
 [sub_resource type="ShaderMaterial" id=1]
 resource_local_to_scene = true
@@ -429,9 +432,19 @@ animations = [ {
 "name": "ParryHigh",
 "speed": 5.0
 }, {
+"frames": [ ExtResource( 214 ) ],
+"loop": true,
+"name": "ParryHighHaki",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 19 ) ],
 "loop": true,
 "name": "ParryLow",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 215 ) ],
+"loop": true,
+"name": "ParryLowHaki",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 21 ), ExtResource( 13 ), ExtResource( 9 ), ExtResource( 17 ) ],
@@ -488,7 +501,7 @@ player_info_scene = ExtResource( 157 )
 [node name="Sprite" parent="Flip" index="0"]
 material = SubResource( 2 )
 frames = SubResource( 3 )
-animation = "HakiGroundedSpearUp"
+animation = "ParryLowHaki"
 speed_scale = 2.0
 
 [node name="Super" parent="Sounds" index="3"]
@@ -504,16 +517,25 @@ allowed_stances_string = "Normal
 HakiAvailable"
 
 [node name="ParryHigh" parent="StateMachine" index="1"]
-allowed_stances_string = "Normal
-HakiAvailable"
+script = ExtResource( 216 )
+__meta__ = {
+"_editor_description_": ""
+}
+allowed_stances_string = "All"
 
 [node name="ParryLow" parent="StateMachine" index="2"]
-allowed_stances_string = "Normal
-HakiAvailable"
+script = ExtResource( 216 )
+__meta__ = {
+"_editor_description_": ""
+}
+allowed_stances_string = "All"
 
 [node name="ParryAir" parent="StateMachine" index="3"]
-allowed_stances_string = "Normal
-HakiAvailable"
+script = ExtResource( 216 )
+__meta__ = {
+"_editor_description_": ""
+}
+allowed_stances_string = "All"
 
 [node name="Roll" parent="StateMachine" index="4"]
 allowed_stances_string = "Normal
