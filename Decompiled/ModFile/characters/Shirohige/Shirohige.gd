@@ -36,7 +36,7 @@ func tick():
 			hakiRegenerate = true
 			
 	if (hakiRegenerate):
-		currentHakiAmount += 1
+		currentHakiAmount += 0.5
 	
 	if(stance == hakiStance):
-		currentHakiAmount -= 1
+		currentHakiAmount -= 0.1

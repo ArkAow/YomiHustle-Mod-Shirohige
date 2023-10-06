@@ -1,4 +1,4 @@
-[gd_scene load_steps=215 format=2]
+[gd_scene load_steps=216 format=2]
 
 [ext_resource path="res://characters/BaseChar.gdshader" type="Shader" id=1]
 [ext_resource path="res://characters/BaseChar.tscn" type="PackedScene" id=2]
@@ -211,6 +211,7 @@
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/hakilightspearfront/hakifrontspear2.png" type="Texture" id=209]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/hakilightspearfront/hakifrontspear8.png" type="Texture" id=210]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/hakiAttacks/hakilightspearfront/hakiGroundedSpearFrontIcon.png" type="Texture" id=211]
+[ext_resource path="res://ModFile/characters/Shirohige/States/ShirohigeAirDash.gd" type="Script" id=212]
 
 [sub_resource type="ShaderMaterial" id=1]
 resource_local_to_scene = true
@@ -616,8 +617,11 @@ __meta__ = {
 allowed_stances_string = "All"
 
 [node name="AirDash" parent="StateMachine" index="27"]
-allowed_stances_string = "Normal
-HakiAvailable"
+script = ExtResource( 212 )
+__meta__ = {
+"_editor_description_": ""
+}
+allowed_stances_string = "All"
 
 [node name="InstantCancel" parent="StateMachine" index="28"]
 allowed_stances_string = "Normal
@@ -1221,6 +1225,7 @@ width = 15
 height = 5
 damage = 120
 minimum_damage = 60
+victim_hitlag = 5
 ignore_armor = true
 dir_x = "6.0"
 knockdown = true

@@ -27,16 +27,28 @@ func _frame_0():
 	iasa_at = starting_iasa_at
 	if "-" in force.x:
 		if host.get_facing() == "Right" and data.x != 0:
-			anim_name = "DashBackward"
+			if (host.hakiActivated):
+				anim_name = "DashBackwardHaki"
+			else:
+				anim_name = "DashBackward"
 			back = true
 		else :
-			anim_name = "DashForward"
+			if (host.hakiActivated):
+				anim_name = "DashForwardHaki"
+			else:
+				anim_name = "DashForward"
 	else :
 		if host.get_facing() == "Left" and data.x != 0:
-			anim_name = "DashBackward"
+			if (host.hakiActivated):
+				anim_name = "DashBackwardHaki"
+			else:
+				anim_name = "DashBackward"
 			back = true
 		else :
-			anim_name = "DashForward"
+			if (host.hakiActivated):
+				anim_name = "DashForwardHaki"
+			else:
+				anim_name = "DashForward"
 	if back and host.combo_count <= 0:
 		backdash_iasa = true
 		beats_backdash = false
