@@ -1,4 +1,4 @@
-[gd_scene load_steps=229 format=2]
+[gd_scene load_steps=238 format=2]
 
 [ext_resource path="res://characters/BaseChar.gdshader" type="Shader" id=1]
 [ext_resource path="res://characters/BaseChar.tscn" type="PackedScene" id=2]
@@ -225,6 +225,15 @@
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/groundstomp/groundstomp5.png" type="Texture" id=223]
 [ext_resource path="res://ModFile/characters/Shirohige/States/AttackStates/GroundStomp.gd" type="Script" id=224]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/groundstomp/groundstompIcon.png" type="Texture" id=225]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/poke/poke2.png" type="Texture" id=226]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/poke/poke5.png" type="Texture" id=227]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/poke/poke3.png" type="Texture" id=228]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/poke/poke4.png" type="Texture" id=229]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/poke/poke1.png" type="Texture" id=230]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/poke/poke6.png" type="Texture" id=231]
+[ext_resource path="res://ModFile/characters/Shirohige/States/AttackStates/Poke.gd" type="Script" id=232]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/poke/pokeIcon.png" type="Texture" id=233]
+[ext_resource path="res://ModFile/characters/Shirohige/Particles/GroundStompEffect.tscn" type="PackedScene" id=234]
 
 [sub_resource type="ShaderMaterial" id=1]
 resource_local_to_scene = true
@@ -461,6 +470,11 @@ animations = [ {
 "name": "ParryLowHaki",
 "speed": 5.0
 }, {
+"frames": [ ExtResource( 230 ), ExtResource( 226 ), ExtResource( 228 ), ExtResource( 229 ), ExtResource( 227 ), ExtResource( 231 ) ],
+"loop": true,
+"name": "Poke",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 21 ), ExtResource( 13 ), ExtResource( 9 ), ExtResource( 17 ) ],
 "loop": true,
 "name": "RollBackward",
@@ -515,8 +529,8 @@ player_info_scene = ExtResource( 157 )
 [node name="Sprite" parent="Flip" index="0"]
 material = SubResource( 2 )
 frames = SubResource( 3 )
-animation = "GroundStomp"
-frame = 3
+animation = "Poke"
+frame = 4
 speed_scale = 2.0
 
 [node name="Super" parent="Sounds" index="3"]
@@ -995,9 +1009,14 @@ active_ticks = 4
 
 [node name="GroundStomp" type="Node2D" parent="StateMachine" index="53"]
 script = ExtResource( 224 )
+apply_forces = true
+apply_fric = true
+apply_grav = true
 anim_length = 21
 ticks_per_frame = 3
-title = "Grouind Stomp"
+timed_particle_scene = ExtResource( 234 )
+timed_spawn_particle_tick = 13
+title = "Ground Stomp"
 type = 1
 button_texture = ExtResource( 225 )
 interrupt_from_string = "Grounded
@@ -1008,9 +1027,61 @@ allowed_stances_string = "Normal
 HakiAvailable"
 
 [node name="Hitbox" type="Node2D" parent="StateMachine/GroundStomp" index="0"]
+z_index = 1000
 script = ExtResource( 96 )
+y = -3
+width = 80
+height = 3
+damage = 50
+hitlag_ticks = 10
+victim_hitlag = 10
+hits_otg = true
+hits_vs_aerial = false
+can_clash = false
+hit_height = 2
+screenshake_amount = 6
+dir_x = "0.5"
+dir_y = "-2.0"
+grounded_hit_state = "HurtAerial"
+start_tick = 13
+active_ticks = 4
 
-[node name="LeapAttack" type="Node2D" parent="StateMachine" index="54"]
+[node name="Poke" type="Node2D" parent="StateMachine" index="54"]
+script = ExtResource( 232 )
+apply_forces = true
+apply_fric = true
+apply_grav = true
+anim_length = 12
+ticks_per_frame = 2
+force_dir_x = "2"
+force_speed = "2"
+force_tick = 8
+title = "Poke"
+type = 1
+button_texture = ExtResource( 233 )
+interrupt_from_string = "GroundedAttack
+Grounded"
+interrupt_into_string = "Grounded"
+hit_cancel_into_string = "Grounded"
+allowed_stances_string = "Normal
+HakiAvailable"
+
+[node name="Hitbox" type="Node2D" parent="StateMachine/Poke" index="0"]
+z_index = 1000
+script = ExtResource( 96 )
+x = 19
+y = -26
+width = 8
+height = 4
+damage = 30
+cancellable = false
+can_clash = false
+hit_height = 0
+knockback = "1.0"
+start_tick = 8
+active_ticks = 2
+
+[node name="LeapAttack" type="Node2D" parent="StateMachine" index="55"]
 script = ExtResource( 151 )
 apply_forces = true
 apply_fric = true
@@ -1064,7 +1135,7 @@ minimum_damage = 20
 start_tick = 24
 active_ticks = 2
 
-[node name="ActivateHaki" type="Node2D" parent="StateMachine" index="55"]
+[node name="ActivateHaki" type="Node2D" parent="StateMachine" index="56"]
 script = ExtResource( 172 )
 anim_length = 28
 ticks_per_frame = 2
@@ -1078,7 +1149,7 @@ hit_cancel_into_string = "Grounded"
 allowed_stances_string = "HakiAvailable"
 change_stance_to = "Haki"
 
-[node name="HakiGroundedSpearUp" type="Node2D" parent="StateMachine" index="56"]
+[node name="HakiGroundedSpearUp" type="Node2D" parent="StateMachine" index="57"]
 script = ExtResource( 35 )
 apply_forces = true
 apply_fric = true
@@ -1133,7 +1204,7 @@ knockback = "5.0"
 start_tick = 15
 active_ticks = 3
 
-[node name="HakiGroundedSpearDown" type="Node2D" parent="StateMachine" index="57"]
+[node name="HakiGroundedSpearDown" type="Node2D" parent="StateMachine" index="58"]
 script = ExtResource( 105 )
 apply_forces = true
 apply_fric = true
@@ -1166,7 +1237,7 @@ knockback = "5.0"
 start_tick = 7
 active_ticks = 14
 
-[node name="HakiGroundedSpearFront" type="Node2D" parent="StateMachine" index="58"]
+[node name="HakiGroundedSpearFront" type="Node2D" parent="StateMachine" index="59"]
 script = ExtResource( 103 )
 apply_forces = true
 apply_fric = true
@@ -1200,7 +1271,7 @@ knockback = "8.0"
 start_tick = 15
 active_ticks = 9
 
-[node name="HakiLeapAttack" type="Node2D" parent="StateMachine" index="59"]
+[node name="HakiLeapAttack" type="Node2D" parent="StateMachine" index="60"]
 script = ExtResource( 190 )
 __meta__ = {
 "_editor_description_": ""
@@ -1255,7 +1326,7 @@ minimum_damage = 60
 start_tick = 24
 active_ticks = 2
 
-[node name="HakiStrongerPunch" type="Node2D" parent="StateMachine" index="60"]
+[node name="HakiStrongerPunch" type="Node2D" parent="StateMachine" index="61"]
 script = ExtResource( 25 )
 apply_forces = true
 apply_fric = true
