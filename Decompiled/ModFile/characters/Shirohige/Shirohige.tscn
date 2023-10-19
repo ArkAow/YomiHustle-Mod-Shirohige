@@ -1,4 +1,4 @@
-[gd_scene load_steps=238 format=2]
+[gd_scene load_steps=256 format=2]
 
 [ext_resource path="res://characters/BaseChar.gdshader" type="Shader" id=1]
 [ext_resource path="res://characters/BaseChar.tscn" type="PackedScene" id=2]
@@ -234,6 +234,24 @@
 [ext_resource path="res://ModFile/characters/Shirohige/States/AttackStates/Poke.gd" type="Script" id=232]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/poke/pokeIcon.png" type="Texture" id=233]
 [ext_resource path="res://ModFile/characters/Shirohige/Particles/GroundStompEffect.tscn" type="PackedScene" id=234]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/impale/impale thrust/impaleThrust3.png" type="Texture" id=235]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/impale/impale thrust/impaleThrust4.png" type="Texture" id=236]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/impale/impale thrust/impaleThrust8.png" type="Texture" id=237]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/impale/impale thrust/impaleThrust1.png" type="Texture" id=238]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/impale/impale thrust/impaleThrust5.png" type="Texture" id=239]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/impale/impale slice/impaleSlice1.png" type="Texture" id=240]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/impale/impale slice/impaleSlice2.png" type="Texture" id=241]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/impale/impale thrust/impaleThrust7.png" type="Texture" id=242]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/impale/impale thrust/impaleThrust9.png" type="Texture" id=243]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/impale/impale slice/impaleSlice4.png" type="Texture" id=244]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/impale/impale thrust/impaleThrust10.png" type="Texture" id=245]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/impale/impale slice/impaleSlice3.png" type="Texture" id=246]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/impale/impale thrust/impaleThrust2.png" type="Texture" id=247]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/impale/impale thrust/impaleThrust6.png" type="Texture" id=248]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/impale/impale slice/impaleSlice5.png" type="Texture" id=249]
+[ext_resource path="res://ModFile/characters/Shirohige/States/AttackStates/ImpaleThrust.gd" type="Script" id=250]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/impale/impale thrust/ImpaleThrustIcon.png" type="Texture" id=251]
+[ext_resource path="res://ModFile/characters/Shirohige/States/AttackStates/ImpaleSlice.gd" type="Script" id=252]
 
 [sub_resource type="ShaderMaterial" id=1]
 resource_local_to_scene = true
@@ -410,6 +428,16 @@ animations = [ {
 "name": "HurtGroundedMidHaki",
 "speed": 5.0
 }, {
+"frames": [ ExtResource( 240 ), ExtResource( 241 ), ExtResource( 246 ), ExtResource( 244 ), ExtResource( 249 ) ],
+"loop": true,
+"name": "ImpaleSlice",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 238 ), ExtResource( 247 ), ExtResource( 235 ), ExtResource( 236 ), ExtResource( 236 ), ExtResource( 239 ), ExtResource( 239 ), ExtResource( 248 ), ExtResource( 248 ), ExtResource( 242 ), ExtResource( 237 ), ExtResource( 243 ), ExtResource( 245 ) ],
+"loop": true,
+"name": "ImpaleThrust",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 16 ) ],
 "loop": true,
 "name": "InstantCancel",
@@ -529,9 +557,9 @@ num_feints = 3
 [node name="Sprite" parent="Flip" index="0"]
 material = SubResource( 2 )
 frames = SubResource( 3 )
-animation = "GroundStomp"
-frame = 1
-playing = true
+animation = "ImpaleThrust"
+frame = 10
+speed_scale = 3.0
 
 [node name="Super" parent="Sounds" index="3"]
 pitch_scale = 0.46
@@ -1135,8 +1163,75 @@ minimum_damage = 20
 start_tick = 24
 active_ticks = 2
 
-[node name="ActivateHaki" type="Node2D" parent="StateMachine" index="56"]
+[node name="ImpaleThrust" type="Node2D" parent="StateMachine" index="56"]
+script = ExtResource( 250 )
+apply_forces = true
+apply_fric = true
+apply_grav = true
+anim_length = 35
+ticks_per_frame = 2
+force_dir_x = "1"
+force_speed = "2"
+force_tick = 27
+title = "Impale"
+type = 2
+button_texture = ExtResource( 251 )
+interrupt_from_string = "GroundedAttack
+Grounded"
+interrupt_into_string = "Grounded"
+hit_cancel_into_string = "Grounded"
+allowed_stances_string = "Normal
+HakiAvailable"
+
+[node name="Hitbox" type="Node2D" parent="StateMachine/ImpaleThrust" index="0"]
+script = ExtResource( 96 )
+x = 10
+y = -10
+damage = 100
+minimum_damage = 100
+hitstun_ticks = 20
+hitlag_ticks = 20
+victim_hitlag = 10
+ignore_armor = true
+followup_state = "ImpaleSlice"
+screenshake_amount = 5
+screenshake_frames = 4
+knockback = "0"
+start_tick = 23
+active_ticks = 3
+
+[node name="ImpaleSlice" type="Node2D" parent="StateMachine" index="57"]
+script = ExtResource( 252 )
+apply_forces = true
+apply_fric = true
+apply_grav = true
+anim_length = 15
+ticks_per_frame = 3
+show_in_menu = false
+type = 2
+
+[node name="Hitbox2" type="Node2D" parent="StateMachine/ImpaleSlice" index="0"]
+z_index = 1000
+script = ExtResource( 96 )
+x = 10
+y = -10
+damage = 130
+minimum_damage = 100
+hitstun_ticks = 40
+hitlag_ticks = 20
+victim_hitlag = 10
+ignore_armor = true
+screenshake_amount = 5
+screenshake_frames = 1
+knockback = "0"
+start_tick = 5
+active_ticks = 10
+
+[node name="ActivateHaki" type="Node2D" parent="StateMachine" index="58"]
 script = ExtResource( 172 )
+apply_forces = true
+apply_fric = true
+apply_grav = true
 anim_length = 28
 ticks_per_frame = 2
 title = "Activate Haki"
@@ -1149,7 +1244,7 @@ hit_cancel_into_string = "Grounded"
 allowed_stances_string = "HakiAvailable"
 change_stance_to = "Haki"
 
-[node name="HakiGroundedSpearUp" type="Node2D" parent="StateMachine" index="57"]
+[node name="HakiGroundedSpearUp" type="Node2D" parent="StateMachine" index="59"]
 script = ExtResource( 35 )
 apply_forces = true
 apply_fric = true
@@ -1204,7 +1299,7 @@ knockback = "5.0"
 start_tick = 15
 active_ticks = 3
 
-[node name="HakiGroundedSpearDown" type="Node2D" parent="StateMachine" index="58"]
+[node name="HakiGroundedSpearDown" type="Node2D" parent="StateMachine" index="60"]
 script = ExtResource( 105 )
 apply_forces = true
 apply_fric = true
@@ -1237,7 +1332,7 @@ knockback = "5.0"
 start_tick = 7
 active_ticks = 14
 
-[node name="HakiGroundedSpearFront" type="Node2D" parent="StateMachine" index="59"]
+[node name="HakiGroundedSpearFront" type="Node2D" parent="StateMachine" index="61"]
 script = ExtResource( 103 )
 apply_forces = true
 apply_fric = true
@@ -1271,7 +1366,7 @@ knockback = "8.0"
 start_tick = 15
 active_ticks = 9
 
-[node name="HakiLeapAttack" type="Node2D" parent="StateMachine" index="60"]
+[node name="HakiLeapAttack" type="Node2D" parent="StateMachine" index="62"]
 script = ExtResource( 190 )
 __meta__ = {
 "_editor_description_": ""
@@ -1326,7 +1421,7 @@ minimum_damage = 60
 start_tick = 24
 active_ticks = 2
 
-[node name="HakiStrongerPunch" type="Node2D" parent="StateMachine" index="61"]
+[node name="HakiStrongerPunch" type="Node2D" parent="StateMachine" index="63"]
 script = ExtResource( 25 )
 apply_forces = true
 apply_fric = true
