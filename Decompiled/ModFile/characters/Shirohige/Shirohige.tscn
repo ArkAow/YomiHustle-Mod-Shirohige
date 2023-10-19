@@ -514,24 +514,24 @@ animations = [ {
 [node name="Shirohige" instance=ExtResource( 2 )]
 material = SubResource( 1 )
 script = ExtResource( 156 )
-gravity = "0.8"
-max_air_speed = "10"
-max_fall_speed = "20"
+gravity = "0.6"
+max_air_speed = "12"
+max_fall_speed = "10"
 extra_state_variables = "currentHakiAmount
 maximumHakiAmount
 hakiFull
 hakiEmpty
 hakiActivated"
-num_air_movements = 3
 character_portrait = ExtResource( 27 )
 player_info_scene = ExtResource( 157 )
+num_feints = 3
 
 [node name="Sprite" parent="Flip" index="0"]
 material = SubResource( 2 )
 frames = SubResource( 3 )
-animation = "Poke"
-frame = 4
-speed_scale = 2.0
+animation = "GroundStomp"
+frame = 1
+playing = true
 
 [node name="Super" parent="Sounds" index="3"]
 pitch_scale = 0.46
