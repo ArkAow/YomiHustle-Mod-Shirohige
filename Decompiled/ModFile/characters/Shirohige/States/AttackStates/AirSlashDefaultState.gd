@@ -4,7 +4,7 @@ var hit_something
 var lifetime
 
 func _frame_0():
- 	lifetime = data["lifetime"]
+	lifetime = data["lifetime"]
 	host.set_grounded(false)
 	var dir = data["dir"]
 	var move_vec = fixed.normalized_vec_times(str(dir.x), str(dir.y), str(data["speed"]))

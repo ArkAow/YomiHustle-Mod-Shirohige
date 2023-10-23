@@ -1,4 +1,4 @@
-[gd_scene load_steps=267 format=2]
+[gd_scene load_steps=286 format=2]
 
 [ext_resource path="res://characters/BaseChar.gdshader" type="Shader" id=1]
 [ext_resource path="res://characters/BaseChar.tscn" type="PackedScene" id=2]
@@ -263,6 +263,25 @@
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/frontkick/frontkick7.png" type="Texture" id=261]
 [ext_resource path="res://ModFile/characters/Shirohige/States/AttackStates/FrontKick.gd" type="Script" id=262]
 [ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/frontkick/frontkickIcon.png" type="Texture" id=263]
+[ext_resource path="res://ModFile/characters/Shirohige/States/AttackStates/SeaTilt.gd" type="Script" id=264]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/seatilt/seaTilt15.png" type="Texture" id=265]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/seatilt/seaTilt8.png" type="Texture" id=266]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/seatilt/seaTilt17.png" type="Texture" id=267]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/seatilt/seaTilt6.png" type="Texture" id=268]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/seatilt/seaTilt9.png" type="Texture" id=269]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/seatilt/seaTilt10.png" type="Texture" id=270]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/seatilt/seaTilt12.png" type="Texture" id=271]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/seatilt/seaTilt14.png" type="Texture" id=272]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/seatilt/seaTilt2.png" type="Texture" id=273]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/seatilt/seaTilt3.png" type="Texture" id=274]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/seatilt/seaTilt11.png" type="Texture" id=275]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/seatilt/seaTilt7.png" type="Texture" id=276]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/seatilt/seaTilt1.png" type="Texture" id=277]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/seatilt/seaTilt13.png" type="Texture" id=278]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/seatilt/seaTilt4.png" type="Texture" id=279]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/seatilt/seaTilt5.png" type="Texture" id=280]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/seatilt/seaTilt16.png" type="Texture" id=281]
+[ext_resource path="res://ModFile/characters/Shirohige/Sprites/normalAttacks/seatilt/seaTiltIcon.png" type="Texture" id=282]
 
 [sub_resource type="ShaderMaterial" id=1]
 resource_local_to_scene = true
@@ -534,6 +553,11 @@ animations = [ {
 "name": "SeaQuake",
 "speed": 5.0
 }, {
+"frames": [ ExtResource( 277 ), ExtResource( 273 ), ExtResource( 274 ), ExtResource( 279 ), ExtResource( 280 ), ExtResource( 268 ), ExtResource( 276 ), ExtResource( 266 ), ExtResource( 266 ), ExtResource( 269 ), ExtResource( 269 ), ExtResource( 270 ), ExtResource( 275 ), ExtResource( 275 ), ExtResource( 271 ), ExtResource( 278 ), ExtResource( 272 ), ExtResource( 265 ), ExtResource( 281 ), ExtResource( 267 ) ],
+"loop": true,
+"name": "SeaTilt",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 64 ) ],
 "loop": true,
 "name": "ThrowTech",
@@ -573,9 +597,10 @@ num_feints = 3
 [node name="Sprite" parent="Flip" index="0"]
 material = SubResource( 2 )
 frames = SubResource( 3 )
-animation = "ImpaleSlice"
-frame = 1
+animation = "SeaTilt"
+frame = 17
 speed_scale = 3.0
+playing = true
 
 [node name="Super" parent="Sounds" index="3"]
 pitch_scale = 0.46
@@ -1283,7 +1308,51 @@ wall_slam = true
 start_tick = 27
 active_ticks = 9
 
-[node name="ActivateHaki" type="Node2D" parent="StateMachine" index="59"]
+[node name="SeaTilt" type="Node2D" parent="StateMachine" index="59"]
+script = ExtResource( 264 )
+apply_forces = true
+apply_fric = true
+apply_grav = true
+anim_length = 60
+ticks_per_frame = 3
+state_screenshake_tick = 48
+state_screenshake_dir = Vector2( 0, 1 )
+state_screenshake_length = 5.0
+state_screenshake_amount = 40
+title = "Sea Tilt"
+type = 3
+button_texture = ExtResource( 282 )
+interrupt_from_string = "GroundedAttack
+Grounded"
+interrupt_into_string = "Grounded"
+hit_cancel_into_string = "Grounded"
+allowed_stances_string = "Normal
+HakiAvailable"
+super_level = 0
+
+[node name="Hitbox" type="Node2D" parent="StateMachine/SeaTilt" index="0"]
+z_index = 1000
+script = ExtResource( 96 )
+x = 94
+y = -39
+width = 219
+height = 39
+damage = 300
+minimum_damage = 150
+hitlag_ticks = 50
+victim_hitlag = 50
+damage_proration = 10
+ignore_armor = true
+can_clash = false
+hit_height = 2
+dir_x = "1"
+dir_y = "-4.0"
+grounded_hit_state = "HurtAerial"
+wall_slam = true
+start_tick = 48
+active_ticks = 9
+
+[node name="ActivateHaki" type="Node2D" parent="StateMachine" index="60"]
 script = ExtResource( 172 )
 apply_forces = true
 apply_fric = true
@@ -1300,7 +1369,7 @@ hit_cancel_into_string = "Grounded"
 allowed_stances_string = "HakiAvailable"
 change_stance_to = "Haki"
 
-[node name="HakiGroundedSpearUp" type="Node2D" parent="StateMachine" index="60"]
+[node name="HakiGroundedSpearUp" type="Node2D" parent="StateMachine" index="61"]
 script = ExtResource( 35 )
 apply_forces = true
 apply_fric = true
@@ -1355,7 +1424,7 @@ knockback = "5.0"
 start_tick = 15
 active_ticks = 3
 
-[node name="HakiGroundedSpearDown" type="Node2D" parent="StateMachine" index="61"]
+[node name="HakiGroundedSpearDown" type="Node2D" parent="StateMachine" index="62"]
 script = ExtResource( 105 )
 apply_forces = true
 apply_fric = true
@@ -1388,7 +1457,7 @@ knockback = "5.0"
 start_tick = 7
 active_ticks = 14
 
-[node name="HakiGroundedSpearFront" type="Node2D" parent="StateMachine" index="62"]
+[node name="HakiGroundedSpearFront" type="Node2D" parent="StateMachine" index="63"]
 script = ExtResource( 103 )
 apply_forces = true
 apply_fric = true
@@ -1422,7 +1491,7 @@ knockback = "8.0"
 start_tick = 15
 active_ticks = 9
 
-[node name="HakiLeapAttack" type="Node2D" parent="StateMachine" index="63"]
+[node name="HakiLeapAttack" type="Node2D" parent="StateMachine" index="64"]
 script = ExtResource( 190 )
 __meta__ = {
 "_editor_description_": ""
@@ -1477,7 +1546,7 @@ minimum_damage = 60
 start_tick = 24
 active_ticks = 2
 
-[node name="HakiStrongerPunch" type="Node2D" parent="StateMachine" index="64"]
+[node name="HakiStrongerPunch" type="Node2D" parent="StateMachine" index="65"]
 script = ExtResource( 25 )
 apply_forces = true
 apply_fric = true

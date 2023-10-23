@@ -10,7 +10,7 @@ func _frame_3():
 		host.has_hyper_armor = true
 	host.start_projectile_invulnerability()
 	
-func _frame_42():
+func _frame_60():
 	host.has_hyper_armor = false
 	host.end_projectile_invulnerability()
 	
