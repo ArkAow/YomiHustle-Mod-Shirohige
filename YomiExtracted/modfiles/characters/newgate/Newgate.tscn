@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://characters/BaseChar.tscn" type="PackedScene" id=1]
 [ext_resource path="res://modfiles/characters/newgate/newgate_sprite_frames.tres" type="SpriteFrames" id=2]
@@ -13,6 +13,8 @@
 [ext_resource path="res://modfiles/characters/newgate/states/LightSpearFront.gd" type="Script" id=11]
 [ext_resource path="res://modfiles/characters/newgate/states/LightSpearLow.gd" type="Script" id=12]
 [ext_resource path="res://modfiles/characters/newgate/states/LightSpearUp.gd" type="Script" id=13]
+[ext_resource path="res://modfiles/characters/newgate/icons/frontkickIcon.png" type="Texture" id=14]
+[ext_resource path="res://modfiles/characters/newgate/states/Kick.gd" type="Script" id=15]
 
 [sub_resource type="ShaderMaterial" id=1]
 resource_local_to_scene = true
@@ -35,8 +37,7 @@ character_portrait = ExtResource( 3 )
 [node name="Sprite" parent="Flip" index="0"]
 material = SubResource( 1 )
 frames = ExtResource( 2 )
-animation = "LightSpearUp"
-frame = 2
+animation = "Kick"
 speed_scale = 2.0
 
 [node name="Punch" type="Node2D" parent="StateMachine" index="54"]
@@ -71,7 +72,42 @@ knockback = "6.0"
 start_tick = 6
 active_ticks = 4
 
-[node name="LightSpearLow" type="Node2D" parent="StateMachine" index="55"]
+[node name="Kick" type="Node2D" parent="StateMachine" index="55"]
+script = ExtResource( 15 )
+__meta__ = {
+"_editor_description_": ""
+}
+apply_forces = true
+apply_fric = true
+apply_grav = true
+anim_length = 22
+ticks_per_frame = 2
+force_dir_x = "1"
+force_speed = "4"
+force_tick = 12
+title = "Kick"
+type = 1
+button_texture = ExtResource( 14 )
+interrupt_from_string = "Grounded"
+interrupt_into_string = "GroundedAttack"
+hit_cancel_into_string = "GroundedAttack
+GroundedSpecial
+"
+
+[node name="Hitbox" type="Node2D" parent="StateMachine/Kick" index="0"]
+z_index = 1000
+script = ExtResource( 9 )
+x = 14
+y = -15
+width = 15
+height = 9
+damage = 140
+hitlag_ticks = 15
+knockback = "12"
+start_tick = 14
+active_ticks = 4
+
+[node name="LightSpearLow" type="Node2D" parent="StateMachine" index="56"]
 script = ExtResource( 12 )
 __meta__ = {
 "_editor_description_": ""
@@ -108,7 +144,7 @@ hit_height = 2
 hard_knockdown = true
 start_tick = 8
 
-[node name="LightSpearFront" type="Node2D" parent="StateMachine" index="56"]
+[node name="LightSpearFront" type="Node2D" parent="StateMachine" index="57"]
 script = ExtResource( 11 )
 __meta__ = {
 "_editor_description_": ""
@@ -146,7 +182,7 @@ dir_y = "-1.5"
 knockdown = true
 start_tick = 10
 
-[node name="LightSpearUp" type="Node2D" parent="StateMachine" index="57"]
+[node name="LightSpearUp" type="Node2D" parent="StateMachine" index="58"]
 script = ExtResource( 13 )
 __meta__ = {
 "_editor_description_": ""

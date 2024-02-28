@@ -2778,7 +2778,7 @@ start_tick = 5
 active_ticks = 3
 
 [node name="HurtboxState" type="Node2D" parent="StateMachine/GroundedKick" index="1"]
-z_index = 1000
+z_index = 999
 script = ExtResource( 76 )
 y = -13
 width = 15
@@ -2832,7 +2832,7 @@ start_tick = 7
 active_ticks = 2
 
 [node name="HurtboxState" type="Node2D" parent="StateMachine/GroundedSweep" index="1"]
-z_index = 1000
+z_index = 999
 script = ExtResource( 76 )
 y = -13
 width = 15
@@ -2889,7 +2889,7 @@ start_tick = 7
 active_ticks = 2
 
 [node name="HurtboxState" type="Node2D" parent="StateMachine/GroundedSweepQS" index="1"]
-z_index = 1000
+z_index = 999
 script = ExtResource( 76 )
 y = -13
 width = 15
@@ -2935,7 +2935,7 @@ wall_slam = true
 start_tick = 11
 
 [node name="HurtboxState" type="Node2D" parent="StateMachine/DropKick" index="1"]
-z_index = 1000
+z_index = 999
 script = ExtResource( 76 )
 x = 5
 y = -22
@@ -3264,7 +3264,7 @@ start_tick = 7
 active_ticks = 8
 
 [node name="HurtboxState" type="Node2D" parent="StateMachine/SlideKick" index="1"]
-z_index = 1000
+z_index = 999
 script = ExtResource( 76 )
 __meta__ = {
 "_editor_description_": ""
@@ -3330,7 +3330,7 @@ start_tick = 7
 active_ticks = 8
 
 [node name="HurtboxState" type="Node2D" parent="StateMachine/SlideKickOld" index="1"]
-z_index = 1000
+z_index = 999
 script = ExtResource( 76 )
 x = 3
 y = -10
@@ -3394,7 +3394,7 @@ start_tick = 7
 active_ticks = 8
 
 [node name="HurtboxState" type="Node2D" parent="StateMachine/SlideKickAir" index="1"]
-z_index = 1000
+z_index = 999
 script = ExtResource( 76 )
 x = 3
 y = -9
@@ -3445,7 +3445,7 @@ start_tick = 5
 active_ticks = 10
 
 [node name="HurtboxState" type="Node2D" parent="StateMachine/SlideKick2" index="1"]
-z_index = 1000
+z_index = 999
 script = ExtResource( 76 )
 x = 8
 y = -9
@@ -3500,7 +3500,7 @@ start_tick = 8
 active_ticks = 2
 
 [node name="HurtboxState" type="Node2D" parent="StateMachine/HitGrab" index="1"]
-z_index = 1000
+z_index = 999
 script = ExtResource( 76 )
 x = 8
 y = -16
@@ -3545,7 +3545,7 @@ start_tick = 8
 active_ticks = 2
 
 [node name="HurtboxState" type="Node2D" parent="StateMachine/HitGrab2" index="1"]
-z_index = 1000
+z_index = 999
 script = ExtResource( 76 )
 x = 8
 y = -16
@@ -3567,6 +3567,14 @@ ExtResource( 218 ): {
 "x": 24,
 "y": 2
 },
+ExtResource( 222 ): {
+"x": 23,
+"y": 6
+},
+ExtResource( 221 ): {
+"x": 27,
+"y": 1
+},
 ExtResource( 219 ): {
 "x": 24,
 "y": 3
@@ -3574,14 +3582,6 @@ ExtResource( 219 ): {
 Resource( "res://characters/stickman/sprites/hitgrab_followup6.png" ): {
 "x": 2,
 "y": -7
-},
-ExtResource( 221 ): {
-"x": 27,
-"y": 1
-},
-ExtResource( 222 ): {
-"x": 23,
-"y": 6
 }
 }
 button_texture = ExtResource( 223 )
@@ -3777,6 +3777,10 @@ force_tick = 10
 enter_force_dir_x = "1.0"
 enter_force_speed = "4.0"
 throw_positions = {
+ExtResource( 207 ): {
+"x": 15,
+"y": -10
+},
 ExtResource( 208 ): {
 "x": 14,
 "y": -11
@@ -3787,10 +3791,6 @@ ExtResource( 209 ): {
 },
 ExtResource( 206 ): {
 "x": 13,
-"y": -10
-},
-ExtResource( 207 ): {
-"x": 15,
 "y": -10
 }
 }
@@ -3831,9 +3831,17 @@ active_ticks = 1
 [node name="BackThrow" parent="StateMachine" index="98"]
 sprite_animation = "GroundedThrow"
 throw_positions = {
+ExtResource( 207 ): {
+"x": 14,
+"y": -9
+},
 ExtResource( 208 ): {
 "x": 13,
 "y": -12
+},
+ExtResource( 210 ): {
+"x": 37,
+"y": -7
 },
 ExtResource( 209 ): {
 "x": 32,
@@ -3842,14 +3850,6 @@ ExtResource( 209 ): {
 ExtResource( 206 ): {
 "x": 12,
 "y": -10
-},
-ExtResource( 207 ): {
-"x": 14,
-"y": -9
-},
-ExtResource( 210 ): {
-"x": 37,
-"y": -7
 }
 }
 burst_cancellable = false
