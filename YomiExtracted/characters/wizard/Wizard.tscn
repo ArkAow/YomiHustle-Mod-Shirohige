@@ -855,29 +855,29 @@ default_dash_speed
 boulder_projectile"
 damages_own_team = true
 throw_positions = {
-ExtResource( 322 ): {
-"x": 40,
-"y": -28
-},
-ExtResource( 326 ): {
-"x": 40,
-"y": -10
-},
-ExtResource( 320 ): {
+ExtResource( 323 ): {
 "x": 62,
-"y": -126
-},
-ExtResource( 321 ): {
-"x": 60,
-"y": -124
+"y": -128
 },
 ExtResource( 325 ): {
 "x": 58,
 "y": -78
 },
-ExtResource( 323 ): {
+ExtResource( 326 ): {
+"x": 40,
+"y": -10
+},
+ExtResource( 322 ): {
+"x": 40,
+"y": -28
+},
+ExtResource( 321 ): {
+"x": 60,
+"y": -124
+},
+ExtResource( 320 ): {
 "x": 62,
-"y": -128
+"y": -126
 }
 }
 character_portrait = ExtResource( 63 )
@@ -894,6 +894,9 @@ material = SubResource( 3 )
 frames = SubResource( 13 )
 animation = "IceSpikeAir"
 frame = 4
+
+[node name="Particles" parent="Flip" index="1"]
+visible = false
 
 [node name="WindParticle" parent="Flip/Particles" index="0" instance=ExtResource( 160 )]
 unique_name_in_owner = true
@@ -1888,29 +1891,29 @@ anim_length = 70
 sfx = ExtResource( 217 )
 sfx_tick = 10
 throw_positions = {
-ExtResource( 322 ): {
-"x": 40,
-"y": -28
-},
-ExtResource( 326 ): {
-"x": 40,
-"y": -10
-},
-ExtResource( 320 ): {
+ExtResource( 323 ): {
 "x": 62,
-"y": -126
-},
-ExtResource( 321 ): {
-"x": 60,
-"y": -124
+"y": -128
 },
 ExtResource( 325 ): {
 "x": 58,
 "y": -78
 },
-ExtResource( 323 ): {
+ExtResource( 326 ): {
+"x": 40,
+"y": -10
+},
+ExtResource( 322 ): {
+"x": 40,
+"y": -28
+},
+ExtResource( 321 ): {
+"x": 60,
+"y": -124
+},
+ExtResource( 320 ): {
 "x": 62,
-"y": -128
+"y": -126
 }
 }
 type = 1
