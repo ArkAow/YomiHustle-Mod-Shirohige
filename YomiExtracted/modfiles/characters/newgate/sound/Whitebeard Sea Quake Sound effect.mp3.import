@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Whitebeard Sea Quake Sound effect.mp3-e85582133bc477d1bbc4206cb0b2a093.mp3str"
+
+[deps]
+
+source_file="res://modfiles/characters/newgate/sound/Whitebeard Sea Quake Sound effect.mp3"
+dest_files=[ "res://.import/Whitebeard Sea Quake Sound effect.mp3-e85582133bc477d1bbc4206cb0b2a093.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
