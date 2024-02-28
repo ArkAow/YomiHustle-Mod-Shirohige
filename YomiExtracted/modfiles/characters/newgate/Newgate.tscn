@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://characters/BaseChar.tscn" type="PackedScene" id=1]
 [ext_resource path="res://modfiles/characters/newgate/newgate_sprite_frames.tres" type="SpriteFrames" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://modfiles/characters/newgate/states/Punch.gd" type="Script" id=5]
 [ext_resource path="res://modfiles/characters/newgate/icons/GroundedSpearDownIcon.png" type="Texture" id=6]
 [ext_resource path="res://modfiles/characters/newgate/icons/punchIcon.png" type="Texture" id=7]
+[ext_resource path="res://modfiles/characters/newgate/icons/GroundedSpearFrontIcon.png" type="Texture" id=8]
 [ext_resource path="res://mechanics/Hitbox.gd" type="Script" id=9]
 
 [sub_resource type="ShaderMaterial" id=1]
@@ -30,8 +31,8 @@ character_portrait = ExtResource( 3 )
 [node name="Sprite" parent="Flip" index="0"]
 material = SubResource( 1 )
 frames = ExtResource( 2 )
-animation = "LightSpearLow"
-frame = 3
+animation = "LightSpearFront"
+frame = 4
 speed_scale = 2.0
 
 [node name="Punch" type="Node2D" parent="StateMachine" index="54"]
@@ -39,7 +40,6 @@ script = ExtResource( 5 )
 apply_forces = true
 apply_fric = true
 apply_grav = true
-sprite_animation = "Punch"
 anim_length = 12
 ticks_per_frame = 2
 force_dir_x = "1"
@@ -61,7 +61,7 @@ x = 15
 y = -22
 width = 15
 height = 13
-damage = 120
+damage = 80
 hitlag_ticks = 10
 knockback = "6.0"
 start_tick = 6
@@ -72,7 +72,6 @@ script = ExtResource( 5 )
 apply_forces = true
 apply_fric = true
 apply_grav = true
-sprite_animation = "LightSpearLow"
 anim_length = 14
 ticks_per_frame = 2
 force_dir_x = "1"
@@ -101,3 +100,38 @@ hitlag_ticks = 10
 hit_height = 2
 knockdown = true
 start_tick = 8
+
+[node name="LightSpearFront" type="Node2D" parent="StateMachine" index="56"]
+script = ExtResource( 5 )
+apply_forces = true
+apply_fric = true
+apply_grav = true
+anim_length = 18
+ticks_per_frame = 2
+force_dir_x = "1"
+force_speed = "5"
+force_tick = 10
+title = "Spear Slash"
+type = 1
+button_texture = ExtResource( 8 )
+interrupt_from_string = "Grounded
+GroundedAttack"
+interrupt_into_string = "Grounded
+GroundedAttack"
+hit_cancel_into_string = "GroundedAttack
+GroundedSpecial
+"
+
+[node name="Hitbox" type="Node2D" parent="StateMachine/LightSpearFront" index="0"]
+z_index = 1000
+script = ExtResource( 9 )
+x = 10
+y = -25
+width = 40
+height = 27
+damage = 100
+hitlag_ticks = 12
+screenshake_amount = 5
+dir_y = "-1.5"
+knockdown = true
+start_tick = 10
