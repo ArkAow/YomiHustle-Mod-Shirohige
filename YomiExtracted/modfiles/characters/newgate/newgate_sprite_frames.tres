@@ -1,4 +1,4 @@
-[gd_resource type="SpriteFrames" load_steps=77 format=2]
+[gd_resource type="SpriteFrames" load_steps=84 format=2]
 
 [ext_resource path="res://modfiles/characters/newgate/sprites/normal/base/hurt_grounded_low.png" type="Texture" id=1]
 [ext_resource path="res://modfiles/characters/newgate/sprites/normal/base/hurt_grounded_mid.png" type="Texture" id=2]
@@ -76,6 +76,13 @@
 [ext_resource path="res://modfiles/characters/newgate/sprites/normal/attacks/super/sea_quake/animation4.png" type="Texture" id=74]
 [ext_resource path="res://modfiles/characters/newgate/sprites/normal/attacks/super/sea_quake/animation11.png" type="Texture" id=75]
 [ext_resource path="res://modfiles/characters/newgate/sprites/normal/attacks/super/sea_quake/animation2.png" type="Texture" id=76]
+[ext_resource path="res://modfiles/characters/newgate/sprites/normal/attacks/ground/ground_stomp/groundstomp4.png" type="Texture" id=77]
+[ext_resource path="res://modfiles/characters/newgate/sprites/normal/attacks/ground/ground_stomp/groundstomp6.png" type="Texture" id=78]
+[ext_resource path="res://modfiles/characters/newgate/sprites/normal/attacks/ground/ground_stomp/groundstomp7.png" type="Texture" id=79]
+[ext_resource path="res://modfiles/characters/newgate/sprites/normal/attacks/ground/ground_stomp/groundstomp1.png" type="Texture" id=80]
+[ext_resource path="res://modfiles/characters/newgate/sprites/normal/attacks/ground/ground_stomp/groundstomp5.png" type="Texture" id=81]
+[ext_resource path="res://modfiles/characters/newgate/sprites/normal/attacks/ground/ground_stomp/groundstomp3.png" type="Texture" id=82]
+[ext_resource path="res://modfiles/characters/newgate/sprites/normal/attacks/ground/ground_stomp/groundstomp2.png" type="Texture" id=83]
 
 [resource]
 animations = [ {
@@ -117,6 +124,11 @@ animations = [ {
 "frames": [ ExtResource( 18 ) ],
 "loop": true,
 "name": "Grabbed",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 80 ), ExtResource( 83 ), ExtResource( 82 ), ExtResource( 77 ), ExtResource( 77 ), ExtResource( 81 ), ExtResource( 81 ), ExtResource( 78 ), ExtResource( 78 ), ExtResource( 79 ) ],
+"loop": true,
+"name": "GroundStomp",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 4 ) ],
