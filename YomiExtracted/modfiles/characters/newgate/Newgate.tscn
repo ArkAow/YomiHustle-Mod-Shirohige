@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=2]
+[gd_scene load_steps=23 format=2]
 
 [ext_resource path="res://characters/BaseChar.tscn" type="PackedScene" id=1]
 [ext_resource path="res://modfiles/characters/newgate/newgate_sprite_frames.tres" type="SpriteFrames" id=2]
@@ -18,8 +18,9 @@
 [ext_resource path="res://modfiles/characters/newgate/states/SeaQuake.gd" type="Script" id=16]
 [ext_resource path="res://modfiles/characters/newgate/icons/seaQuakeIcon.png" type="Texture" id=17]
 [ext_resource path="res://modfiles/characters/newgate/SeaQuakeParticle.tscn" type="PackedScene" id=18]
-[ext_resource path="res://modfiles/characters/newgate/icons/groundstompIcon.png" type="Texture" id=19]
+[ext_resource path="res://modfiles/characters/newgate/states/GroundStomp.gd" type="Script" id=19]
 [ext_resource path="res://modfiles/characters/newgate/GroundStompEffect.tscn" type="PackedScene" id=20]
+[ext_resource path="res://modfiles/characters/newgate/icons/groundstompIcon.png" type="Texture" id=21]
 
 [sub_resource type="ShaderMaterial" id=1]
 resource_local_to_scene = true
@@ -227,7 +228,7 @@ start_tick = 6
 active_ticks = 6
 
 [node name="GroundStomp" type="Node2D" parent="StateMachine" index="59"]
-script = ExtResource( 13 )
+script = ExtResource( 19 )
 __meta__ = {
 "_editor_description_": ""
 }
@@ -240,7 +241,7 @@ timed_particle_scene = ExtResource( 20 )
 timed_spawn_particle_tick = 18
 title = "Ground Stomp"
 type = 2
-button_texture = ExtResource( 19 )
+button_texture = ExtResource( 21 )
 interrupt_from_string = "Grounded
 GroundedAttack"
 interrupt_into_string = "Grounded
