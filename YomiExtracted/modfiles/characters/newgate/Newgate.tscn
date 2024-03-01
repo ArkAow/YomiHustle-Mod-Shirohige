@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=2]
+[gd_scene load_steps=26 format=2]
 
 [ext_resource path="res://characters/BaseChar.tscn" type="PackedScene" id=1]
 [ext_resource path="res://modfiles/characters/newgate/newgate_sprite_frames.tres" type="SpriteFrames" id=2]
@@ -21,6 +21,9 @@
 [ext_resource path="res://modfiles/characters/newgate/states/GroundStomp.gd" type="Script" id=19]
 [ext_resource path="res://modfiles/characters/newgate/GroundStompEffect.tscn" type="PackedScene" id=20]
 [ext_resource path="res://modfiles/characters/newgate/icons/groundstompIcon.png" type="Texture" id=21]
+[ext_resource path="res://modfiles/characters/newgate/states/LeapAttack.gd" type="Script" id=22]
+[ext_resource path="res://modfiles/characters/newgate/icons/leapattackIcon.png" type="Texture" id=23]
+[ext_resource path="res://modfiles/characters/newgate/states/LeapAttackLanding.gd" type="Script" id=24]
 
 [sub_resource type="ShaderMaterial" id=1]
 resource_local_to_scene = true
@@ -43,14 +46,12 @@ character_portrait = ExtResource( 3 )
 [node name="Sprite" parent="Flip" index="0"]
 material = SubResource( 1 )
 frames = ExtResource( 2 )
-animation = "GroundStomp"
-speed_scale = 2.0
+animation = "LeapAttack"
+frame = 1
+speed_scale = 4.0
 
 [node name="Punch" type="Node2D" parent="StateMachine" index="54"]
 script = ExtResource( 5 )
-apply_forces = true
-apply_fric = true
-apply_grav = true
 anim_length = 12
 ticks_per_frame = 2
 force_dir_x = "1"
@@ -83,9 +84,6 @@ script = ExtResource( 15 )
 __meta__ = {
 "_editor_description_": ""
 }
-apply_forces = true
-apply_fric = true
-apply_grav = true
 anim_length = 22
 ticks_per_frame = 2
 force_dir_x = "1"
@@ -118,9 +116,6 @@ script = ExtResource( 12 )
 __meta__ = {
 "_editor_description_": ""
 }
-apply_forces = true
-apply_fric = true
-apply_grav = true
 anim_length = 14
 ticks_per_frame = 2
 force_dir_x = "1"
@@ -156,9 +151,6 @@ script = ExtResource( 11 )
 __meta__ = {
 "_editor_description_": ""
 }
-apply_forces = true
-apply_fric = true
-apply_grav = true
 anim_length = 18
 ticks_per_frame = 2
 force_dir_x = "1"
@@ -195,9 +187,6 @@ script = ExtResource( 13 )
 __meta__ = {
 "_editor_description_": ""
 }
-apply_forces = true
-apply_fric = true
-apply_grav = true
 anim_length = 16
 ticks_per_frame = 2
 title = "Upward Slsash"
@@ -267,7 +256,56 @@ air_ground_bounce = true
 start_tick = 18
 active_ticks = 4
 
-[node name="SeaQuake" type="Node2D" parent="StateMachine" index="60"]
+[node name="LeapAttack" type="Node2D" parent="StateMachine" index="60"]
+script = ExtResource( 22 )
+__meta__ = {
+"_editor_description_": ""
+}
+endless = true
+force_dir_x = "1.1"
+force_dir_y = "-0.25"
+force_speed = "11.0"
+force_tick = 5
+title = "Jump Slash"
+type = 2
+button_texture = ExtResource( 23 )
+air_type = 2
+self_hit_cancellable = false
+interrupt_from_string = "GroundedSpecial
+Grounded
+Aerial"
+interrupt_into_string = "Grounded
+Aerial"
+hit_cancel_into_string = "GroundedSuper
+GroundedSpecial
+AerialSpecial
+AerialSuper"
+
+[node name="Hitbox" type="Node2D" parent="StateMachine/LeapAttack" index="0"]
+z_index = 1000
+script = ExtResource( 9 )
+y = -15
+width = 90
+height = 15
+damage = 110
+hitlag_ticks = 12
+screenshake_amount = 10
+dir_x = "0.1"
+dir_y = "-2"
+knockback = "6.0"
+grounded_hit_state = "HurtAerial"
+air_ground_bounce = true
+start_tick = 18
+active_ticks = 4
+
+[node name="LeapAttackLanding" type="Node2D" parent="StateMachine" index="61"]
+script = ExtResource( 24 )
+__meta__ = {
+"_editor_description_": ""
+}
+sprite_animation = "Landing"
+
+[node name="SeaQuake" type="Node2D" parent="StateMachine" index="62"]
 script = ExtResource( 16 )
 __meta__ = {
 "_editor_description_": ""
