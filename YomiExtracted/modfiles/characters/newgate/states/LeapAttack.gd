@@ -14,7 +14,7 @@ func _frame_7():
 		left_ground = true
 
 func _tick():
-	if current_tick <= 6:
+	if current_tick <= 24:
 		left_ground = false
 	else :
 		if started_in_air:

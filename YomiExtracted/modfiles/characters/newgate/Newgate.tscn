@@ -47,8 +47,7 @@ character_portrait = ExtResource( 3 )
 material = SubResource( 1 )
 frames = ExtResource( 2 )
 animation = "LeapAttack"
-frame = 1
-speed_scale = 4.0
+frame = 9
 
 [node name="Punch" type="Node2D" parent="StateMachine" index="54"]
 script = ExtResource( 5 )
@@ -261,11 +260,13 @@ script = ExtResource( 22 )
 __meta__ = {
 "_editor_description_": ""
 }
+anim_length = 26
+ticks_per_frame = 2
 endless = true
 force_dir_x = "1.1"
-force_dir_y = "-0.25"
-force_speed = "11.0"
-force_tick = 5
+force_dir_y = "-0.5"
+force_speed = "9.0"
+force_tick = 1
 title = "Jump Slash"
 type = 2
 button_texture = ExtResource( 23 )
@@ -284,19 +285,21 @@ AerialSuper"
 [node name="Hitbox" type="Node2D" parent="StateMachine/LeapAttack" index="0"]
 z_index = 1000
 script = ExtResource( 9 )
-y = -15
-width = 90
-height = 15
-damage = 110
+x = 19
+y = -28
+width = 32
+height = 27
+damage = 150
 hitlag_ticks = 12
-screenshake_amount = 10
-dir_x = "0.1"
-dir_y = "-2"
-knockback = "6.0"
+screenshake_amount = 14
+dir_x = "2"
+dir_y = "-0.5"
+knockback = "8.0"
 grounded_hit_state = "HurtAerial"
 air_ground_bounce = true
-start_tick = 18
-active_ticks = 4
+wall_slam = true
+start_tick = 20
+active_ticks = 6
 
 [node name="LeapAttackLanding" type="Node2D" parent="StateMachine" index="61"]
 script = ExtResource( 24 )
