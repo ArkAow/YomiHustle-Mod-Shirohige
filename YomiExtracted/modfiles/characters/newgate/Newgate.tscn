@@ -51,6 +51,9 @@ frame = 9
 
 [node name="Punch" type="Node2D" parent="StateMachine" index="54"]
 script = ExtResource( 5 )
+apply_forces = true
+apply_fric = true
+apply_grav = true
 anim_length = 12
 ticks_per_frame = 2
 force_dir_x = "1"
@@ -83,11 +86,14 @@ script = ExtResource( 15 )
 __meta__ = {
 "_editor_description_": ""
 }
+apply_forces = true
+apply_fric = true
+apply_grav = true
 anim_length = 22
 ticks_per_frame = 2
 force_dir_x = "1"
 force_speed = "4"
-force_tick = 12
+force_tick = 13
 title = "Kick"
 type = 1
 button_texture = ExtResource( 14 )
@@ -115,6 +121,9 @@ script = ExtResource( 12 )
 __meta__ = {
 "_editor_description_": ""
 }
+apply_forces = true
+apply_fric = true
+apply_grav = true
 anim_length = 14
 ticks_per_frame = 2
 force_dir_x = "1"
@@ -150,6 +159,9 @@ script = ExtResource( 11 )
 __meta__ = {
 "_editor_description_": ""
 }
+apply_forces = true
+apply_fric = true
+apply_grav = true
 anim_length = 18
 ticks_per_frame = 2
 force_dir_x = "1"
@@ -186,6 +198,9 @@ script = ExtResource( 13 )
 __meta__ = {
 "_editor_description_": ""
 }
+apply_forces = true
+apply_fric = true
+apply_grav = true
 anim_length = 16
 ticks_per_frame = 2
 title = "Upward Slsash"
