@@ -1,4 +1,4 @@
-[gd_resource type="SpriteFrames" load_steps=91 format=2]
+[gd_resource type="SpriteFrames" load_steps=108 format=2]
 
 [ext_resource path="res://modfiles/characters/newgate/sprites/normal/base/hurt_grounded_low.png" type="Texture" id=1]
 [ext_resource path="res://modfiles/characters/newgate/sprites/normal/base/hurt_grounded_mid.png" type="Texture" id=2]
@@ -61,6 +61,8 @@
 [ext_resource path="res://modfiles/characters/newgate/sprites/normal/attacks/ground/front_kick/frontkick6.png" type="Texture" id=59]
 [ext_resource path="res://modfiles/characters/newgate/sprites/normal/attacks/ground/front_kick/frontkick2.png" type="Texture" id=60]
 [ext_resource path="res://modfiles/characters/newgate/sprites/normal/attacks/ground/front_kick/frontkick7.png" type="Texture" id=61]
+[ext_resource path="res://modfiles/characters/newgate/sprites/normal/attacks/super/sea_tilt/seaTilt4.png" type="Texture" id=62]
+[ext_resource path="res://modfiles/characters/newgate/sprites/normal/attacks/super/sea_tilt/seaTilt11.png" type="Texture" id=63]
 [ext_resource path="res://modfiles/characters/newgate/sprites/normal/attacks/super/sea_quake/animation3.png" type="Texture" id=64]
 [ext_resource path="res://modfiles/characters/newgate/sprites/normal/attacks/super/sea_quake/animation13.png" type="Texture" id=65]
 [ext_resource path="res://modfiles/characters/newgate/sprites/normal/attacks/super/sea_quake/animation5.png" type="Texture" id=66]
@@ -86,10 +88,25 @@
 [ext_resource path="res://modfiles/characters/newgate/sprites/normal/attacks/ground/leap_attack/leapattack8.png" type="Texture" id=86]
 [ext_resource path="res://modfiles/characters/newgate/sprites/normal/attacks/ground/leap_attack/leapattack6.png" type="Texture" id=87]
 [ext_resource path="res://modfiles/characters/newgate/sprites/normal/attacks/ground/leap_attack/leapattack9.png" type="Texture" id=88]
+[ext_resource path="res://modfiles/characters/newgate/sprites/normal/attacks/super/sea_tilt/seaTilt5.png" type="Texture" id=89]
 [ext_resource path="res://modfiles/characters/newgate/sprites/normal/attacks/ground/leap_attack/leapattack4.png" type="Texture" id=90]
 [ext_resource path="res://modfiles/characters/newgate/sprites/normal/attacks/ground/leap_attack/leapattack7.png" type="Texture" id=91]
+[ext_resource path="res://modfiles/characters/newgate/sprites/normal/attacks/super/sea_tilt/seaTilt15.png" type="Texture" id=92]
 [ext_resource path="res://modfiles/characters/newgate/sprites/normal/attacks/ground/leap_attack/leapattack5.png" type="Texture" id=93]
 [ext_resource path="res://modfiles/characters/newgate/sprites/normal/attacks/ground/leap_attack/leapattack10.png" type="Texture" id=94]
+[ext_resource path="res://modfiles/characters/newgate/sprites/normal/attacks/super/sea_tilt/seaTilt7.png" type="Texture" id=95]
+[ext_resource path="res://modfiles/characters/newgate/sprites/normal/attacks/super/sea_tilt/seaTilt10.png" type="Texture" id=96]
+[ext_resource path="res://modfiles/characters/newgate/sprites/normal/attacks/super/sea_tilt/seaTilt13.png" type="Texture" id=97]
+[ext_resource path="res://modfiles/characters/newgate/sprites/normal/attacks/super/sea_tilt/seaTilt18.png" type="Texture" id=98]
+[ext_resource path="res://modfiles/characters/newgate/sprites/normal/attacks/super/sea_tilt/seaTilt1.png" type="Texture" id=99]
+[ext_resource path="res://modfiles/characters/newgate/sprites/normal/attacks/super/sea_tilt/seaTilt14.png" type="Texture" id=100]
+[ext_resource path="res://modfiles/characters/newgate/sprites/normal/attacks/super/sea_tilt/seaTilt2.png" type="Texture" id=101]
+[ext_resource path="res://modfiles/characters/newgate/sprites/normal/attacks/super/sea_tilt/seaTilt3.png" type="Texture" id=102]
+[ext_resource path="res://modfiles/characters/newgate/sprites/normal/attacks/super/sea_tilt/seaTilt6.png" type="Texture" id=103]
+[ext_resource path="res://modfiles/characters/newgate/sprites/normal/attacks/super/sea_tilt/seaTilt16.png" type="Texture" id=104]
+[ext_resource path="res://modfiles/characters/newgate/sprites/normal/attacks/super/sea_tilt/seaTilt8.png" type="Texture" id=105]
+[ext_resource path="res://modfiles/characters/newgate/sprites/normal/attacks/super/sea_tilt/seaTilt9.png" type="Texture" id=106]
+[ext_resource path="res://modfiles/characters/newgate/sprites/normal/attacks/super/sea_tilt/seaTilt17.png" type="Texture" id=107]
 
 [resource]
 animations = [ {
@@ -236,6 +253,11 @@ animations = [ {
 "frames": [ ExtResource( 76 ), ExtResource( 64 ), ExtResource( 74 ), ExtResource( 66 ), ExtResource( 73 ), ExtResource( 67 ), ExtResource( 69 ), ExtResource( 70 ), ExtResource( 71 ), ExtResource( 75 ), ExtResource( 72 ), ExtResource( 65 ), ExtResource( 57 ) ],
 "loop": true,
 "name": "SeaQuake",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 99 ), ExtResource( 101 ), ExtResource( 102 ), ExtResource( 62 ), ExtResource( 89 ), ExtResource( 103 ), ExtResource( 95 ), ExtResource( 105 ), ExtResource( 105 ), ExtResource( 105 ), ExtResource( 106 ), ExtResource( 106 ), ExtResource( 106 ), ExtResource( 96 ), ExtResource( 63 ), ExtResource( 97 ), ExtResource( 100 ), ExtResource( 92 ), ExtResource( 104 ), ExtResource( 107 ), ExtResource( 98 ) ],
+"loop": true,
+"name": "SeaTilt",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 68 ) ],

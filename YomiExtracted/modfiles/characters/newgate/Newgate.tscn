@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=2]
+[gd_scene load_steps=28 format=2]
 
 [ext_resource path="res://characters/BaseChar.tscn" type="PackedScene" id=1]
 [ext_resource path="res://modfiles/characters/newgate/newgate_sprite_frames.tres" type="SpriteFrames" id=2]
@@ -24,6 +24,8 @@
 [ext_resource path="res://modfiles/characters/newgate/states/LeapAttack.gd" type="Script" id=22]
 [ext_resource path="res://modfiles/characters/newgate/icons/leapattackIcon.png" type="Texture" id=23]
 [ext_resource path="res://modfiles/characters/newgate/states/LeapAttackLanding.gd" type="Script" id=24]
+[ext_resource path="res://modfiles/characters/newgate/states/SeaTilt.gd" type="Script" id=25]
+[ext_resource path="res://modfiles/characters/newgate/icons/seaTiltIcon.png" type="Texture" id=26]
 
 [sub_resource type="ShaderMaterial" id=1]
 resource_local_to_scene = true
@@ -46,8 +48,9 @@ character_portrait = ExtResource( 3 )
 [node name="Sprite" parent="Flip" index="0"]
 material = SubResource( 1 )
 frames = ExtResource( 2 )
-animation = "LeapAttack"
-frame = 9
+animation = "SeaTilt"
+frame = 8
+speed_scale = 2.0
 
 [node name="Punch" type="Node2D" parent="StateMachine" index="54"]
 script = ExtResource( 5 )
@@ -395,3 +398,50 @@ dir_x = "0.5"
 grounded_hit_state = "HurtAerial"
 start_tick = 38
 active_ticks = 4
+
+[node name="SeaTilt" type="Node2D" parent="StateMachine" index="63"]
+script = ExtResource( 25 )
+__meta__ = {
+"_editor_description_": ""
+}
+apply_forces = true
+apply_fric = true
+apply_grav = true
+anim_length = 63
+ticks_per_frame = 3
+state_screenshake_tick = 48
+state_screenshake_dir = Vector2( 0.4, 1 )
+state_screenshake_length = 10.0
+state_screenshake_amount = 100
+title = "Sea Tilt"
+type = 3
+button_texture = ExtResource( 26 )
+self_hit_cancellable = false
+self_interruptable = false
+interrupt_from_string = "Grounded
+GroundedAttack"
+can_be_counterhit = false
+supers_used_ = 0
+super_effect_ = true
+
+[node name="Hitbox" type="Node2D" parent="StateMachine/SeaTilt" index="0"]
+z_index = 1000
+script = ExtResource( 9 )
+x = -3
+y = -27
+width = 300
+height = 100
+damage = 200
+hitstun_ticks = 120
+hitlag_ticks = 60
+cancellable = false
+guard_break = true
+hit_height = 0
+dir_x = "0.4"
+dir_y = "1.0"
+grounded_hit_state = "HurtAerial"
+knockdown = true
+hard_knockdown = true
+ground_bounce = false
+start_tick = 50
+active_ticks = 6
