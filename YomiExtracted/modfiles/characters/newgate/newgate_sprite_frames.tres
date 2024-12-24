@@ -1,4 +1,4 @@
-[gd_resource type="SpriteFrames" load_steps=108 format=2]
+[gd_resource type="SpriteFrames" load_steps=107 format=2]
 
 [ext_resource path="res://modfiles/characters/newgate/sprites/normal/base/hurt_grounded_low.png" type="Texture" id=1]
 [ext_resource path="res://modfiles/characters/newgate/sprites/normal/base/hurt_grounded_mid.png" type="Texture" id=2]
@@ -67,7 +67,6 @@
 [ext_resource path="res://modfiles/characters/newgate/sprites/normal/attacks/super/sea_quake/animation13.png" type="Texture" id=65]
 [ext_resource path="res://modfiles/characters/newgate/sprites/normal/attacks/super/sea_quake/animation5.png" type="Texture" id=66]
 [ext_resource path="res://modfiles/characters/newgate/sprites/normal/attacks/super/sea_quake/animation7.png" type="Texture" id=67]
-[ext_resource path="res://characters/stickman/sprites/stickman61.png" type="Texture" id=68]
 [ext_resource path="res://modfiles/characters/newgate/sprites/normal/attacks/super/sea_quake/animation8.png" type="Texture" id=69]
 [ext_resource path="res://modfiles/characters/newgate/sprites/normal/attacks/super/sea_quake/animation9.png" type="Texture" id=70]
 [ext_resource path="res://modfiles/characters/newgate/sprites/normal/attacks/super/sea_quake/animation10.png" type="Texture" id=71]
@@ -260,7 +259,7 @@ animations = [ {
 "name": "SeaTilt",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 68 ) ],
+"frames": [ ExtResource( 9 ) ],
 "loop": true,
 "name": "ThrowTech",
 "speed": 5.0

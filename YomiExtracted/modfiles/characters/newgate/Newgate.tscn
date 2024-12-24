@@ -61,6 +61,12 @@ y = -25
 width = 9
 height = 25
 
+[node name="Roll" parent="StateMachine" index="6"]
+show_in_menu = false
+
+[node name="TechRoll" parent="StateMachine" index="22"]
+show_in_menu = false
+
 [node name="Punch" type="Node2D" parent="StateMachine" index="54"]
 script = ExtResource( 5 )
 apply_forces = true
