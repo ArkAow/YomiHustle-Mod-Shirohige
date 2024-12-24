@@ -48,7 +48,8 @@ character_portrait = ExtResource( 3 )
 [node name="Sprite" parent="Flip" index="0"]
 material = SubResource( 1 )
 frames = ExtResource( 2 )
-animation = "Wait"
+animation = "Punch"
+frame = 2
 speed_scale = 2.0
 
 [node name="CollisionBox" parent="." index="2"]
@@ -90,9 +91,9 @@ GroundedSpecial
 z_index = 1000
 script = ExtResource( 9 )
 x = 15
-y = -22
+y = -27
 width = 15
-height = 13
+height = 10
 damage = 80
 hitlag_ticks = 10
 knockback = "6.0"
