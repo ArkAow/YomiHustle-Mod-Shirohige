@@ -48,9 +48,18 @@ character_portrait = ExtResource( 3 )
 [node name="Sprite" parent="Flip" index="0"]
 material = SubResource( 1 )
 frames = ExtResource( 2 )
-animation = "SeaTilt"
-frame = 8
+animation = "Wait"
 speed_scale = 2.0
+
+[node name="CollisionBox" parent="." index="2"]
+y = -25
+width = 7
+height = 19
+
+[node name="Hurtbox" parent="." index="3"]
+y = -25
+width = 9
+height = 25
 
 [node name="Punch" type="Node2D" parent="StateMachine" index="54"]
 script = ExtResource( 5 )
