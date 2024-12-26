@@ -48,7 +48,7 @@ character_portrait = ExtResource( 3 )
 [node name="Sprite" parent="Flip" index="0"]
 material = SubResource( 1 )
 frames = ExtResource( 2 )
-animation = "Hook"
+animation = "Taunt"
 speed_scale = 2.0
 
 [node name="CollisionBox" parent="." index="2"]
@@ -66,6 +66,9 @@ show_in_menu = false
 
 [node name="TechRoll" parent="StateMachine" index="22"]
 show_in_menu = false
+
+[node name="Taunt" parent="StateMachine" index="52"]
+sprite_anim_length = 33
 
 [node name="Hook" type="Node2D" parent="StateMachine" index="54"]
 script = ExtResource( 5 )
@@ -375,7 +378,7 @@ x = -3
 y = -27
 width = 55
 height = 35
-damage = 300
+damage = 400
 hitstun_ticks = 70
 hitlag_ticks = 30
 victim_hitlag = 35
