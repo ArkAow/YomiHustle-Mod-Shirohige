@@ -6,7 +6,7 @@
 [ext_resource path="res://characters/BaseChar.gdshader" type="Shader" id=4]
 [ext_resource path="res://modfiles/characters/newgate/states/Punch.gd" type="Script" id=5]
 [ext_resource path="res://modfiles/characters/newgate/icons/GroundedSpearDownIcon.png" type="Texture" id=6]
-[ext_resource path="res://modfiles/characters/newgate/icons/punchIcon.png" type="Texture" id=7]
+[ext_resource path="res://modfiles/characters/newgate/icons/hookIcon.png" type="Texture" id=7]
 [ext_resource path="res://modfiles/characters/newgate/icons/GroundedSpearFrontIcon.png" type="Texture" id=8]
 [ext_resource path="res://mechanics/Hitbox.gd" type="Script" id=9]
 [ext_resource path="res://modfiles/characters/newgate/icons/GroundedSpearUpIcon.png" type="Texture" id=10]
@@ -48,8 +48,7 @@ character_portrait = ExtResource( 3 )
 [node name="Sprite" parent="Flip" index="0"]
 material = SubResource( 1 )
 frames = ExtResource( 2 )
-animation = "Punch"
-frame = 2
+animation = "Hook"
 speed_scale = 2.0
 
 [node name="CollisionBox" parent="." index="2"]
@@ -68,7 +67,7 @@ show_in_menu = false
 [node name="TechRoll" parent="StateMachine" index="22"]
 show_in_menu = false
 
-[node name="Punch" type="Node2D" parent="StateMachine" index="54"]
+[node name="Hook" type="Node2D" parent="StateMachine" index="54"]
 script = ExtResource( 5 )
 apply_forces = true
 apply_fric = true
@@ -78,7 +77,7 @@ ticks_per_frame = 2
 force_dir_x = "1"
 force_speed = "2"
 force_tick = 6
-title = "Punch"
+title = "Hook"
 type = 1
 button_texture = ExtResource( 7 )
 interrupt_from_string = "Grounded"
@@ -87,7 +86,7 @@ hit_cancel_into_string = "GroundedAttack
 GroundedSpecial
 "
 
-[node name="Hitbox" type="Node2D" parent="StateMachine/Punch" index="0"]
+[node name="Hitbox" type="Node2D" parent="StateMachine/Hook" index="0"]
 z_index = 1000
 script = ExtResource( 9 )
 x = 15

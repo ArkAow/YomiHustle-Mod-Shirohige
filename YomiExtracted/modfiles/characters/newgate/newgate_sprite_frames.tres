@@ -25,14 +25,14 @@
 [ext_resource path="res://modfiles/characters/newgate/sprites/normal/base/parry_low.png" type="Texture" id=23]
 [ext_resource path="res://modfiles/characters/newgate/sprites/normal/base/wait.png" type="Texture" id=24]
 [ext_resource path="res://modfiles/characters/newgate/sprites/normal/base/wall_slam.png" type="Texture" id=25]
-[ext_resource path="res://modfiles/characters/newgate/sprites/normal/attacks/ground/punch/punch2.png" type="Texture" id=26]
+[ext_resource path="res://modfiles/characters/newgate/sprites/normal/attacks/ground/hook/hook2.png" type="Texture" id=26]
 [ext_resource path="res://characters/stickman/sprites/stickman7.png" type="Texture" id=27]
-[ext_resource path="res://modfiles/characters/newgate/sprites/normal/attacks/ground/punch/punch4.png" type="Texture" id=28]
+[ext_resource path="res://modfiles/characters/newgate/sprites/normal/attacks/ground/hook/hook5.png" type="Texture" id=28]
 [ext_resource path="res://characters/stickman/sprites/stickman5.png" type="Texture" id=29]
 [ext_resource path="res://modfiles/characters/newgate/sprites/normal/base/knockdown.png" type="Texture" id=30]
-[ext_resource path="res://modfiles/characters/newgate/sprites/normal/attacks/ground/punch/punch1.png" type="Texture" id=31]
-[ext_resource path="res://modfiles/characters/newgate/sprites/normal/attacks/ground/punch/punch5.png" type="Texture" id=32]
-[ext_resource path="res://modfiles/characters/newgate/sprites/normal/attacks/ground/punch/punch3.png" type="Texture" id=33]
+[ext_resource path="res://modfiles/characters/newgate/sprites/normal/attacks/ground/hook/hook3.png" type="Texture" id=31]
+[ext_resource path="res://modfiles/characters/newgate/sprites/normal/attacks/ground/hook/hook1.png" type="Texture" id=32]
+[ext_resource path="res://modfiles/characters/newgate/sprites/normal/attacks/ground/hook/hook4.png" type="Texture" id=33]
 [ext_resource path="res://modfiles/characters/newgate/sprites/normal/attacks/ground/light_spear_low/animation5.png" type="Texture" id=34]
 [ext_resource path="res://modfiles/characters/newgate/sprites/normal/attacks/ground/light_spear_low/animation3.png" type="Texture" id=35]
 [ext_resource path="res://modfiles/characters/newgate/sprites/normal/attacks/ground/light_spear_low/animation1.png" type="Texture" id=36]
@@ -154,6 +154,11 @@ animations = [ {
 "name": "GroundStomp",
 "speed": 5.0
 }, {
+"frames": [ ExtResource( 32 ), ExtResource( 26 ), ExtResource( 31 ), ExtResource( 33 ), ExtResource( 28 ) ],
+"loop": true,
+"name": "Hook",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 4 ) ],
 "loop": true,
 "name": "HurtAerial",
@@ -232,11 +237,6 @@ animations = [ {
 "frames": [ ExtResource( 23 ) ],
 "loop": true,
 "name": "ParryLow",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 31 ), ExtResource( 26 ), ExtResource( 33 ), ExtResource( 28 ), ExtResource( 32 ) ],
-"loop": true,
-"name": "Punch",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 6 ), ExtResource( 27 ), ExtResource( 16 ), ExtResource( 29 ) ],
