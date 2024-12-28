@@ -48,7 +48,8 @@ character_portrait = ExtResource( 3 )
 [node name="Sprite" parent="Flip" index="0"]
 material = SubResource( 1 )
 frames = ExtResource( 2 )
-animation = "Taunt"
+animation = "LightSpearFront"
+frame = 4
 speed_scale = 2.0
 
 [node name="CollisionBox" parent="." index="2"]
@@ -183,7 +184,7 @@ __meta__ = {
 apply_forces = true
 apply_fric = true
 apply_grav = true
-anim_length = 18
+anim_length = 14
 ticks_per_frame = 2
 force_dir_x = "1"
 force_speed = "5"
@@ -202,9 +203,9 @@ GroundedSpecial
 [node name="Hitbox" type="Node2D" parent="StateMachine/LightSpearFront" index="0"]
 z_index = 1000
 script = ExtResource( 9 )
-x = 10
+x = 20
 y = -25
-width = 40
+width = 49
 height = 27
 damage = 100
 hitlag_ticks = 12

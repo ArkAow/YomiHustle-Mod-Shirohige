@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/frontspear8.png-b1800da3d438fd994a9ec86b3fce4928.stex"
+path="res://.import/animation3.png-0d2ec9c74d03db9e1f160874dd28b878.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://modfiles/characters/newgate/sprites/normal/attacks/ground/light_spear_front/frontspear8.png"
-dest_files=[ "res://.import/frontspear8.png-b1800da3d438fd994a9ec86b3fce4928.stex" ]
+source_file="res://modfiles/characters/newgate/sprites/normal/attacks/ground/light_spear_front/animation3.png"
+dest_files=[ "res://.import/animation3.png-0d2ec9c74d03db9e1f160874dd28b878.stex" ]
 
 [params]
 
