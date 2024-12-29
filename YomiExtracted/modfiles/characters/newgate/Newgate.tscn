@@ -48,8 +48,8 @@ character_portrait = ExtResource( 3 )
 [node name="Sprite" parent="Flip" index="0"]
 material = SubResource( 1 )
 frames = ExtResource( 2 )
-animation = "LightSpearFront"
-frame = 4
+animation = "LightSpearLow"
+frame = 3
 speed_scale = 2.0
 
 [node name="CollisionBox" parent="." index="2"]
@@ -165,8 +165,8 @@ GroundedSpecial
 [node name="Hitbox" type="Node2D" parent="StateMachine/LightSpearLow" index="0"]
 z_index = 1000
 script = ExtResource( 9 )
-x = 5
-y = -10
+x = 14
+y = -13
 width = 45
 height = 11
 damage = 100
@@ -174,7 +174,7 @@ hitlag_ticks = 10
 hit_height = 2
 knockback = "6.0"
 hard_knockdown = true
-start_tick = 8
+start_tick = 7
 
 [node name="LightSpearFront" type="Node2D" parent="StateMachine" index="57"]
 script = ExtResource( 11 )
@@ -207,7 +207,7 @@ x = 20
 y = -25
 width = 49
 height = 27
-damage = 100
+damage = 150
 hitlag_ticks = 12
 screenshake_amount = 5
 dir_y = "-1.5"
