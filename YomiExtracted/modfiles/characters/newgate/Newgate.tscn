@@ -48,9 +48,8 @@ character_portrait = ExtResource( 3 )
 [node name="Sprite" parent="Flip" index="0"]
 material = SubResource( 1 )
 frames = ExtResource( 2 )
-animation = "LightSpearLow"
+animation = "Hook"
 frame = 3
-speed_scale = 2.0
 
 [node name="CollisionBox" parent="." index="2"]
 y = -25
@@ -76,7 +75,7 @@ script = ExtResource( 5 )
 apply_forces = true
 apply_fric = true
 apply_grav = true
-anim_length = 12
+anim_length = 6
 ticks_per_frame = 2
 force_dir_x = "1"
 force_speed = "2"
@@ -91,17 +90,17 @@ GroundedSpecial
 "
 
 [node name="Hitbox" type="Node2D" parent="StateMachine/Hook" index="0"]
+position = Vector2( 2, -3 )
 z_index = 1000
 script = ExtResource( 9 )
 x = 15
 y = -27
-width = 15
 height = 10
 damage = 80
 hitlag_ticks = 10
 knockback = "6.0"
-start_tick = 6
-active_ticks = 4
+start_tick = 3
+active_ticks = 2
 
 [node name="Kick" type="Node2D" parent="StateMachine" index="55"]
 script = ExtResource( 15 )
@@ -163,11 +162,12 @@ GroundedSpecial
 "
 
 [node name="Hitbox" type="Node2D" parent="StateMachine/LightSpearLow" index="0"]
+position = Vector2( -3, -5 )
 z_index = 1000
 script = ExtResource( 9 )
 x = 14
 y = -13
-width = 45
+width = 56
 height = 11
 damage = 100
 hitlag_ticks = 10
