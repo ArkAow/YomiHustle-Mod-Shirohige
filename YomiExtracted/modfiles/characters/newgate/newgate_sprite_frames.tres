@@ -253,7 +253,7 @@ animations = [ {
 "name": "RollForward",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 76 ), ExtResource( 64 ), ExtResource( 74 ), ExtResource( 66 ), ExtResource( 73 ), ExtResource( 67 ), ExtResource( 69 ), ExtResource( 70 ), ExtResource( 71 ), ExtResource( 75 ), ExtResource( 72 ), ExtResource( 65 ), ExtResource( 57 ) ],
+"frames": [ ExtResource( 76 ), ExtResource( 64 ), ExtResource( 74 ), ExtResource( 66 ), ExtResource( 73 ), ExtResource( 67 ), ExtResource( 67 ), ExtResource( 67 ), ExtResource( 69 ), ExtResource( 70 ), ExtResource( 71 ), ExtResource( 75 ), ExtResource( 72 ), ExtResource( 65 ), ExtResource( 57 ) ],
 "loop": true,
 "name": "SeaQuake",
 "speed": 5.0

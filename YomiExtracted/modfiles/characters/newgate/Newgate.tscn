@@ -48,9 +48,10 @@ character_portrait = ExtResource( 3 )
 [node name="Sprite" parent="Flip" index="0"]
 material = SubResource( 1 )
 frames = ExtResource( 2 )
-animation = "LeapAttack"
-frame = 3
-speed_scale = 2.0
+animation = "SeaQuake"
+frame = 8
+speed_scale = 4.0
+playing = true
 
 [node name="CollisionBox" parent="." index="2"]
 y = -25
@@ -204,9 +205,9 @@ GroundedSpecial
 [node name="Hitbox" type="Node2D" parent="StateMachine/LightSpearFront" index="0"]
 z_index = 1000
 script = ExtResource( 9 )
-x = 20
+x = 24
 y = -25
-width = 49
+width = 69
 height = 27
 damage = 150
 hitlag_ticks = 12
@@ -398,7 +399,7 @@ knockback = "60"
 grounded_hit_state = "HurtAerial"
 air_ground_bounce = true
 wall_slam = true
-start_tick = 32
+start_tick = 40
 active_ticks = 10
 
 [node name="Hitbox2" type="Node2D" parent="StateMachine/SeaQuake" index="1"]
@@ -417,8 +418,7 @@ hit_height = 0
 screenshake_amount = 5
 dir_x = "0.5"
 grounded_hit_state = "HurtAerial"
-start_tick = 38
-active_ticks = 4
+start_tick = 42
 
 [node name="SeaTilt" type="Node2D" parent="StateMachine" index="63"]
 script = ExtResource( 25 )
