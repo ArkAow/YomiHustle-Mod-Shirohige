@@ -1,4 +1,4 @@
-[gd_resource type="SpriteFrames" load_steps=109 format=2]
+[gd_resource type="SpriteFrames" load_steps=108 format=2]
 
 [ext_resource path="res://modfiles/characters/newgate/sprites/normal/base/hurt_grounded_low.png" type="Texture" id=1]
 [ext_resource path="res://modfiles/characters/newgate/sprites/normal/base/hurt_grounded_mid.png" type="Texture" id=2]
@@ -52,7 +52,6 @@
 [ext_resource path="res://modfiles/characters/newgate/sprites/normal/attacks/ground/light_spear_high/animation2.png" type="Texture" id=51]
 [ext_resource path="res://modfiles/characters/newgate/sprites/normal/attacks/ground/light_spear_high/animation3.png" type="Texture" id=52]
 [ext_resource path="res://modfiles/characters/newgate/sprites/normal/attacks/ground/light_spear_high/animation4.png" type="Texture" id=53]
-[ext_resource path="res://modfiles/characters/newgate/sprites/normal/attacks/ground/light_spear_high/animation7.png" type="Texture" id=54]
 [ext_resource path="res://modfiles/characters/newgate/sprites/normal/attacks/ground/front_kick/frontkick3.png" type="Texture" id=55]
 [ext_resource path="res://modfiles/characters/newgate/sprites/normal/attacks/ground/front_kick/frontkick4.png" type="Texture" id=56]
 [ext_resource path="res://modfiles/characters/newgate/sprites/normal/attacks/super/sea_quake/animation14.png" type="Texture" id=57]
@@ -226,7 +225,7 @@ animations = [ {
 "name": "LightSpearLow",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 50 ), ExtResource( 51 ), ExtResource( 52 ), ExtResource( 53 ), ExtResource( 48 ), ExtResource( 49 ), ExtResource( 54 ) ],
+"frames": [ ExtResource( 50 ), ExtResource( 51 ), ExtResource( 52 ), ExtResource( 53 ), ExtResource( 48 ), ExtResource( 49 ) ],
 "loop": true,
 "name": "LightSpearUp",
 "speed": 5.0

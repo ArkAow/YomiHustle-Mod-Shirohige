@@ -48,7 +48,7 @@ character_portrait = ExtResource( 3 )
 [node name="Sprite" parent="Flip" index="0"]
 material = SubResource( 1 )
 frames = ExtResource( 2 )
-animation = "GroundStomp"
+animation = "LightSpearUp"
 frame = 3
 speed_scale = 4.0
 
@@ -210,6 +210,7 @@ width = 69
 height = 27
 damage = 150
 hitlag_ticks = 12
+ignore_projectile_armor = true
 screenshake_amount = 5
 dir_y = "-1.5"
 knockback = "6.0"
@@ -240,10 +241,10 @@ GroundedSpecial
 [node name="Hitbox" type="Node2D" parent="StateMachine/LightSpearUp" index="0"]
 z_index = 1000
 script = ExtResource( 9 )
-x = 5
-y = -35
-width = 37
-height = 37
+x = -3
+y = -51
+width = 53
+height = 32
 damage = 110
 hitlag_ticks = 12
 screenshake_amount = 5
